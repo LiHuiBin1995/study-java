@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-06-23T05:38:29.124Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="Z0rmfMVSURD7F0WMPldA" version="14.8.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-06-23T05:39:52.064Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="v23nrc_3T9N9Irc_UNmt" version="14.8.0" type="github">
   <diagram id="0EBJrcc88xZn_uUqVCnv" name="jvm内存模型">
-    <mxGraphModel dx="984" dy="626" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="192000" pageHeight="108000" background="#FFFFFF" math="0" shadow="1">
+    <mxGraphModel dx="820" dy="522" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="192000" pageHeight="108000" background="#FFFFFF" math="0" shadow="1">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -58,8 +58,13 @@
         <mxCell id="DQElCaOPBhp9bba2K63A-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.641;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="DQElCaOPBhp9bba2K63A-15" target="DQElCaOPBhp9bba2K63A-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="OTBtEdxUYZ1fyFuqsqig-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="DQElCaOPBhp9bba2K63A-15" target="OTBtEdxUYZ1fyFuqsqig-1" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="OTBtEdxUYZ1fyFuqsqig-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="DQElCaOPBhp9bba2K63A-15" target="OTBtEdxUYZ1fyFuqsqig-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1510" y="875" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1655" y="910" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="OTBtEdxUYZ1fyFuqsqig-91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" parent="1" source="DQElCaOPBhp9bba2K63A-15" target="DQElCaOPBhp9bba2K63A-9" edge="1">
           <mxGeometry relative="1" as="geometry">
