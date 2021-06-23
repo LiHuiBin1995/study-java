@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-06-23T02:07:24.508Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="fNTo5u83DU1MSjmIoAd5" version="14.8.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-06-23T02:07:55.727Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="vn-0eKFTA6z0gn1zvYiC" version="14.8.0" type="github">
   <diagram id="0EBJrcc88xZn_uUqVCnv" name="jvm内存模型">
     <mxGraphModel dx="984" dy="626" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="192000" pageHeight="108000" background="none" math="0" shadow="1">
       <root>
@@ -37,6 +37,9 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="DQElCaOPBhp9bba2K63A-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.641;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="DQElCaOPBhp9bba2K63A-15" target="DQElCaOPBhp9bba2K63A-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OTBtEdxUYZ1fyFuqsqig-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="DQElCaOPBhp9bba2K63A-15" target="OTBtEdxUYZ1fyFuqsqig-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="DQElCaOPBhp9bba2K63A-15" value="字节码执行引擎" style="whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
