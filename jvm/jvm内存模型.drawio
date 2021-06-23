@@ -1,1 +1,48 @@
-<mxfile host="app.diagrams.net" modified="2021-06-23T01:33:27.143Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" version="14.8.0" etag="2weLFFJZ9Um-NGdmHJ9s" type="github"><diagram id="0EBJrcc88xZn_uUqVCnv">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-06-23T01:44:19.033Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="rdMr82cqdKZZ0Eaoxc7t" version="14.8.0" type="github">
+  <diagram id="0EBJrcc88xZn_uUqVCnv" name="第 1 页">
+    <mxGraphModel dx="984" dy="626" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="192000" pageHeight="108000" background="none" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="DQElCaOPBhp9bba2K63A-4" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="120" y="240" width="650" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="DQElCaOPBhp9bba2K63A-5" value="堆" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="150" y="260" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="DQElCaOPBhp9bba2K63A-6" value="栈（线程）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="360" y="260" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="DQElCaOPBhp9bba2K63A-7" value="栈（本地方法）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="560" y="260" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="DQElCaOPBhp9bba2K63A-8" value="元空间" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="150" y="410" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="DQElCaOPBhp9bba2K63A-9" value="程序计数器（PC）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="360" y="410" width="370" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="DQElCaOPBhp9bba2K63A-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="DQElCaOPBhp9bba2K63A-13" target="DQElCaOPBhp9bba2K63A-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DQElCaOPBhp9bba2K63A-13" value="类加载子系统" style="whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="940" y="190" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="DQElCaOPBhp9bba2K63A-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="DQElCaOPBhp9bba2K63A-15" target="DQElCaOPBhp9bba2K63A-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="995" y="390" />
+              <mxPoint x="638" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DQElCaOPBhp9bba2K63A-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.641;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="DQElCaOPBhp9bba2K63A-15" target="DQElCaOPBhp9bba2K63A-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DQElCaOPBhp9bba2K63A-15" value="字节码执行引擎" style="whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="940" y="420" width="110" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
