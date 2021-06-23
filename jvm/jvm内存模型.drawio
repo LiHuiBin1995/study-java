@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-06-23T05:41:18.660Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="RpNykv4C5BeCajt_cHTe" version="14.8.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-06-23T05:41:57.347Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="LzVHTaUV1lPojgStQA9X" version="14.8.0" type="github" pages="2">
   <diagram id="0EBJrcc88xZn_uUqVCnv" name="jvm内存模型">
     <mxGraphModel dx="1406" dy="894" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="192000" pageHeight="108000" background="#FFFFFF" math="0" shadow="1">
       <root>
@@ -328,6 +328,14 @@
         <mxCell id="xZsD2P9WzX99Pgf7OHO4-14" value="最大年龄15" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
           <mxGeometry x="1535" y="1040" width="80" height="20" as="geometry" />
         </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="45qs-bjMW5HfuuK_SDtQ" name="jvm调优相关参数">
+    <mxGraphModel dx="984" dy="626" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="192000" pageHeight="108000" math="0" shadow="0">
+      <root>
+        <mxCell id="SvuZyVjjKDeECD0t_zUa-0" />
+        <mxCell id="SvuZyVjjKDeECD0t_zUa-1" parent="SvuZyVjjKDeECD0t_zUa-0" />
       </root>
     </mxGraphModel>
   </diagram>
