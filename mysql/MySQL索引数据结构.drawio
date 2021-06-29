@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-06-29T07:04:56.640Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="jQvAIUmY-YbuU_dJIOyA" version="14.8.0" type="github" pages="9">
+<mxfile host="app.diagrams.net" modified="2021-06-29T07:39:29.413Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="iZcbQvw4PsRM4jhuV7kx" version="14.8.0" type="github" pages="9">
   <diagram id="JrFSPCjuFUnZ7v7BHWO6" name="二叉树">
     <mxGraphModel dx="557" dy="495" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="192000" pageHeight="108000" math="0" shadow="0">
       <root>
@@ -1195,7 +1195,7 @@
           <mxGeometry x="1060" y="180" width="320" height="50" as="geometry" />
         </mxCell>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-3" value="" style="rounded=0;whiteSpace=wrap;html=1;startSize=0;strokeColor=#000000;strokeWidth=2;fillColor=#FF9999;" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
-          <mxGeometry x="1010" y="270" width="430" height="250" as="geometry" />
+          <mxGeometry x="1010" y="270" width="460" height="250" as="geometry" />
         </mxCell>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startSize=0;strokeWidth=2;" edge="1" parent="jS1sA1JP-IGQIhZOZ2VB-1" source="jS1sA1JP-IGQIhZOZ2VB-4" target="jS1sA1JP-IGQIhZOZ2VB-5">
           <mxGeometry relative="1" as="geometry" />
@@ -1248,6 +1248,14 @@
             <mxPoint x="-2" y="-17" as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="jS1sA1JP-IGQIhZOZ2VB-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.402;entryY=0.021;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=15;fontColor=#000000;startSize=0;strokeWidth=2;" edge="1" parent="jS1sA1JP-IGQIhZOZ2VB-1" source="jS1sA1JP-IGQIhZOZ2VB-9" target="jS1sA1JP-IGQIhZOZ2VB-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jS1sA1JP-IGQIhZOZ2VB-56" value="4、写入redo日志" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=15;fontColor=#000000;" vertex="1" connectable="0" parent="jS1sA1JP-IGQIhZOZ2VB-55">
+          <mxGeometry x="0.237" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-9" value="执行器" style="rounded=0;whiteSpace=wrap;html=1;startSize=0;strokeColor=#000000;strokeWidth=2;fillColor=#99FF99;" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
           <mxGeometry x="1200" y="440" width="80" height="30" as="geometry" />
         </mxCell>
@@ -1292,8 +1300,18 @@
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-34" value="name = zhangsan666" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;startSize=0;fontColor=#990000;fontStyle=1" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
           <mxGeometry x="1030" y="760" width="160" height="20" as="geometry" />
         </mxCell>
+        <mxCell id="l-n8Nsm_BFb_VGwomjxH-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=15;fontColor=#000000;startSize=0;strokeWidth=2;" edge="1" parent="jS1sA1JP-IGQIhZOZ2VB-1" source="jS1sA1JP-IGQIhZOZ2VB-36">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1520" y="1000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l-n8Nsm_BFb_VGwomjxH-1" value="5、准备提交事务&lt;br&gt;将redo日志写入磁盘文件" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=15;fontColor=#000000;" vertex="1" connectable="0" parent="l-n8Nsm_BFb_VGwomjxH-0">
+          <mxGeometry x="0.6146" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-36" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;Redo Log Buffer&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;startSize=0;strokeColor=#000000;strokeWidth=2;fillColor=#99FF99;" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
-          <mxGeometry x="1390" y="690" width="150" height="80" as="geometry" />
+          <mxGeometry x="1330" y="680" width="150" height="80" as="geometry" />
         </mxCell>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-39" value="……" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;startSize=0;fontStyle=1" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
           <mxGeometry x="1090" y="790" width="40" height="10" as="geometry" />
@@ -1329,6 +1347,18 @@
         </mxCell>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-47" value="undo日志文件&lt;br&gt;（InnoDB引擎特有）" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;startSize=0;fontStyle=1" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-48">
           <mxGeometry x="45" y="10" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="jS1sA1JP-IGQIhZOZ2VB-61" value="" style="group" vertex="1" connectable="0" parent="jS1sA1JP-IGQIhZOZ2VB-1">
+          <mxGeometry x="1400" y="1000" width="245" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="jS1sA1JP-IGQIhZOZ2VB-57" value="&lt;b&gt;&lt;font color=&quot;#cc0000&quot;&gt;name=zhangsan666&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;fontColor=#000000;startSize=0;strokeColor=#000000;strokeWidth=2;fillColor=#9999FF;" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-61">
+          <mxGeometry width="245.00000000000003" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="jS1sA1JP-IGQIhZOZ2VB-58" value="redo日志文件&lt;br&gt;（InnoDB存储引擎特有）" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;fontColor=#000000;startSize=0;" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-61">
+          <mxGeometry x="33.177083333333336" y="10" width="178.64583333333334" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="jS1sA1JP-IGQIhZOZ2VB-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=15;fontColor=#000000;startSize=0;strokeWidth=2;" edge="1" parent="jS1sA1JP-IGQIhZOZ2VB-61" source="jS1sA1JP-IGQIhZOZ2VB-58" target="jS1sA1JP-IGQIhZOZ2VB-58">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
