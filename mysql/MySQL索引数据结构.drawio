@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-06-29T06:32:13.454Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="59XA4tggVr6BGRGkamh_" version="14.8.0" type="github" pages="9">
+<mxfile host="app.diagrams.net" modified="2021-06-29T06:56:14.419Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="jQzpT1a2nwuxfGqscMLc" version="14.8.0" type="github" pages="9">
   <diagram id="JrFSPCjuFUnZ7v7BHWO6" name="二叉树">
     <mxGraphModel dx="557" dy="495" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="192000" pageHeight="108000" math="0" shadow="0">
       <root>
@@ -1256,7 +1256,7 @@
           <mxGeometry x="1030" y="290" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-24" value="" style="rounded=0;whiteSpace=wrap;html=1;startSize=0;strokeColor=#000000;strokeWidth=2;fillColor=#66FFFF;" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
-          <mxGeometry x="470" y="520" width="630" height="290" as="geometry" />
+          <mxGeometry x="470" y="520" width="630" height="270" as="geometry" />
         </mxCell>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-25" value="&lt;font style=&quot;font-size: 15px&quot;&gt;InnoDB存储引擎&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;startSize=0;" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
           <mxGeometry x="750" y="520" width="80" height="40" as="geometry" />
@@ -1281,6 +1281,26 @@
         </mxCell>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-39" value="……" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;startSize=0;fontStyle=1" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
           <mxGeometry x="620" y="690" width="40" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="jS1sA1JP-IGQIhZOZ2VB-44" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;startSize=0;strokeWidth=2;entryX=0.469;entryY=1.039;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="jS1sA1JP-IGQIhZOZ2VB-1" source="jS1sA1JP-IGQIhZOZ2VB-40" target="jS1sA1JP-IGQIhZOZ2VB-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jS1sA1JP-IGQIhZOZ2VB-45" value="1、将数据加载到缓&lt;br&gt;冲池中加载id为1的记&lt;br&gt;录所在页的所有数据" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=15;" vertex="1" connectable="0" parent="jS1sA1JP-IGQIhZOZ2VB-44">
+          <mxGeometry x="-0.4273" y="-2" relative="1" as="geometry">
+            <mxPoint x="2" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jS1sA1JP-IGQIhZOZ2VB-40" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;startSize=0;strokeColor=#000000;strokeWidth=2;fillColor=#9999FF;" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
+          <mxGeometry x="450" y="900" width="380" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="jS1sA1JP-IGQIhZOZ2VB-41" value="磁盘文件(idb)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;startSize=0;fontStyle=1" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
+          <mxGeometry x="590" y="910" width="95" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="jS1sA1JP-IGQIhZOZ2VB-42" value="page&lt;br&gt;name=zhangsan&lt;br&gt;......" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;startSize=0;strokeColor=#000000;strokeWidth=2;fillColor=#FFCE9F;" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
+          <mxGeometry x="460" y="960" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="jS1sA1JP-IGQIhZOZ2VB-43" value="page&lt;br&gt;......" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;startSize=0;strokeColor=#000000;strokeWidth=2;fillColor=#FFCE9F;" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
+          <mxGeometry x="645" y="960" width="170" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
