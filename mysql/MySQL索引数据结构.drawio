@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-06-29T06:56:14.419Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="jQzpT1a2nwuxfGqscMLc" version="14.8.0" type="github" pages="9">
+<mxfile host="app.diagrams.net" modified="2021-06-29T07:03:38.905Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="woglUXh0BznaRtbRQrlM" version="14.8.0" type="github" pages="9">
   <diagram id="JrFSPCjuFUnZ7v7BHWO6" name="二叉树">
     <mxGraphModel dx="557" dy="495" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="192000" pageHeight="108000" math="0" shadow="0">
       <root>
@@ -1184,15 +1184,15 @@
     </mxGraphModel>
   </diagram>
   <diagram id="xqegEzbTVuIXeuqBMLsA" name="InnoDB引擎SQL执行的BufferPool缓存机制">
-    <mxGraphModel dx="796" dy="707" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="192000" pageHeight="108000" math="0" shadow="0">
+    <mxGraphModel dx="1857" dy="1650" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="192000" pageHeight="108000" math="0" shadow="0">
       <root>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-0" />
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-1" parent="jS1sA1JP-IGQIhZOZ2VB-0" />
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-2" value="client执行SQL&lt;br&gt;update t set name = &#39;zhangsan&#39; where id = 1;&lt;br&gt;id为1的数据那么的原值为zhangsan" style="rounded=0;whiteSpace=wrap;html=1;startSize=0;strokeColor=#000000;strokeWidth=2;fillColor=#99FF99;" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
-          <mxGeometry x="590" y="80" width="320" height="50" as="geometry" />
+          <mxGeometry x="1060" y="180" width="320" height="50" as="geometry" />
         </mxCell>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-3" value="" style="rounded=0;whiteSpace=wrap;html=1;startSize=0;strokeColor=#000000;strokeWidth=2;fillColor=#FF9999;" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
-          <mxGeometry x="540" y="170" width="430" height="250" as="geometry" />
+          <mxGeometry x="1010" y="270" width="430" height="250" as="geometry" />
         </mxCell>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startSize=0;strokeWidth=2;" edge="1" parent="jS1sA1JP-IGQIhZOZ2VB-1" source="jS1sA1JP-IGQIhZOZ2VB-4" target="jS1sA1JP-IGQIhZOZ2VB-5">
           <mxGeometry relative="1" as="geometry" />
@@ -1204,18 +1204,18 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-4" value="连接器" style="rounded=0;whiteSpace=wrap;html=1;startSize=0;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
-          <mxGeometry x="730" y="190" width="80" height="30" as="geometry" />
+          <mxGeometry x="1200" y="290" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startSize=0;strokeWidth=2;" edge="1" parent="jS1sA1JP-IGQIhZOZ2VB-1" source="jS1sA1JP-IGQIhZOZ2VB-5" target="jS1sA1JP-IGQIhZOZ2VB-7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-19" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;dashed=1;startSize=0;strokeWidth=2;" edge="1" parent="jS1sA1JP-IGQIhZOZ2VB-1" source="jS1sA1JP-IGQIhZOZ2VB-5">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1030" y="255" as="targetPoint" />
+            <mxPoint x="1500" y="355" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-5" value="分析器" style="rounded=0;whiteSpace=wrap;html=1;startSize=0;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
-          <mxGeometry x="730" y="240" width="80" height="30" as="geometry" />
+          <mxGeometry x="1200" y="340" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startSize=0;strokeWidth=2;" edge="1" parent="jS1sA1JP-IGQIhZOZ2VB-1" source="jS1sA1JP-IGQIhZOZ2VB-7" target="jS1sA1JP-IGQIhZOZ2VB-9">
           <mxGeometry relative="1" as="geometry" />
@@ -1224,12 +1224,12 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-7" value="优化器" style="rounded=0;whiteSpace=wrap;html=1;startSize=0;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
-          <mxGeometry x="730" y="290" width="80" height="30" as="geometry" />
+          <mxGeometry x="1200" y="390" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-37" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;fontSize=14;startSize=0;strokeWidth=2;" edge="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="769" y="370" as="sourcePoint" />
-            <mxPoint x="769" y="520" as="targetPoint" />
+            <mxPoint x="1239" y="470" as="sourcePoint" />
+            <mxPoint x="1239" y="620" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-38" value="调用引擎接口" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="jS1sA1JP-IGQIhZOZ2VB-37">
@@ -1238,52 +1238,63 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-9" value="执行器" style="rounded=0;whiteSpace=wrap;html=1;startSize=0;strokeColor=#000000;strokeWidth=2;fillColor=#99FF99;" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
-          <mxGeometry x="730" y="340" width="80" height="30" as="geometry" />
+          <mxGeometry x="1200" y="440" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-11" value="查询缓存" style="rounded=0;whiteSpace=wrap;html=1;startSize=0;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
-          <mxGeometry x="610" y="220" width="80" height="30" as="geometry" />
+          <mxGeometry x="1080" y="320" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-14" value="&lt;font style=&quot;font-size: 15px&quot;&gt;Server层&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;startSize=0;fontStyle=1" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
-          <mxGeometry x="560" y="305" width="70" height="20" as="geometry" />
+          <mxGeometry x="1030" y="405" width="70" height="20" as="geometry" />
         </mxCell>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-16" value="管理连接与权限校验" style="rounded=0;whiteSpace=wrap;html=1;startSize=0;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFCC;" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
-          <mxGeometry x="1030" y="190" width="120" height="30" as="geometry" />
+          <mxGeometry x="1500" y="290" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-21" value="语法此法分析" style="rounded=0;whiteSpace=wrap;html=1;startSize=0;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFCC;" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
-          <mxGeometry x="1030" y="240" width="120" height="30" as="geometry" />
+          <mxGeometry x="1500" y="340" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-22" value="执行计划生成索引选择" style="rounded=0;whiteSpace=wrap;html=1;startSize=0;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFCC;" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
-          <mxGeometry x="1030" y="290" width="120" height="30" as="geometry" />
+          <mxGeometry x="1500" y="390" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jS1sA1JP-IGQIhZOZ2VB-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=15;fontColor=#990000;startSize=0;strokeWidth=2;" edge="1" parent="jS1sA1JP-IGQIhZOZ2VB-1" source="jS1sA1JP-IGQIhZOZ2VB-24" target="jS1sA1JP-IGQIhZOZ2VB-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jS1sA1JP-IGQIhZOZ2VB-50" value="2、写入更新数据的旧值&lt;br&gt;便于数据回滚操作" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=15;" vertex="1" connectable="0" parent="jS1sA1JP-IGQIhZOZ2VB-49">
+          <mxGeometry x="0.3118" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-24" value="" style="rounded=0;whiteSpace=wrap;html=1;startSize=0;strokeColor=#000000;strokeWidth=2;fillColor=#66FFFF;" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
-          <mxGeometry x="470" y="520" width="630" height="270" as="geometry" />
+          <mxGeometry x="940" y="620" width="630" height="270" as="geometry" />
         </mxCell>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-25" value="&lt;font style=&quot;font-size: 15px&quot;&gt;InnoDB存储引擎&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;startSize=0;" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
-          <mxGeometry x="750" y="520" width="80" height="40" as="geometry" />
+          <mxGeometry x="1220" y="620" width="80" height="40" as="geometry" />
         </mxCell>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-29" value="" style="rounded=0;whiteSpace=wrap;html=1;startSize=0;strokeColor=#000000;strokeWidth=2;fillColor=#99FF99;" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
-          <mxGeometry x="505" y="580" width="290" height="150" as="geometry" />
+          <mxGeometry x="975" y="680" width="290" height="150" as="geometry" />
         </mxCell>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-30" value="Buffer Pool 缓存池" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;startSize=0;fontSize=14;" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
-          <mxGeometry x="612.5" y="590" width="75" height="20" as="geometry" />
+          <mxGeometry x="1082.5" y="690" width="75" height="20" as="geometry" />
         </mxCell>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-32" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;startSize=0;strokeColor=#000000;strokeWidth=2;fillColor=#F8CECC;" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
-          <mxGeometry x="550" y="620" width="190" height="90" as="geometry" />
+          <mxGeometry x="1020" y="720" width="190" height="90" as="geometry" />
         </mxCell>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-33" value="page" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;startSize=0;" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
-          <mxGeometry x="620" y="625" width="40" height="20" as="geometry" />
+          <mxGeometry x="1090" y="725" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="jS1sA1JP-IGQIhZOZ2VB-34" value="name = zhangsan666" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;startSize=0;" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
-          <mxGeometry x="560" y="660" width="160" height="20" as="geometry" />
+        <mxCell id="jS1sA1JP-IGQIhZOZ2VB-34" value="name = zhangsan666" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;startSize=0;fontColor=#990000;fontStyle=1" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
+          <mxGeometry x="1030" y="760" width="160" height="20" as="geometry" />
         </mxCell>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-36" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;Redo Log Buffer&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;startSize=0;strokeColor=#000000;strokeWidth=2;fillColor=#99FF99;" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
-          <mxGeometry x="920" y="590" width="150" height="80" as="geometry" />
+          <mxGeometry x="1390" y="690" width="150" height="80" as="geometry" />
         </mxCell>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-39" value="……" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;startSize=0;fontStyle=1" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
-          <mxGeometry x="620" y="690" width="40" height="10" as="geometry" />
+          <mxGeometry x="1090" y="790" width="40" height="10" as="geometry" />
         </mxCell>
-        <mxCell id="jS1sA1JP-IGQIhZOZ2VB-44" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;startSize=0;strokeWidth=2;entryX=0.469;entryY=1.039;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="jS1sA1JP-IGQIhZOZ2VB-1" source="jS1sA1JP-IGQIhZOZ2VB-40" target="jS1sA1JP-IGQIhZOZ2VB-29">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="jS1sA1JP-IGQIhZOZ2VB-44" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;startSize=0;strokeWidth=2;" edge="1" parent="jS1sA1JP-IGQIhZOZ2VB-1" source="jS1sA1JP-IGQIhZOZ2VB-40">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1109" y="830" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-45" value="1、将数据加载到缓&lt;br&gt;冲池中加载id为1的记&lt;br&gt;录所在页的所有数据" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=15;" vertex="1" connectable="0" parent="jS1sA1JP-IGQIhZOZ2VB-44">
           <mxGeometry x="-0.4273" y="-2" relative="1" as="geometry">
@@ -1291,16 +1302,25 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-40" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;startSize=0;strokeColor=#000000;strokeWidth=2;fillColor=#9999FF;" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
-          <mxGeometry x="450" y="900" width="380" height="170" as="geometry" />
+          <mxGeometry x="920" y="1000" width="380" height="170" as="geometry" />
         </mxCell>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-41" value="磁盘文件(idb)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;startSize=0;fontStyle=1" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
-          <mxGeometry x="590" y="910" width="95" height="20" as="geometry" />
+          <mxGeometry x="1060" y="1010" width="95" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="jS1sA1JP-IGQIhZOZ2VB-42" value="page&lt;br&gt;name=zhangsan&lt;br&gt;......" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;startSize=0;strokeColor=#000000;strokeWidth=2;fillColor=#FFCE9F;" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
-          <mxGeometry x="460" y="960" width="170" height="90" as="geometry" />
+        <mxCell id="jS1sA1JP-IGQIhZOZ2VB-42" value="page&lt;br&gt;&lt;font color=&quot;#990000&quot;&gt;name=zhangsan&lt;/font&gt;&lt;br&gt;......" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;startSize=0;strokeColor=#000000;strokeWidth=2;fillColor=#FFCE9F;" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
+          <mxGeometry x="930" y="1060" width="170" height="90" as="geometry" />
         </mxCell>
         <mxCell id="jS1sA1JP-IGQIhZOZ2VB-43" value="page&lt;br&gt;......" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;startSize=0;strokeColor=#000000;strokeWidth=2;fillColor=#FFCE9F;" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-1">
-          <mxGeometry x="645" y="960" width="170" height="90" as="geometry" />
+          <mxGeometry x="1115" y="1060" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="jS1sA1JP-IGQIhZOZ2VB-48" value="" style="group" vertex="1" connectable="0" parent="jS1sA1JP-IGQIhZOZ2VB-1">
+          <mxGeometry x="600" y="1000" width="240" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="jS1sA1JP-IGQIhZOZ2VB-46" value="&lt;font color=&quot;#990000&quot;&gt;&lt;b&gt;name=zhangsan&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;startSize=0;strokeColor=#000000;strokeWidth=2;fillColor=#9999FF;" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-48">
+          <mxGeometry width="240" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="jS1sA1JP-IGQIhZOZ2VB-47" value="undo日志文件&lt;br&gt;（InnoDB引擎特有）" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;startSize=0;fontStyle=1" vertex="1" parent="jS1sA1JP-IGQIhZOZ2VB-48">
+          <mxGeometry x="45" y="10" width="150" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
