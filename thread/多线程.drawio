@@ -1,1 +1,81 @@
-<mxfile host="app.diagrams.net" modified="2021-07-09T10:02:28.820Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" version="14.8.5" etag="jRCF6ol85_XeLUIPa1jM" type="github"><diagram id="seccJu0PsUxPGG4cf08J">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-07-10T04:25:04.215Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="JcM74jTohfwtPq3HidRF" version="14.8.5" type="github" pages="2">
+  <diagram id="seccJu0PsUxPGG4cf08J" name="第 1 页">
+    <mxGraphModel dx="768" dy="522" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="192000" pageHeight="108000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="aC22Q0dVUbu4FL3n1vRg-3" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="160" y="390" width="280" height="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="aC22Q0dVUbu4FL3n1vRg-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="aC22Q0dVUbu4FL3n1vRg-3">
+          <mxGeometry width="280" height="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="aC22Q0dVUbu4FL3n1vRg-2" value="T1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="aC22Q0dVUbu4FL3n1vRg-3">
+          <mxGeometry width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aC22Q0dVUbu4FL3n1vRg-5" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1080" y="390" width="280" height="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="aC22Q0dVUbu4FL3n1vRg-6" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="aC22Q0dVUbu4FL3n1vRg-5">
+          <mxGeometry width="280" height="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="aC22Q0dVUbu4FL3n1vRg-7" value="T3" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="aC22Q0dVUbu4FL3n1vRg-5">
+          <mxGeometry width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aC22Q0dVUbu4FL3n1vRg-8" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="600" y="390" width="280" height="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="aC22Q0dVUbu4FL3n1vRg-9" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="aC22Q0dVUbu4FL3n1vRg-8">
+          <mxGeometry width="280" height="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="aC22Q0dVUbu4FL3n1vRg-10" value="T2" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="aC22Q0dVUbu4FL3n1vRg-8">
+          <mxGeometry width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aC22Q0dVUbu4FL3n1vRg-14" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="350" y="80" width="680" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="aC22Q0dVUbu4FL3n1vRg-11" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="aC22Q0dVUbu4FL3n1vRg-14">
+          <mxGeometry width="680" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="aC22Q0dVUbu4FL3n1vRg-12" value="主线程" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="aC22Q0dVUbu4FL3n1vRg-14">
+          <mxGeometry x="260" y="10" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="aC22Q0dVUbu4FL3n1vRg-13" value="共享资源" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;" vertex="1" parent="aC22Q0dVUbu4FL3n1vRg-14">
+          <mxGeometry x="240" y="55" width="190" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="74UPsjGEHl_OH_TAkwJz" name="第 2 页">
+    <mxGraphModel dx="961" dy="545" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="192000" pageHeight="108000" math="0" shadow="0">
+      <root>
+        <mxCell id="nQEKxpMTzryJtnswwrHB-0" />
+        <mxCell id="nQEKxpMTzryJtnswwrHB-1" parent="nQEKxpMTzryJtnswwrHB-0" />
+        <mxCell id="nQEKxpMTzryJtnswwrHB-39" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;span style=&quot;font-weight: 700&quot;&gt;ReentrantLock&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;-&amp;nbsp; Sync: abstract static class&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ NonfairSync: static final class&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ FairSync: static final class&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;-&amp;nbsp; getOwer(): Thread&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;-&amp;nbsp; getQueuedThreads(): Collection&amp;lt;Thread&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;-&amp;nbsp; getWaitingThreads(Condition): Collection&amp;lt;Thread&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ ReentrantLock()&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ ReentrantLock(boolean)&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;+ lock(): void&lt;br&gt;+ lockInterruptibly(): void&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;+ tryLock(): boolean&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;+ tryLock(long,Timeout): boolean&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;+ unlock(): void&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;+ newCondition(): Condition&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;+ getHoldCount(): int&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;+ isHeldByCurrentThread(): boolean&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;+ isLocked(): boolean&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;+ isFair(): boolean&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;+ hasQueuedThreads(): boolean&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;+ hasQueuedThreads(Thread): boolean&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;+ getQueueLength(): int&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;+ hasWaiters(Condition): boolean&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;+ getWaitQueueLength(Condition): boolean&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px&quot;&gt;+ toString(): String&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;fillColor=#D5E8D4;" vertex="1" parent="nQEKxpMTzryJtnswwrHB-1">
+          <mxGeometry x="150" y="310" width="340" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="nQEKxpMTzryJtnswwrHB-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;startArrow=none;startFill=0;endArrow=block;endFill=0;" edge="1" parent="nQEKxpMTzryJtnswwrHB-1" source="nQEKxpMTzryJtnswwrHB-38" target="nQEKxpMTzryJtnswwrHB-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nQEKxpMTzryJtnswwrHB-38" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Lock&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ lock(): void&lt;br&gt;+ lockInterruptibly(): void&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ tryLock(): boolean&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ tryLock(long time,Timeout unit): boolean&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ unlock(): void&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ newCondition(): Condition&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;fillColor=#D5E8D4;" vertex="1" parent="nQEKxpMTzryJtnswwrHB-1">
+          <mxGeometry x="192.5" y="70" width="255" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="nQEKxpMTzryJtnswwrHB-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=0;" edge="1" parent="nQEKxpMTzryJtnswwrHB-1" source="nQEKxpMTzryJtnswwrHB-44" target="nQEKxpMTzryJtnswwrHB-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nQEKxpMTzryJtnswwrHB-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=block;endFill=0;" edge="1" parent="nQEKxpMTzryJtnswwrHB-1" source="nQEKxpMTzryJtnswwrHB-44" target="nQEKxpMTzryJtnswwrHB-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nQEKxpMTzryJtnswwrHB-44" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;Sync&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ lock(): void&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ nonfairTryAcqire(int): boolean&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ tryRelease(int): boolean&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ isHeldExclusively(): boolean&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ newCondition(): ConditionObject&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ getOwer(): Thread&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ getHoldCount(): int&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ isLocked(): boolean&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;-&amp;nbsp; readObject(): void&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;fillColor=#D5E8D4;" vertex="1" parent="nQEKxpMTzryJtnswwrHB-1">
+          <mxGeometry x="700" y="110" width="190" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="nQEKxpMTzryJtnswwrHB-53" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;NonfairSync&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ lock(): void&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ tryAcquire(int): boolean&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;fillColor=#D5E8D4;" vertex="1" parent="nQEKxpMTzryJtnswwrHB-1">
+          <mxGeometry x="600" y="390" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="nQEKxpMTzryJtnswwrHB-55" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;FairSync&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ lock(): void&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ tryAcquire(int): boolean&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;fillColor=#D5E8D4;" vertex="1" parent="nQEKxpMTzryJtnswwrHB-1">
+          <mxGeometry x="880" y="390" width="160" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
