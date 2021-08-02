@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-08-02T06:24:51.770Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="OW6MquBdY3pC6wWpORrM" version="14.9.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-08-02T06:26:41.971Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="eAa6SNvmjXWIBd9hF6Wj" version="14.9.3" type="github">
   <diagram id="eFSnvH-j5v0lLI5UnApI" name="IOC加载流程">
     <mxGraphModel dx="1302" dy="707" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -109,8 +109,14 @@
             <mxPoint x="15" y="37" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-38" value="loop" style="shape=umlFrame;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="700" y="665" width="300" height="200" as="geometry" />
+        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-40" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="710" y="690" width="270" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-38" value="loop" style="shape=umlFrame;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="XQ4zk1a1KSQNIVSHgwAn-40">
+          <mxGeometry width="260" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-39" value="registerBean(componentClass);&lt;br&gt;注册给定的bean" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="XQ4zk1a1KSQNIVSHgwAn-40">
+          <mxGeometry x="30" y="45" width="195" height="41.88" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
