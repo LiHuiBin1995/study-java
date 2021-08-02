@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-08-02T06:34:57.521Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="HhGKcJd_NkJRRhA2_x4Q" version="14.9.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-08-02T06:36:41.335Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="-r2JE_MvMZIYmQyQSltn" version="14.9.3" type="github">
   <diagram id="eFSnvH-j5v0lLI5UnApI" name="IOC加载流程">
     <mxGraphModel dx="1302" dy="707" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -110,32 +110,32 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="XQ4zk1a1KSQNIVSHgwAn-47" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="690" y="690" width="350" height="350" as="geometry" />
+          <mxGeometry x="690" y="675" width="440" height="450" as="geometry" />
         </mxCell>
         <mxCell id="XQ4zk1a1KSQNIVSHgwAn-41" value="doRegisterBean（）获取bean元数据，并且根据元数据注册相应类型的bean" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="XQ4zk1a1KSQNIVSHgwAn-47">
-          <mxGeometry x="40.14838709677412" y="159.71951219512192" width="242.10967741935482" height="40.20731707317072" as="geometry" />
+          <mxGeometry x="47.74402789886653" y="159.71951219512192" width="287.9142109851787" height="40.20731707317072" as="geometry" />
         </mxCell>
         <mxCell id="XQ4zk1a1KSQNIVSHgwAn-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="XQ4zk1a1KSQNIVSHgwAn-47" source="XQ4zk1a1KSQNIVSHgwAn-39" target="XQ4zk1a1KSQNIVSHgwAn-41">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="XQ4zk1a1KSQNIVSHgwAn-38" value="loop" style="shape=umlFrame;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="XQ4zk1a1KSQNIVSHgwAn-47">
-          <mxGeometry x="-11.29032258064516" width="350" height="349.99999999999994" as="geometry" />
+          <mxGeometry x="-13.425945945945946" width="453.425945945946" height="450" as="geometry" />
         </mxCell>
         <mxCell id="XQ4zk1a1KSQNIVSHgwAn-39" value="registerBean(componentClass);&lt;br&gt;注册给定的bean" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="XQ4zk1a1KSQNIVSHgwAn-47">
-          <mxGeometry x="40.14838709677412" y="42.68292682926828" width="242.10967741935482" height="40.20731707317072" as="geometry" />
+          <mxGeometry x="47.74402789886653" y="42.68292682926828" width="287.9142109851787" height="40.20731707317072" as="geometry" />
         </mxCell>
         <mxCell id="XQ4zk1a1KSQNIVSHgwAn-45" value="registerBeanDefinition(...)将bean定义注册到beaDefinitionMap中" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="XQ4zk1a1KSQNIVSHgwAn-47">
-          <mxGeometry x="37.00967741935481" y="239.02439024390242" width="248.38709677419354" height="51.21951219512194" as="geometry" />
+          <mxGeometry x="44.011508282475994" y="239.02439024390242" width="295.3792502179599" height="51.21951219512194" as="geometry" />
         </mxCell>
         <mxCell id="XQ4zk1a1KSQNIVSHgwAn-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="XQ4zk1a1KSQNIVSHgwAn-47" source="XQ4zk1a1KSQNIVSHgwAn-41" target="XQ4zk1a1KSQNIVSHgwAn-45">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="161.20322580645131" y="268.2195121951219" as="targetPoint" />
+            <mxPoint x="191.70113339145564" y="268.2195121951219" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-48" value="registry.registerBeanDefinition(...)真正进行注册bean逻辑,这里调用的是DefaultListableBeanFactory类中的registerBeanDefinition()方法进行注册" style="whiteSpace=wrap;html=1;rounded=0;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="716.8000000000001" y="1060" width="268.8" height="64.15" as="geometry" />
+        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-48" value="registry.registerBeanDefinition(...)真正进行注册bean逻辑,这里调用的是DefaultListableBeanFactory类中的registerBeanDefinition()方法进行注册" style="whiteSpace=wrap;html=1;rounded=0;strokeWidth=2;" vertex="1" parent="XQ4zk1a1KSQNIVSHgwAn-47">
+          <mxGeometry x="31.870270270270353" y="350" width="319.6540540540541" height="64.15" as="geometry" />
         </mxCell>
-        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="XQ4zk1a1KSQNIVSHgwAn-45" target="XQ4zk1a1KSQNIVSHgwAn-48">
+        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="XQ4zk1a1KSQNIVSHgwAn-47" source="XQ4zk1a1KSQNIVSHgwAn-45" target="XQ4zk1a1KSQNIVSHgwAn-48">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
