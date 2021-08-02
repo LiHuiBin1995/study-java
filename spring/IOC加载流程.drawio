@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-08-02T06:36:41.335Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="-r2JE_MvMZIYmQyQSltn" version="14.9.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-08-02T06:38:48.500Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="T_LyI0RoAa1lKg7FYMnp" version="14.9.3" type="github">
   <diagram id="eFSnvH-j5v0lLI5UnApI" name="IOC加载流程">
     <mxGraphModel dx="1302" dy="707" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -110,7 +110,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="XQ4zk1a1KSQNIVSHgwAn-47" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="690" y="675" width="440" height="450" as="geometry" />
+          <mxGeometry x="860" y="720" width="440" height="450" as="geometry" />
         </mxCell>
         <mxCell id="XQ4zk1a1KSQNIVSHgwAn-41" value="doRegisterBean（）获取bean元数据，并且根据元数据注册相应类型的bean" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="XQ4zk1a1KSQNIVSHgwAn-47">
           <mxGeometry x="47.74402789886653" y="159.71951219512192" width="287.9142109851787" height="40.20731707317072" as="geometry" />
@@ -137,6 +137,17 @@
         </mxCell>
         <mxCell id="XQ4zk1a1KSQNIVSHgwAn-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="XQ4zk1a1KSQNIVSHgwAn-47" source="XQ4zk1a1KSQNIVSHgwAn-45" target="XQ4zk1a1KSQNIVSHgwAn-48">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-50" value="" style="whiteSpace=wrap;html=1;rounded=0;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="430" y="1090" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="XQ4zk1a1KSQNIVSHgwAn-3" target="XQ4zk1a1KSQNIVSHgwAn-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-52" value="刷新上下文，将注册的bean&lt;br&gt;以及环境参数应用到上下文" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="XQ4zk1a1KSQNIVSHgwAn-51">
+          <mxGeometry x="0.4167" y="-4" relative="1" as="geometry">
+            <mxPoint y="-47" as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
