@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-08-02T03:07:20.584Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="EGOALci01aMRfyjhnLNK" version="14.9.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-08-02T03:12:11.148Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="o_gH2xk74Lvh8bQgEMOA" version="14.9.3" type="github">
   <diagram id="eFSnvH-j5v0lLI5UnApI" name="IOC加载流程">
     <mxGraphModel dx="1107" dy="601" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -25,7 +25,7 @@
           <mxGeometry x="120" y="500" width="310" height="40" as="geometry" />
         </mxCell>
         <mxCell id="XQ4zk1a1KSQNIVSHgwAn-1" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="560" y="435" width="175" height="170" as="geometry" />
+          <mxGeometry x="570" y="435" width="175" height="170" as="geometry" />
         </mxCell>
         <mxCell id="3bNbBRN6fOfR_KHOpcYK-6" value="" style="whiteSpace=wrap;html=1;rounded=0;strokeWidth=2;" parent="XQ4zk1a1KSQNIVSHgwAn-1" vertex="1">
           <mxGeometry width="175" height="170" as="geometry" />
@@ -40,10 +40,26 @@
           <mxGeometry x="12.5" y="115" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="XQ4zk1a1KSQNIVSHgwAn-5" value="// 实例化一个BeanDefinitionReader用来读取配置文件信息&lt;br&gt;new AnnotationBeanDefinitionReader();&lt;br&gt;// 实例化一个BeanDefinitionScanner用来扫描组件上的注解&lt;br&gt;new ClassPathBeanDefinitionScanner();" style="whiteSpace=wrap;html=1;rounded=0;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="817.5" y="440" width="242.5" height="90" as="geometry" />
+          <mxGeometry x="920" y="365" width="242.5" height="90" as="geometry" />
         </mxCell>
         <mxCell id="XQ4zk1a1KSQNIVSHgwAn-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="3bNbBRN6fOfR_KHOpcYK-8" target="XQ4zk1a1KSQNIVSHgwAn-5">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-9" value="初始化BeanDefinitionReader&lt;br&gt;和BeanDefinitionScanner" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="XQ4zk1a1KSQNIVSHgwAn-6">
+          <mxGeometry x="-0.1474" relative="1" as="geometry">
+            <mxPoint x="1" y="-23" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-7" value="" style="whiteSpace=wrap;html=1;rounded=0;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="920" y="485" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="3bNbBRN6fOfR_KHOpcYK-6" target="XQ4zk1a1KSQNIVSHgwAn-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-10" value="注册一个或多个要&lt;br&gt;处理的bean" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="XQ4zk1a1KSQNIVSHgwAn-8">
+          <mxGeometry x="-0.2571" y="2" relative="1" as="geometry">
+            <mxPoint x="15" y="2" as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
