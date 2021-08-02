@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-08-02T06:26:41.971Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="eAa6SNvmjXWIBd9hF6Wj" version="14.9.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-08-02T06:28:56.110Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="QCuPOGanePAu6UykoEic" version="14.9.3" type="github">
   <diagram id="eFSnvH-j5v0lLI5UnApI" name="IOC加载流程">
     <mxGraphModel dx="1302" dy="707" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -110,13 +110,19 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="XQ4zk1a1KSQNIVSHgwAn-40" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="710" y="690" width="270" height="155" as="geometry" />
+          <mxGeometry x="710" y="690" width="320" height="320" as="geometry" />
         </mxCell>
         <mxCell id="XQ4zk1a1KSQNIVSHgwAn-38" value="loop" style="shape=umlFrame;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="XQ4zk1a1KSQNIVSHgwAn-40">
-          <mxGeometry width="260" height="130" as="geometry" />
+          <mxGeometry width="308.14814814814815" height="268.38709677419354" as="geometry" />
         </mxCell>
         <mxCell id="XQ4zk1a1KSQNIVSHgwAn-39" value="registerBean(componentClass);&lt;br&gt;注册给定的bean" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="XQ4zk1a1KSQNIVSHgwAn-40">
-          <mxGeometry x="30" y="45" width="195" height="41.88" as="geometry" />
+          <mxGeometry x="35.56" y="50.00000000000001" width="214.44" height="47.1" as="geometry" />
+        </mxCell>
+        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-41" value="doRegisterBean（）获取bean元数据，并且根据元数据注册相应类型的bean" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="745.56" y="867.1" width="214.44" height="47.1" as="geometry" />
+        </mxCell>
+        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="XQ4zk1a1KSQNIVSHgwAn-39" target="XQ4zk1a1KSQNIVSHgwAn-41">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
