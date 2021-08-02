@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-08-02T06:21:03.486Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="-k4oHnIBROAOhHeEoq57" version="14.9.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-08-02T06:24:51.770Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="OW6MquBdY3pC6wWpORrM" version="14.9.3" type="github">
   <diagram id="eFSnvH-j5v0lLI5UnApI" name="IOC加载流程">
     <mxGraphModel dx="1302" dy="707" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -79,7 +79,7 @@
         </mxCell>
         <mxCell id="XQ4zk1a1KSQNIVSHgwAn-29" value="扫描符合条件的bean并且将&lt;br&gt;bean注册到beanDefinitionMap" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="XQ4zk1a1KSQNIVSHgwAn-28">
           <mxGeometry x="-0.2736" y="1" relative="1" as="geometry">
-            <mxPoint x="33" y="1" as="offset" />
+            <mxPoint x="7" y="41" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="XQ4zk1a1KSQNIVSHgwAn-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="XQ4zk1a1KSQNIVSHgwAn-30" target="XQ4zk1a1KSQNIVSHgwAn-31">
@@ -98,6 +98,19 @@
         </mxCell>
         <mxCell id="XQ4zk1a1KSQNIVSHgwAn-33" value="setResourceLoader(resourceLoader);设置ResourceLoader以用于资源位置" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="1210" y="630" width="337.5" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;entryX=-0.001;entryY=0.531;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="XQ4zk1a1KSQNIVSHgwAn-2" target="XQ4zk1a1KSQNIVSHgwAn-38">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700" y="695" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-37" value="&lt;div&gt;&lt;span style=&quot;font-size: 11px&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 11px&quot;&gt;AnnotatedBeanDefinitionReader.register()&lt;/span&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rotation=0;" vertex="1" connectable="0" parent="XQ4zk1a1KSQNIVSHgwAn-36">
+          <mxGeometry x="-0.2551" y="2" relative="1" as="geometry">
+            <mxPoint x="15" y="37" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-38" value="loop" style="shape=umlFrame;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="700" y="665" width="300" height="200" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
