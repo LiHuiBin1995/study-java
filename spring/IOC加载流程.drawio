@@ -1,29 +1,43 @@
-<mxfile host="app.diagrams.net" modified="2021-08-02T03:02:16.415Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="OGxKKrZUey8-x_0qORge" version="14.9.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-08-02T03:04:18.711Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="h_OYDJtnDHYEr23qX8bp" version="14.9.3" type="github">
   <diagram id="eFSnvH-j5v0lLI5UnApI" name="IOC加载流程">
     <mxGraphModel dx="1107" dy="601" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="3bNbBRN6fOfR_KHOpcYK-2" value="&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;package com.lhb;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;import com.lhb.service.impl.TestIOCImpl;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;import org.springframework.context.ApplicationContext;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;import org.springframework.context.annotation.AnnotationConfigApplicationContext;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;import org.springframework.context.annotation.ComponentScan;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;import org.springframework.context.annotation.Configuration;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;@Configuration&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;@ComponentScan(&quot;com.lhb&quot;)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;public class ApplicationMain {&lt;/font&gt;&lt;/div&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;public static void main(String[] args) {&lt;/font&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;ApplicationContext applicationContext = new AnnotationConfigApplicationContext(ApplicationMain.class);&lt;/font&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;TestIOCImpl bean = applicationContext.getBean(TestIOCImpl.class);&lt;/font&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;bean.helloIOC(&quot;hello spring ioc&quot;);&lt;/font&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;}&lt;/font&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;}&lt;/font&gt;&lt;/div&gt;" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;align=left;" vertex="1" parent="1">
+        <mxCell id="3bNbBRN6fOfR_KHOpcYK-2" value="&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;package com.lhb;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;import com.lhb.service.impl.TestIOCImpl;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;import org.springframework.context.ApplicationContext;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;import org.springframework.context.annotation.AnnotationConfigApplicationContext;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;import org.springframework.context.annotation.ComponentScan;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;import org.springframework.context.annotation.Configuration;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;@Configuration&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;@ComponentScan(&quot;com.lhb&quot;)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;public class ApplicationMain {&lt;/font&gt;&lt;/div&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;public static void main(String[] args) {&lt;/font&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;ApplicationContext applicationContext = new AnnotationConfigApplicationContext(ApplicationMain.class);&lt;/font&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;TestIOCImpl bean = applicationContext.getBean(TestIOCImpl.class);&lt;/font&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;bean.helloIOC(&quot;hello spring ioc&quot;);&lt;/font&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;}&lt;/font&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;}&lt;/font&gt;&lt;/div&gt;" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;align=left;" parent="1" vertex="1">
           <mxGeometry x="70" y="40" width="530" height="270" as="geometry" />
         </mxCell>
-        <mxCell id="3bNbBRN6fOfR_KHOpcYK-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="3bNbBRN6fOfR_KHOpcYK-3" target="3bNbBRN6fOfR_KHOpcYK-4">
+        <mxCell id="3bNbBRN6fOfR_KHOpcYK-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" parent="1" source="3bNbBRN6fOfR_KHOpcYK-3" target="3bNbBRN6fOfR_KHOpcYK-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="3bNbBRN6fOfR_KHOpcYK-3" value="&lt;span style=&quot;font-size: 14px ; text-align: left&quot;&gt;ApplicationContext applicationContext = new AnnotationConfigApplicationContext(ApplicationMain.class);&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-4" value="AnnotationConfigApplicationContext.java" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3bNbBRN6fOfR_KHOpcYK-5">
+          <mxGeometry x="-0.3" y="-1" relative="1" as="geometry">
+            <mxPoint x="1" y="15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3bNbBRN6fOfR_KHOpcYK-3" value="&lt;span style=&quot;font-size: 14px ; text-align: left&quot;&gt;ApplicationContext applicationContext = new AnnotationConfigApplicationContext(ApplicationMain.class);&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="80" y="350" width="390" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="3bNbBRN6fOfR_KHOpcYK-6" value="" style="whiteSpace=wrap;html=1;rounded=0;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="570" y="560" width="175" height="170" as="geometry" />
-        </mxCell>
-        <mxCell id="3bNbBRN6fOfR_KHOpcYK-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="3bNbBRN6fOfR_KHOpcYK-4" target="3bNbBRN6fOfR_KHOpcYK-6">
+        <mxCell id="3bNbBRN6fOfR_KHOpcYK-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" parent="1" source="3bNbBRN6fOfR_KHOpcYK-4" target="3bNbBRN6fOfR_KHOpcYK-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="3bNbBRN6fOfR_KHOpcYK-4" value="&lt;pre style=&quot;font-family: &amp;#34;jetbrains mono&amp;#34; ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;AnnotationConfigApplicationContext构造函数&lt;/span&gt;&lt;/pre&gt;" style="whiteSpace=wrap;html=1;rounded=0;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="120" y="450" width="310" height="40" as="geometry" />
+        <mxCell id="3bNbBRN6fOfR_KHOpcYK-4" value="&lt;pre style=&quot;font-family: &amp;#34;jetbrains mono&amp;#34; ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;AnnotationConfigApplicationContext构造函数&lt;/span&gt;&lt;/pre&gt;" style="whiteSpace=wrap;html=1;rounded=0;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="120" y="500" width="310" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="3bNbBRN6fOfR_KHOpcYK-8" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="582.5" y="580" width="150" height="30" as="geometry" />
+        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-1" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="560" y="435" width="175" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="3bNbBRN6fOfR_KHOpcYK-6" value="" style="whiteSpace=wrap;html=1;rounded=0;strokeWidth=2;" parent="XQ4zk1a1KSQNIVSHgwAn-1" vertex="1">
+          <mxGeometry width="175" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="3bNbBRN6fOfR_KHOpcYK-8" value="this();" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" parent="XQ4zk1a1KSQNIVSHgwAn-1" vertex="1">
+          <mxGeometry x="12.5" y="20" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-2" value="register();" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="XQ4zk1a1KSQNIVSHgwAn-1">
+          <mxGeometry x="12.5" y="65" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-3" value="refresh();" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="XQ4zk1a1KSQNIVSHgwAn-1">
+          <mxGeometry x="12.5" y="115" width="150" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
