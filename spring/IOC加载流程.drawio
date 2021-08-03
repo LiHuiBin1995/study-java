@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-08-02T08:06:09.844Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="tKzTa1nOlvFU6-Iw7eIy" version="14.9.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-08-03T02:56:13.015Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="wFIrmxAjjCI-kq8BJDVZ" version="14.9.3" type="github">
   <diagram id="eFSnvH-j5v0lLI5UnApI" name="IOC加载流程">
     <mxGraphModel dx="1107" dy="601" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -176,8 +176,14 @@
         <mxCell id="XQ4zk1a1KSQNIVSHgwAn-60" value="postProcessBeanFactory(beanFactory); bean工厂后置处理器。在这个阶段spring已经完成了标准初始化过程，所有的bean都已经加载完毕，但是所有的bean还没有进行初始化；我们可以在这个阶段向容器中注入自定义的bean" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="130" y="1070" width="280" height="80" as="geometry" />
         </mxCell>
+        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-64" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="XQ4zk1a1KSQNIVSHgwAn-62" target="XQ4zk1a1KSQNIVSHgwAn-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="XQ4zk1a1KSQNIVSHgwAn-62" value="invokeBeanFactoryPostProcessors(beanFactory);" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="130" y="1169" width="280" height="61" as="geometry" />
+        </mxCell>
+        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-63" value="这个阶段回去解析@Component、@ComponentScan、@Bean、@Import等注解" style="whiteSpace=wrap;html=1;rounded=0;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="570" y="1159.25" width="170" height="80.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
