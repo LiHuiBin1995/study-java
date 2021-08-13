@@ -1,2 +1,2 @@
 # study-java
-java学习资料
+java学习资料。
