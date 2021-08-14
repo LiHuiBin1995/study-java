@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-08-13T06:45:33.626Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="5pRIjcPsS-6c_81RdLU_" version="14.9.6" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-08-14T02:13:28.520Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="VwlyO5R5kLs4r5bljRlM" version="14.9.6" type="github" pages="2">
   <diagram id="eFSnvH-j5v0lLI5UnApI" name="IOC加载流程">
-    <mxGraphModel dx="1265" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1265" dy="642" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -48,7 +48,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="XQ4zk1a1KSQNIVSHgwAn-18" value="" style="group" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="700" y="202.5" width="270" height="205" as="geometry" />
+          <mxGeometry x="640" y="202.5" width="270" height="205" as="geometry" />
         </mxCell>
         <mxCell id="XQ4zk1a1KSQNIVSHgwAn-5" value="" style="whiteSpace=wrap;html=1;rounded=0;strokeWidth=2;" parent="XQ4zk1a1KSQNIVSHgwAn-18" vertex="1">
           <mxGeometry width="270" height="205" as="geometry" />
@@ -63,16 +63,13 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="XQ4zk1a1KSQNIVSHgwAn-24" value="" style="group" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="1181" y="90" width="370" height="145" as="geometry" />
+          <mxGeometry x="1080" y="100" width="370" height="145" as="geometry" />
         </mxCell>
         <mxCell id="XQ4zk1a1KSQNIVSHgwAn-19" value="AnnotationConfigUtils.&lt;br&gt;registerAnnotationConfigProcessors(this.registry);&lt;br&gt;这个方法中会注册一些spring最基础的一些配置类解析类。&lt;br&gt;例如：&lt;br&gt;&lt;ul&gt;&lt;li&gt;ConfigurationClassPostProcessor：解析@Configuration&lt;br&gt;&lt;/li&gt;&lt;li&gt;AutowiredAnnotationBeanPostProcessor: 解析@Autowired 等&lt;/li&gt;&lt;/ul&gt;" style="whiteSpace=wrap;html=1;rounded=0;strokeWidth=2;align=left;" parent="XQ4zk1a1KSQNIVSHgwAn-24" vertex="1">
           <mxGeometry width="370" height="145" as="geometry" />
         </mxCell>
         <mxCell id="XQ4zk1a1KSQNIVSHgwAn-23" value="AnnotatedBeanDefinitionReader()方法" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" parent="XQ4zk1a1KSQNIVSHgwAn-24" vertex="1">
           <mxGeometry x="69.9993023255814" y="-0.0033653846153836042" width="220" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-27" value="" style="whiteSpace=wrap;html=1;rounded=0;strokeWidth=2;" parent="1" vertex="1">
-          <mxGeometry x="1181" y="282.5" width="389" height="245" as="geometry" />
         </mxCell>
         <mxCell id="XQ4zk1a1KSQNIVSHgwAn-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" parent="1" source="XQ4zk1a1KSQNIVSHgwAn-17" target="XQ4zk1a1KSQNIVSHgwAn-27" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -81,23 +78,6 @@
           <mxGeometry x="-0.2736" y="1" relative="1" as="geometry">
             <mxPoint x="7" y="41" as="offset" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="XQ4zk1a1KSQNIVSHgwAn-30" target="XQ4zk1a1KSQNIVSHgwAn-31" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1376" y="452.5" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-30" value="registerDefaultFilters()注册默认过滤器&lt;br&gt;&lt;br&gt;&lt;span&gt;为@Component注册默认过滤器。&lt;/span&gt;&lt;br&gt;&lt;div&gt;这将隐式注册所有具有@Component元注释的注释，包括@Repository 、 @Service和@Controller型注释。&lt;/div&gt;&lt;div&gt;还支持 Java EE 6 的javax.annotation.ManagedBean和 JSR-330 的javax.inject.Named注释（如果可用）&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
-          <mxGeometry x="1206.25" y="292.5" width="338.5" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" parent="1" source="XQ4zk1a1KSQNIVSHgwAn-31" target="XQ4zk1a1KSQNIVSHgwAn-33" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-31" value="setEnvironment(environment); 设置环境参数" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
-          <mxGeometry x="1210" y="419.5" width="337.5" height="35" as="geometry" />
-        </mxCell>
-        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-33" value="setResourceLoader(resourceLoader);设置ResourceLoader以用于资源位置" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
-          <mxGeometry x="1210" y="482.5" width="337.5" height="35" as="geometry" />
         </mxCell>
         <mxCell id="XQ4zk1a1KSQNIVSHgwAn-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;entryX=-0.001;entryY=0.531;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="XQ4zk1a1KSQNIVSHgwAn-2" target="XQ4zk1a1KSQNIVSHgwAn-38" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -109,37 +89,8 @@
             <mxPoint x="47" y="52" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-47" value="" style="group" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="970" y="580" width="440" height="450" as="geometry" />
-        </mxCell>
-        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-41" value="doRegisterBean（）获取bean元数据，并且根据元数据注册相应类型的bean" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" parent="XQ4zk1a1KSQNIVSHgwAn-47" vertex="1">
-          <mxGeometry x="47.74402789886653" y="159.71951219512192" width="287.9142109851787" height="40.20731707317072" as="geometry" />
-        </mxCell>
-        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" parent="XQ4zk1a1KSQNIVSHgwAn-47" source="XQ4zk1a1KSQNIVSHgwAn-39" target="XQ4zk1a1KSQNIVSHgwAn-41" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-38" value="loop" style="shape=umlFrame;whiteSpace=wrap;html=1;strokeWidth=2;" parent="XQ4zk1a1KSQNIVSHgwAn-47" vertex="1">
-          <mxGeometry x="-13.425945945945946" width="453.425945945946" height="450" as="geometry" />
-        </mxCell>
-        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-39" value="registerBean(componentClass);&lt;br&gt;注册给定的bean" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" parent="XQ4zk1a1KSQNIVSHgwAn-47" vertex="1">
-          <mxGeometry x="47.74402789886653" y="42.68292682926828" width="287.9142109851787" height="40.20731707317072" as="geometry" />
-        </mxCell>
-        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-45" value="registerBeanDefinition(...)将bean定义注册到beaDefinitionMap中" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" parent="XQ4zk1a1KSQNIVSHgwAn-47" vertex="1">
-          <mxGeometry x="44.011508282475994" y="239.02439024390242" width="295.3792502179599" height="51.21951219512194" as="geometry" />
-        </mxCell>
-        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="XQ4zk1a1KSQNIVSHgwAn-47" source="XQ4zk1a1KSQNIVSHgwAn-41" target="XQ4zk1a1KSQNIVSHgwAn-45" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="191.70113339145564" y="268.2195121951219" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-48" value="registry.registerBeanDefinition(...)真正进行注册bean逻辑,这里调用的是DefaultListableBeanFactory类中的registerBeanDefinition()方法进行注册" style="whiteSpace=wrap;html=1;rounded=0;strokeWidth=2;" parent="XQ4zk1a1KSQNIVSHgwAn-47" vertex="1">
-          <mxGeometry x="31.870270270270353" y="350" width="319.6540540540541" height="64.15" as="geometry" />
-        </mxCell>
-        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" parent="XQ4zk1a1KSQNIVSHgwAn-47" source="XQ4zk1a1KSQNIVSHgwAn-45" target="XQ4zk1a1KSQNIVSHgwAn-48" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="XQ4zk1a1KSQNIVSHgwAn-50" value="" style="whiteSpace=wrap;html=1;rounded=0;strokeWidth=2;" parent="1" vertex="1">
-          <mxGeometry x="32.5" y="870" width="485" height="530" as="geometry" />
+          <mxGeometry x="100" y="860" width="350" height="390" as="geometry" />
         </mxCell>
         <mxCell id="XQ4zk1a1KSQNIVSHgwAn-51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" parent="1" source="XQ4zk1a1KSQNIVSHgwAn-3" target="XQ4zk1a1KSQNIVSHgwAn-50" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -184,6 +135,53 @@
         </mxCell>
         <mxCell id="XQ4zk1a1KSQNIVSHgwAn-63" value="这个阶段回去解析@Component、@ComponentScan、@Bean、@Import等注解" style="whiteSpace=wrap;html=1;rounded=0;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="570" y="1159.25" width="170" height="80.5" as="geometry" />
+        </mxCell>
+        <mxCell id="DmthzuD-8GEoQ6VqeyMm-1" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1120" y="282.5" width="389" height="245" as="geometry" />
+        </mxCell>
+        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-27" value="" style="whiteSpace=wrap;html=1;rounded=0;strokeWidth=2;" parent="DmthzuD-8GEoQ6VqeyMm-1" vertex="1">
+          <mxGeometry width="389" height="245" as="geometry" />
+        </mxCell>
+        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-30" value="registerDefaultFilters()注册默认过滤器&lt;br&gt;&lt;br&gt;&lt;span&gt;为@Component注册默认过滤器。&lt;/span&gt;&lt;br&gt;&lt;div&gt;这将隐式注册所有具有@Component元注释的注释，包括@Repository 、 @Service和@Controller型注释。&lt;/div&gt;&lt;div&gt;还支持 Java EE 6 的javax.annotation.ManagedBean和 JSR-330 的javax.inject.Named注释（如果可用）&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" parent="DmthzuD-8GEoQ6VqeyMm-1" vertex="1">
+          <mxGeometry x="22" y="10" width="338.5" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-31" value="setEnvironment(environment); 设置环境参数" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" parent="DmthzuD-8GEoQ6VqeyMm-1" vertex="1">
+          <mxGeometry x="25.75" y="137" width="337.5" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="DmthzuD-8GEoQ6VqeyMm-1" source="XQ4zk1a1KSQNIVSHgwAn-30" target="XQ4zk1a1KSQNIVSHgwAn-31" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="191.75" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-33" value="setResourceLoader(resourceLoader);设置ResourceLoader以用于资源位置" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" parent="DmthzuD-8GEoQ6VqeyMm-1" vertex="1">
+          <mxGeometry x="25.75" y="200" width="337.5" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" parent="DmthzuD-8GEoQ6VqeyMm-1" source="XQ4zk1a1KSQNIVSHgwAn-31" target="XQ4zk1a1KSQNIVSHgwAn-33" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DmthzuD-8GEoQ6VqeyMm-3" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="XQ4zk1a1KSQNIVSHgwAn-41" target="XQ4zk1a1KSQNIVSHgwAn-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-41" value="doRegisterBean（）获取bean元数据，并且根据元数据注册相应类型的bean" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="977.7440278988665" y="699.999512195122" width="287.9142109851787" height="40.20731707317072" as="geometry" />
+        </mxCell>
+        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" parent="1" source="XQ4zk1a1KSQNIVSHgwAn-39" target="XQ4zk1a1KSQNIVSHgwAn-41" edge="1">
+          <mxGeometry x="930" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-38" value="loop" style="shape=umlFrame;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="930" y="585" width="380" height="389.39" as="geometry" />
+        </mxCell>
+        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-39" value="registerBean(componentClass);&lt;br&gt;注册给定的bean" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="977.7440278988665" y="627.6829268292682" width="287.9142109851787" height="40.20731707317072" as="geometry" />
+        </mxCell>
+        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-45" value="registerBeanDefinition(...)将bean定义注册到beaDefinitionMap中" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="974.011508282476" y="790.0043902439024" width="295.3792502179599" height="51.21951219512194" as="geometry" />
+        </mxCell>
+        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-48" value="registry.registerBeanDefinition(...)真正进行注册bean逻辑,这里调用的是DefaultListableBeanFactory类中的registerBeanDefinition()方法进行注册" style="whiteSpace=wrap;html=1;rounded=0;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="961.8702702702703" y="885.85" width="319.6540540540541" height="64.15" as="geometry" />
+        </mxCell>
+        <mxCell id="XQ4zk1a1KSQNIVSHgwAn-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" parent="1" source="XQ4zk1a1KSQNIVSHgwAn-45" target="XQ4zk1a1KSQNIVSHgwAn-48" edge="1">
+          <mxGeometry x="930" y="585" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
