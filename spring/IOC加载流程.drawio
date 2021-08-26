@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-08-26T04:21:53.041Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="WCyQ6YL-IqLx26tf7B3g" version="14.9.9" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2021-08-26T04:42:43.204Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="UVzV9IKrsNaFiHWeC0DX" version="14.9.9" type="github" pages="5">
   <diagram id="eFSnvH-j5v0lLI5UnApI" name="IOC加载流程">
     <mxGraphModel dx="1265" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -885,6 +885,11 @@
         <mxCell id="OsvczPMILkOng_Kcr3Mr-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeWidth=2;entryX=0.513;entryY=-0.005;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="PTcHWUxUaR2ETi6THgpn-1" source="OsvczPMILkOng_Kcr3Mr-20" target="OsvczPMILkOng_Kcr3Mr-23">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-25" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1;fontSize=25;fontColor=#CC0000;labelBackgroundColor=none;" vertex="1" connectable="0" parent="OsvczPMILkOng_Kcr3Mr-24">
+          <mxGeometry x="0.0106" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="OsvczPMILkOng_Kcr3Mr-20" value="&lt;b&gt;&lt;font color=&quot;#009900&quot;&gt;PostProcessorRegistrationDelegate&lt;/font&gt;&lt;/b&gt;#&lt;br&gt;invokenBeanDefinitionRegistryPostProcessors" style="whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
           <mxGeometry x="370" y="800" width="260" height="60" as="geometry" />
         </mxCell>
@@ -896,6 +901,9 @@
         </mxCell>
         <mxCell id="OsvczPMILkOng_Kcr3Mr-23" value="for(postProcessor : postProcessors)" style="shape=umlFrame;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#FFFFFF;width=220;height=30;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
           <mxGeometry x="720" y="880" width="300" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-28" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 12px;&quot;&gt;&lt;span style=&quot;font-size: 12px; line-height: 120%;&quot;&gt;postProcessor是BenDefinitionRegistryPostProcessor类&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=12;fontColor=#CC0000;strokeWidth=2;fillColor=#FFFFFF;verticalAlign=middle;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
+          <mxGeometry x="740" y="920" width="240" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
