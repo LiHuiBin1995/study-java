@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-08-26T03:14:33.183Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="Jusk0Iy0RD-bvYcOWBTf" version="14.9.9" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2021-08-26T03:31:28.164Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="pV221wXqWoeNgFgN_6yb" version="14.9.9" type="github" pages="5">
   <diagram id="eFSnvH-j5v0lLI5UnApI" name="IOC加载流程">
     <mxGraphModel dx="1265" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -855,6 +855,39 @@
             <mxGeometry x="-90" y="460" width="32" height="32" as="geometry" />
           </mxCell>
         </UserObject>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeWidth=2;" edge="1" parent="PTcHWUxUaR2ETi6THgpn-1" source="OsvczPMILkOng_Kcr3Mr-3" target="OsvczPMILkOng_Kcr3Mr-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-3" value="从bean工厂中获取到所有类型为BeanDefinitionRegistryPostProcessor的beanNames，将其放入到缓存postProcessNames中" style="whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
+          <mxGeometry x="52.5" y="600" width="225" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeWidth=2;" edge="1" parent="PTcHWUxUaR2ETi6THgpn-1" source="PTcHWUxUaR2ETi6THgpn-14" target="OsvczPMILkOng_Kcr3Mr-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-18" value="" style="group" vertex="1" connectable="0" parent="PTcHWUxUaR2ETi6THgpn-1">
+          <mxGeometry x="9.38" y="730" width="311.25" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-12" value="for(ppName : postProcessNames)" style="shape=umlFrame;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#FFFFFF;width=205;height=30;" vertex="1" parent="OsvczPMILkOng_Kcr3Mr-18">
+          <mxGeometry width="311.25" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-15" value="currentRegistryProcessors.&lt;br&gt;add(beanFactory.getBean());&lt;br&gt;创建Bean，然后放入到集合中" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="OsvczPMILkOng_Kcr3Mr-18">
+          <mxGeometry x="42.5" y="50" width="217" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-16" value="processedBeans.add(ppName);&lt;br&gt;把bean名字放入到processedBeans，后续会根据这个集合来判断处理器是否被执行过" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="OsvczPMILkOng_Kcr3Mr-18">
+          <mxGeometry x="42.5" y="130" width="217" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeWidth=2;" edge="1" parent="OsvczPMILkOng_Kcr3Mr-18" source="OsvczPMILkOng_Kcr3Mr-15" target="OsvczPMILkOng_Kcr3Mr-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-19" value="加载已经注册的Bean定义的后置处理器，&lt;br&gt;也就是之前注册的：this.reader = new AnnotatedBeanDefinitionReader(this);和注册的配置类。&lt;br&gt;从里面找到实现了BeanDefinitionRegistryPostProcessor接口的，也就是我们的ConfigurationClassPostProcessor" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;align=left;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
+          <mxGeometry x="-390" y="780" width="390" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-20" value="&lt;b&gt;&lt;font color=&quot;#009900&quot;&gt;PostProcessorRegistrationDelegate&lt;/font&gt;&lt;/b&gt;#&lt;br&gt;invokenBeanDefinitionRegistryPostProcessors" style="whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
+          <mxGeometry x="370" y="800" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeWidth=2;" edge="1" parent="PTcHWUxUaR2ETi6THgpn-1" source="OsvczPMILkOng_Kcr3Mr-12" target="OsvczPMILkOng_Kcr3Mr-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
