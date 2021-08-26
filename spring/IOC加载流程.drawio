@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-08-26T04:20:09.508Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="d_WDhVdkINlABoB2ieKN" version="14.9.9" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2021-08-26T04:21:53.041Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="WCyQ6YL-IqLx26tf7B3g" version="14.9.9" type="github" pages="5">
   <diagram id="eFSnvH-j5v0lLI5UnApI" name="IOC加载流程">
     <mxGraphModel dx="1265" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -882,6 +882,9 @@
         <mxCell id="OsvczPMILkOng_Kcr3Mr-19" value="加载已经注册的Bean定义的后置处理器，&lt;br&gt;也就是之前注册的：this.reader = new AnnotatedBeanDefinitionReader(this);和注册的配置类。&lt;br&gt;从里面找到实现了BeanDefinitionRegistryPostProcessor接口的，也就是我们的ConfigurationClassPostProcessor" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;align=left;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
           <mxGeometry x="-390" y="780" width="390" height="140" as="geometry" />
         </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeWidth=2;entryX=0.513;entryY=-0.005;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="PTcHWUxUaR2ETi6THgpn-1" source="OsvczPMILkOng_Kcr3Mr-20" target="OsvczPMILkOng_Kcr3Mr-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="OsvczPMILkOng_Kcr3Mr-20" value="&lt;b&gt;&lt;font color=&quot;#009900&quot;&gt;PostProcessorRegistrationDelegate&lt;/font&gt;&lt;/b&gt;#&lt;br&gt;invokenBeanDefinitionRegistryPostProcessors" style="whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
           <mxGeometry x="370" y="800" width="260" height="60" as="geometry" />
         </mxCell>
@@ -890,6 +893,9 @@
         </mxCell>
         <mxCell id="OsvczPMILkOng_Kcr3Mr-22" value="调用&lt;font color=&quot;#cc0000&quot; style=&quot;font-weight: bold&quot;&gt;创世纪&lt;/font&gt;&lt;font color=&quot;#336600&quot;&gt;的实现了FactoryRegistryPostProcessor接口和Order接口&lt;br&gt;&lt;/font&gt;" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
           <mxGeometry x="370" y="718" width="260" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-23" value="for(postProcessor : postProcessors)" style="shape=umlFrame;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#FFFFFF;width=220;height=30;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
+          <mxGeometry x="720" y="880" width="300" height="200" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
