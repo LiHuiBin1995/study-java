@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-08-26T06:35:53.804Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="_msV1sXEmcR5Y-nyBx4W" version="14.9.9" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2021-08-26T06:56:22.197Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="XMuU4LlR15LJj2HMqRZS" version="14.9.9" type="github" pages="5">
   <diagram id="eFSnvH-j5v0lLI5UnApI" name="IOC加载流程">
     <mxGraphModel dx="1265" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1143,8 +1143,90 @@
         <mxCell id="OsvczPMILkOng_Kcr3Mr-112" value="for(basePackage : basePackages)" style="shape=umlFrame;whiteSpace=wrap;html=1;rounded=0;fontSize=12;fontColor=#000000;strokeWidth=2;fillColor=#FFFFFF;gradientColor=#ffffff;verticalAlign=middle;width=210;height=30;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
           <mxGeometry x="2810" y="240" width="300" height="200" as="geometry" />
         </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-116" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;fontColor=#000000;endArrow=classic;endFill=1;strokeWidth=2;startArrow=classic;startFill=1;" edge="1" parent="PTcHWUxUaR2ETi6THgpn-1" source="OsvczPMILkOng_Kcr3Mr-114" target="OsvczPMILkOng_Kcr3Mr-115">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="OsvczPMILkOng_Kcr3Mr-114" value="根据包名找到符合条件的BeanDefinition&lt;br&gt;findCandidateComponents(basePackage)" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontColor=#000000;strokeWidth=2;fillColor=#99CCFF;gradientColor=none;verticalAlign=middle;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
           <mxGeometry x="2835" y="287" width="250" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-118" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;fontColor=#000000;startArrow=classic;startFill=1;endArrow=classic;endFill=1;strokeWidth=2;" edge="1" parent="PTcHWUxUaR2ETi6THgpn-1" source="OsvczPMILkOng_Kcr3Mr-115" target="OsvczPMILkOng_Kcr3Mr-117">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-115" value="&lt;font color=&quot;#009900&quot;&gt;&lt;b&gt;ClassPathScanningCandidateComponentProvider&lt;/b&gt;&lt;/font&gt;#&lt;br&gt;findCandidateComponents()" style="whiteSpace=wrap;html=1;rounded=0;strokeWidth=2;fillColor=#99CCFF;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
+          <mxGeometry x="3150" y="278.5" width="300" height="61.5" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-120" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;fontColor=#000000;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeWidth=2;" edge="1" parent="PTcHWUxUaR2ETi6THgpn-1" source="OsvczPMILkOng_Kcr3Mr-117" target="OsvczPMILkOng_Kcr3Mr-119">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-117" value="获取到包下面所有的.class文件&lt;br&gt;scanCandidateComponents(basePackage)" style="whiteSpace=wrap;html=1;rounded=0;strokeWidth=2;fillColor=#99CCFF;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
+          <mxGeometry x="3570" y="272.75" width="240" height="71.5" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-136" value="" style="group" vertex="1" connectable="0" parent="PTcHWUxUaR2ETi6THgpn-1">
+          <mxGeometry x="3850" y="373.75" width="440" height="336.25" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-119" value="for(resource : resources)" style="shape=umlFrame;whiteSpace=wrap;html=1;rounded=0;fontSize=12;fontColor=#000000;strokeWidth=2;fillColor=#FFFFFF;gradientColor=#ffffff;verticalAlign=middle;width=190;height=22;" vertex="1" parent="OsvczPMILkOng_Kcr3Mr-136">
+          <mxGeometry width="440" height="336.25" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-121" value="isCandidateComponent ?&lt;br&gt;判断元数据是否符合候选组件要求" style="rhombus;whiteSpace=wrap;html=1;rounded=0;fontSize=12;fontColor=#000000;strokeWidth=2;fillColor=#99CCFF;gradientColor=none;verticalAlign=middle;" vertex="1" parent="OsvczPMILkOng_Kcr3Mr-136">
+          <mxGeometry x="125" y="21.25" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-122" value="excludeFilters" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" vertex="1" parent="OsvczPMILkOng_Kcr3Mr-136">
+          <mxGeometry x="10" y="118.25" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-124" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontSize=12;fontColor=#000000;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeWidth=2;" edge="1" parent="OsvczPMILkOng_Kcr3Mr-136" source="OsvczPMILkOng_Kcr3Mr-121" target="OsvczPMILkOng_Kcr3Mr-122">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-123" value="includeFilters" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" vertex="1" parent="OsvczPMILkOng_Kcr3Mr-136">
+          <mxGeometry x="340" y="118.25" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-125" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=12;fontColor=#000000;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeWidth=2;" edge="1" parent="OsvczPMILkOng_Kcr3Mr-136" source="OsvczPMILkOng_Kcr3Mr-121" target="OsvczPMILkOng_Kcr3Mr-123">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-126" value="isCandidateComponent ?&lt;br&gt;判断BD是否符合候选组件要求" style="rhombus;whiteSpace=wrap;html=1;rounded=0;fontSize=12;fontColor=#000000;strokeWidth=2;fillColor=#99CCFF;gradientColor=none;verticalAlign=middle;" vertex="1" parent="OsvczPMILkOng_Kcr3Mr-136">
+          <mxGeometry x="125" y="146.25" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-127" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;fontColor=#000000;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeWidth=2;" edge="1" parent="OsvczPMILkOng_Kcr3Mr-136" source="OsvczPMILkOng_Kcr3Mr-121" target="OsvczPMILkOng_Kcr3Mr-126">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-128" value="满足" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontColor=#000000;" vertex="1" connectable="0" parent="OsvczPMILkOng_Kcr3Mr-127">
+          <mxGeometry x="-0.2571" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-129" value="接口" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" vertex="1" parent="OsvczPMILkOng_Kcr3Mr-136">
+          <mxGeometry x="35" y="225.25" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-131" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;fontColor=#000000;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeWidth=2;" edge="1" parent="OsvczPMILkOng_Kcr3Mr-136" source="OsvczPMILkOng_Kcr3Mr-126" target="OsvczPMILkOng_Kcr3Mr-129">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-130" value="抽象" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" vertex="1" parent="OsvczPMILkOng_Kcr3Mr-136">
+          <mxGeometry x="365" y="225.25" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-132" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;fontColor=#000000;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeWidth=2;" edge="1" parent="OsvczPMILkOng_Kcr3Mr-136" source="OsvczPMILkOng_Kcr3Mr-126" target="OsvczPMILkOng_Kcr3Mr-130">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-133" value="加入到集合condidates中，最终返回" style="whiteSpace=wrap;html=1;rounded=0;strokeWidth=2;fillColor=#99CCFF;" vertex="1" parent="OsvczPMILkOng_Kcr3Mr-136">
+          <mxGeometry x="127.5" y="286.25" width="195" height="35.25" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-134" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;fontColor=#000000;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeWidth=2;" edge="1" parent="OsvczPMILkOng_Kcr3Mr-136" source="OsvczPMILkOng_Kcr3Mr-126" target="OsvczPMILkOng_Kcr3Mr-133">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-135" value="满足" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontColor=#000000;" vertex="1" connectable="0" parent="OsvczPMILkOng_Kcr3Mr-134">
+          <mxGeometry x="-0.2421" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-137" value="在newClassPathBeanDefinitionScanner()的时候会注册默认的includeFilters,其中就会包含Component.class" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;rounded=0;verticalAlign=middle;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
+          <mxGeometry x="4380" y="451.82" width="310" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-138" value="&lt;pre style=&quot;background-color: #2b2b2b ; color: #a9b7c6 ; font-family: &amp;#34;jetbrains mono&amp;#34; ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;/**&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt; * &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;扫描器，还记不记得在&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;new AnnotationConfigApplicationContext()&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;的时候会调用&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;AnnotationConfigApplicationContext&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt; * &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;的构造方法，在构造方法中有一句&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;this.scanner = new ClassPathBeanDefinitionScanner(this);&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt; * &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;当时说的这个方法不重要，这里就证明了，常规用法中，实际上执行扫描的只会是这里的&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;scanner&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;对象&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;*/&lt;br&gt;&lt;/span&gt;ClassPathBeanDefinitionScanner scanner = &lt;span style=&quot;color: #cc7832&quot;&gt;new &lt;/span&gt;ClassPathBeanDefinitionScanner(&lt;span style=&quot;color: #cc7832&quot;&gt;this&lt;/span&gt;.&lt;span style=&quot;color: #9876aa&quot;&gt;registry&lt;/span&gt;&lt;span style=&quot;color: #cc7832&quot;&gt;,&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #cc7832&quot;&gt;      &lt;/span&gt;componentScan.getBoolean(&lt;span style=&quot;color: #6a8759&quot;&gt;&quot;useDefaultFilters&quot;&lt;/span&gt;)&lt;span style=&quot;color: #cc7832&quot;&gt;, this&lt;/span&gt;.&lt;span style=&quot;color: #9876aa&quot;&gt;environment&lt;/span&gt;&lt;span style=&quot;color: #cc7832&quot;&gt;, this&lt;/span&gt;.&lt;span style=&quot;color: #9876aa&quot;&gt;resourceLoader&lt;/span&gt;)&lt;span style=&quot;color: #cc7832&quot;&gt;;&lt;/span&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
+          <mxGeometry x="4380" y="530" width="730" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-143" value="" style="endArrow=none;dashed=1;html=1;fontSize=12;fontColor=#000000;strokeWidth=2;entryX=-0.003;entryY=0.602;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="PTcHWUxUaR2ETi6THgpn-1" source="OsvczPMILkOng_Kcr3Mr-123" target="OsvczPMILkOng_Kcr3Mr-137">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="4320" y="620" as="sourcePoint" />
+            <mxPoint x="4370" y="570" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
