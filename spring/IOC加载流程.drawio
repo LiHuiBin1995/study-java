@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-08-26T05:08:58.169Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="eZVzvJwfjqDDBuFclS_L" version="14.9.9" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2021-08-26T06:35:53.804Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="_msV1sXEmcR5Y-nyBx4W" version="14.9.9" type="github" pages="5">
   <diagram id="eFSnvH-j5v0lLI5UnApI" name="IOC加载流程">
     <mxGraphModel dx="1265" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -761,7 +761,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="A4gQQk15oYMopLN9AB3x" name="invokeBeanFactoryPostProcessor">
-    <mxGraphModel dx="2919" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#D0D0D0" math="0" shadow="0">
+    <mxGraphModel dx="2919" dy="1803" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#D0D0D0" math="0" shadow="0">
       <root>
         <mxCell id="PTcHWUxUaR2ETi6THgpn-0" />
         <mxCell id="PTcHWUxUaR2ETi6THgpn-1" parent="PTcHWUxUaR2ETi6THgpn-0" />
@@ -900,7 +900,7 @@
           <mxGeometry x="370" y="718" width="260" height="80" as="geometry" />
         </mxCell>
         <mxCell id="OsvczPMILkOng_Kcr3Mr-31" value="" style="group" vertex="1" connectable="0" parent="PTcHWUxUaR2ETi6THgpn-1">
-          <mxGeometry x="740" y="960" width="300" height="220" as="geometry" />
+          <mxGeometry x="780" y="980" width="300" height="220" as="geometry" />
         </mxCell>
         <mxCell id="OsvczPMILkOng_Kcr3Mr-23" value="for(postProcessor : postProcessors)" style="shape=umlFrame;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#FFFFFF;width=220;height=30;" vertex="1" parent="OsvczPMILkOng_Kcr3Mr-31">
           <mxGeometry width="300" height="220" as="geometry" />
@@ -915,16 +915,16 @@
           <mxGeometry x="30" y="140" width="250" height="70" as="geometry" />
         </mxCell>
         <mxCell id="OsvczPMILkOng_Kcr3Mr-34" value="" style="group;gradientColor=#ffffff;fillColor=#FFFFFF;" vertex="1" connectable="0" parent="PTcHWUxUaR2ETi6THgpn-1">
-          <mxGeometry x="1200" y="900" width="500" height="540" as="geometry" />
+          <mxGeometry x="1680" y="680" width="500" height="760" as="geometry" />
         </mxCell>
         <mxCell id="OsvczPMILkOng_Kcr3Mr-32" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;strokeWidth=2;fillColor=#FFFFFF;verticalAlign=middle;" vertex="1" parent="OsvczPMILkOng_Kcr3Mr-34">
-          <mxGeometry width="500" height="430" as="geometry" />
+          <mxGeometry width="500" height="760" as="geometry" />
         </mxCell>
         <mxCell id="OsvczPMILkOng_Kcr3Mr-33" value="&lt;font color=&quot;#000000&quot; size=&quot;1&quot;&gt;&lt;b style=&quot;font-size: 16px&quot;&gt;processConfigBeanDefinitions(registry)&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontColor=#CC0000;strokeWidth=2;verticalAlign=middle;fillColor=#3399FF;" vertex="1" parent="OsvczPMILkOng_Kcr3Mr-34">
           <mxGeometry width="500" height="74.78260869565217" as="geometry" />
         </mxCell>
         <mxCell id="OsvczPMILkOng_Kcr3Mr-35" value="for(beanName : candidateNames)" style="shape=umlFrame;whiteSpace=wrap;html=1;rounded=0;fontSize=12;fontColor=#000000;strokeWidth=2;fillColor=#FFFFFF;gradientColor=#ffffff;verticalAlign=middle;width=210;height=20;" vertex="1" parent="OsvczPMILkOng_Kcr3Mr-34">
-          <mxGeometry x="80" y="110" width="330" height="200" as="geometry" />
+          <mxGeometry x="74.03999999999999" y="100" width="330" height="200" as="geometry" />
         </mxCell>
         <mxCell id="OsvczPMILkOng_Kcr3Mr-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;fontColor=#000000;endArrow=classic;endFill=1;strokeWidth=2;" edge="1" parent="OsvczPMILkOng_Kcr3Mr-34" source="OsvczPMILkOng_Kcr3Mr-36" target="OsvczPMILkOng_Kcr3Mr-39">
           <mxGeometry relative="1" as="geometry" />
@@ -933,29 +933,218 @@
           <mxGeometry x="140" y="150" width="198.09" height="55.91" as="geometry" />
         </mxCell>
         <mxCell id="OsvczPMILkOng_Kcr3Mr-39" value="configCandidates.add(new BeanDefinitionHolder(beanDef,beanName));" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontColor=#000000;strokeWidth=2;fillColor=#FFFFFF;gradientColor=#ffffff;verticalAlign=middle;" vertex="1" parent="OsvczPMILkOng_Kcr3Mr-34">
-          <mxGeometry x="113.57" y="240" width="250.96" height="60" as="geometry" />
+          <mxGeometry x="112.61" y="230" width="250.96" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-46" value="configCandidates.sort();&lt;br&gt;按照注解中的@Order给定顺序排序" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontColor=#000000;strokeWidth=2;fillColor=#FFFFFF;gradientColor=#ffffff;verticalAlign=middle;" vertex="1" parent="OsvczPMILkOng_Kcr3Mr-34">
+          <mxGeometry x="106.06" y="330" width="264.05" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-47" value="" style="endArrow=classic;html=1;fontSize=12;fontColor=#000000;strokeWidth=2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="OsvczPMILkOng_Kcr3Mr-34" target="OsvczPMILkOng_Kcr3Mr-46">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="238" y="300" as="sourcePoint" />
+            <mxPoint x="490" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;fontColor=#000000;endArrow=classic;endFill=1;strokeWidth=2;" edge="1" parent="OsvczPMILkOng_Kcr3Mr-34" source="OsvczPMILkOng_Kcr3Mr-48" target="OsvczPMILkOng_Kcr3Mr-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-48" value="new ConfigurationClassParser()&lt;br&gt;创建配置类解析器，解析@Component、@ComponentScan、@Import、@Bean、@ImportResource" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontColor=#000000;strokeWidth=2;fillColor=#FFFFFF;gradientColor=#ffffff;verticalAlign=middle;" vertex="1" parent="OsvczPMILkOng_Kcr3Mr-34">
+          <mxGeometry x="107.02" y="400" width="264.05" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;fontColor=#000000;endArrow=classic;endFill=1;strokeWidth=2;" edge="1" parent="OsvczPMILkOng_Kcr3Mr-34" source="OsvczPMILkOng_Kcr3Mr-46" target="OsvczPMILkOng_Kcr3Mr-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-50" value="do{...}while(!candidates.isEmpty());" style="shape=umlFrame;whiteSpace=wrap;html=1;rounded=0;fontSize=12;fontColor=#000000;strokeWidth=2;fillColor=#FFFFFF;gradientColor=#ffffff;verticalAlign=middle;width=211;height=30;" vertex="1" parent="OsvczPMILkOng_Kcr3Mr-34">
+          <mxGeometry x="89.03999999999999" y="490" width="300" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-54" value="解析配置类&lt;br&gt;&lt;b&gt;&lt;font color=&quot;#4d9900&quot;&gt;ConfigurationClassParser&lt;/font&gt;&lt;/b&gt;#&lt;br&gt;parse(candidates);" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontColor=#000000;strokeWidth=2;fillColor=#FFFFFF;gradientColor=#ffffff;verticalAlign=middle;" vertex="1" parent="OsvczPMILkOng_Kcr3Mr-34">
+          <mxGeometry x="150" y="530" width="190" height="50" as="geometry" />
         </mxCell>
         <mxCell id="OsvczPMILkOng_Kcr3Mr-37" value="&lt;pre style=&quot;background-color: #2b2b2b ; color: #a9b7c6 ; font-family: &amp;#34;jetbrains mono&amp;#34; ; font-size: 9.8pt&quot;&gt;Map&amp;lt;String&lt;span style=&quot;color: #cc7832&quot;&gt;, &lt;/span&gt;Object&amp;gt; config = metadata.getAnnotationAttributes(&lt;span style=&quot;color: #bbb529&quot;&gt;Configuration&lt;/span&gt;.&lt;span style=&quot;color: #cc7832&quot;&gt;class&lt;/span&gt;.getName())&lt;span style=&quot;color: #cc7832&quot;&gt;;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #cc7832&quot;&gt;if &lt;/span&gt;(config != &lt;span style=&quot;color: #cc7832&quot;&gt;null &lt;/span&gt;&amp;amp;&amp;amp; !Boolean.&lt;span style=&quot;color: #9876aa ; font-style: italic&quot;&gt;FALSE&lt;/span&gt;.equals(config.get(&lt;span style=&quot;color: #6a8759&quot;&gt;&quot;proxyBeanMethods&quot;&lt;/span&gt;))) {&lt;br&gt;   &lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;/** &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;将&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;bean&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;定义的&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;CONFIGURATION_CLASS_ATTRIBUTE&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;属性标记为&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;full&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;模式&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;,&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;设置该属性后会使用&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;CGLib&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;代理去增强方法，&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;* &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;这样设置会出现的结果现象：不管调用多少次对象的构造函数，都只会实例化一个对象，和单例模式一样&lt;br&gt;&lt;div&gt;&lt;span style=&quot;font-size: 9.8pt ; white-space: normal&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;jetbrains mono&amp;#34; ; font-size: 9.8pt ; white-space: normal&quot;&gt;* */&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;   &lt;/span&gt;beanDef.setAttribute(&lt;span style=&quot;color: #9876aa ; font-style: italic&quot;&gt;CONFIGURATION_CLASS_ATTRIBUTE&lt;/span&gt;&lt;span style=&quot;color: #cc7832&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;color: #9876aa ; font-style: italic&quot;&gt;CONFIGURATION_CLASS_FULL&lt;/span&gt;)&lt;span style=&quot;color: #cc7832&quot;&gt;;&lt;br&gt;&lt;/span&gt;}&lt;br&gt;&lt;span style=&quot;color: #cc7832&quot;&gt;else if &lt;/span&gt;(config != &lt;span style=&quot;color: #cc7832&quot;&gt;null &lt;/span&gt;|| &lt;span style=&quot;font-style: italic&quot;&gt;isConfigurationCandidate&lt;/span&gt;(metadata)) {&lt;br&gt;   &lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;/** &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;设置 &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;CONFIGURATION_CLASS_ATTRIBUTE&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;属性标记为&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;lite&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;模式，该模式下调用响应实例方法会生成多个实例&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;*/&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;   &lt;/span&gt;beanDef.setAttribute(&lt;span style=&quot;color: #9876aa ; font-style: italic&quot;&gt;CONFIGURATION_CLASS_ATTRIBUTE&lt;/span&gt;&lt;span style=&quot;color: #cc7832&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;color: #9876aa ; font-style: italic&quot;&gt;CONFIGURATION_CLASS_LITE&lt;/span&gt;)&lt;span style=&quot;color: #cc7832&quot;&gt;;&lt;br&gt;&lt;/span&gt;}&lt;br&gt;&lt;span style=&quot;color: #cc7832&quot;&gt;else &lt;/span&gt;{&lt;br&gt;   &lt;span style=&quot;color: #cc7832&quot;&gt;return false;&lt;br&gt;&lt;/span&gt;}&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
-          <mxGeometry x="1750" y="830" width="720" height="230" as="geometry" />
+          <mxGeometry x="2230" y="610" width="720" height="230" as="geometry" />
         </mxCell>
         <mxCell id="OsvczPMILkOng_Kcr3Mr-38" value="" style="endArrow=none;dashed=1;html=1;fontSize=12;fontColor=#000000;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="PTcHWUxUaR2ETi6THgpn-1" source="OsvczPMILkOng_Kcr3Mr-36" target="OsvczPMILkOng_Kcr3Mr-37">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1940" y="1370" as="sourcePoint" />
-            <mxPoint x="1990" y="1320" as="targetPoint" />
+            <mxPoint x="2420" y="1150" as="sourcePoint" />
+            <mxPoint x="2470" y="1100" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1720" y="1078" />
-              <mxPoint x="1720" y="945" />
+              <mxPoint x="2200" y="858" />
+              <mxPoint x="2200" y="725" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="OsvczPMILkOng_Kcr3Mr-44" value="循环所有的beanDefinition，拿到配置类并且标记：CONFITURATION_CLASS_ATTRIBUTE属性，分两种&lt;br&gt;1、Full 完整配置类@Configuration&lt;br&gt;2、Lite 精简配置类@Component、@Bean、@ComponentScan" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;rounded=0;verticalAlign=middle;align=left;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
-          <mxGeometry x="1750" y="1070" width="410" height="75" as="geometry" />
+          <mxGeometry x="2230" y="850" width="410" height="75" as="geometry" />
         </mxCell>
         <mxCell id="OsvczPMILkOng_Kcr3Mr-45" value="" style="endArrow=none;dashed=1;html=1;fontSize=12;fontColor=#000000;strokeWidth=2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="PTcHWUxUaR2ETi6THgpn-1" target="OsvczPMILkOng_Kcr3Mr-44">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1609" y="1108" as="sourcePoint" />
-            <mxPoint x="1830" y="1200" as="targetPoint" />
+            <mxPoint x="2089" y="888" as="sourcePoint" />
+            <mxPoint x="2310" y="980" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-51" value="" style="whiteSpace=wrap;html=1;rounded=0;strokeWidth=2;fillColor=#FFFFFF;gradientColor=#ffffff;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
+          <mxGeometry x="1870" y="1410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;fontColor=#000000;endArrow=classic;endFill=1;strokeWidth=2;" edge="1" parent="PTcHWUxUaR2ETi6THgpn-1" source="OsvczPMILkOng_Kcr3Mr-50" target="OsvczPMILkOng_Kcr3Mr-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-56" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;fontColor=#000000;endArrow=classic;endFill=1;strokeWidth=2;entryX=-0.004;entryY=0.542;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="PTcHWUxUaR2ETi6THgpn-1" source="OsvczPMILkOng_Kcr3Mr-23" target="OsvczPMILkOng_Kcr3Mr-32">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1640" y="1090" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-60" value="" style="group" vertex="1" connectable="0" parent="PTcHWUxUaR2ETi6THgpn-1">
+          <mxGeometry x="1290" y="670" width="320" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-57" value="&lt;font color=&quot;#ffffff&quot;&gt;processConfigurationClass(new ConfigurationClass(reader,beanName),&lt;br&gt;DEFAULT_EXCLUSION_FILTER);&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontColor=#000000;strokeWidth=2;verticalAlign=middle;fillColor=#333333;" vertex="1" parent="OsvczPMILkOng_Kcr3Mr-60">
+          <mxGeometry x="50" width="270" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-58" value="" style="aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.mscae.enterprise.tool;rounded=0;fontSize=12;fontColor=#000000;" vertex="1" parent="OsvczPMILkOng_Kcr3Mr-60">
+          <mxGeometry y="4" width="50" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontSize=12;fontColor=#000000;endArrow=classic;endFill=1;strokeWidth=2;entryX=1;entryY=0.5;entryDx=0;entryDy=0;curved=1;" edge="1" parent="PTcHWUxUaR2ETi6THgpn-1" source="OsvczPMILkOng_Kcr3Mr-54" target="OsvczPMILkOng_Kcr3Mr-57">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1590" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-62" value="&lt;font style=&quot;font-size: 20px&quot; color=&quot;#ff0000&quot;&gt;&lt;b&gt;①&lt;br&gt;解析配置类&lt;/b&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontColor=#000000;" vertex="1" connectable="0" parent="OsvczPMILkOng_Kcr3Mr-61">
+          <mxGeometry x="-0.0813" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-63" value="this.configurationClasses.put(configuClass,configClass);&lt;br&gt;放入缓存中" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontColor=#000000;strokeWidth=2;gradientColor=none;verticalAlign=middle;fillColor=#FFFFFF;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
+          <mxGeometry x="1320" y="781.82" width="310" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-64" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;fontColor=#000000;endArrow=classic;endFill=1;strokeWidth=2;" edge="1" parent="PTcHWUxUaR2ETi6THgpn-1" source="OsvczPMILkOng_Kcr3Mr-57" target="OsvczPMILkOng_Kcr3Mr-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-65" value="2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=20;fontColor=#000000;fontStyle=1" vertex="1" connectable="0" parent="OsvczPMILkOng_Kcr3Mr-64">
+          <mxGeometry x="-0.2771" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-67" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=20;fontColor=#000000;endArrow=classic;endFill=1;strokeWidth=2;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="PTcHWUxUaR2ETi6THgpn-1" source="OsvczPMILkOng_Kcr3Mr-57" target="OsvczPMILkOng_Kcr3Mr-69">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1475" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-68" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=20;fontColor=#000000;fontStyle=1" vertex="1" connectable="0" parent="OsvczPMILkOng_Kcr3Mr-67">
+          <mxGeometry x="0.2784" y="1" relative="1" as="geometry">
+            <mxPoint x="1" y="12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-78" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=20;fontColor=#000000;endArrow=classic;endFill=1;strokeWidth=2;" edge="1" parent="PTcHWUxUaR2ETi6THgpn-1" source="OsvczPMILkOng_Kcr3Mr-69" target="OsvczPMILkOng_Kcr3Mr-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-69" value="&lt;font style=&quot;font-size: 12px&quot;&gt;解析@Conditional&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=0;fontSize=20;fontColor=#000000;strokeWidth=2;fillColor=#FFFFFF;gradientColor=none;verticalAlign=middle;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
+          <mxGeometry x="1405" y="540" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-70" value="this.conditionEvaluator#shouldSkip(&lt;br&gt;configClass.getMetadata(),&lt;br&gt;ConfigurationPhase.PARSE_CONFIGURATION)&lt;br&gt;每个@OnConditionalXXX都会有不同的验证阶段" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;rounded=0;verticalAlign=middle;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
+          <mxGeometry x="1030" y="530" width="340" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-71" value="" style="endArrow=none;dashed=1;html=1;fontSize=20;fontColor=#000000;strokeWidth=2;exitX=0;exitY=0;exitDx=340;exitDy=50;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="PTcHWUxUaR2ETi6THgpn-1" source="OsvczPMILkOng_Kcr3Mr-70" target="OsvczPMILkOng_Kcr3Mr-69">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1410" y="530" as="sourcePoint" />
+            <mxPoint x="1460" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-97" value="" style="group" vertex="1" connectable="0" parent="PTcHWUxUaR2ETi6THgpn-1">
+          <mxGeometry x="1330" y="-10" width="290" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-72" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontColor=#000000;strokeWidth=2;fillColor=#FFFFFF;gradientColor=none;verticalAlign=middle;" vertex="1" parent="OsvczPMILkOng_Kcr3Mr-97">
+          <mxGeometry width="290" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-73" value="doProcessConfigurationClass（configClass,sourceClass,filter）" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontColor=#000000;strokeWidth=2;gradientColor=none;verticalAlign=middle;fillColor=#3399FF;" vertex="1" parent="OsvczPMILkOng_Kcr3Mr-97">
+          <mxGeometry y="29.99999999999998" width="290" height="53.79" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-75" value="解析配置类" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;rounded=0;verticalAlign=middle;" vertex="1" parent="OsvczPMILkOng_Kcr3Mr-97">
+          <mxGeometry y="4" width="290" height="26.21" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-79" value="解析注解@Component" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontColor=#000000;strokeWidth=2;fillColor=#3399FF;gradientColor=none;verticalAlign=middle;" vertex="1" parent="OsvczPMILkOng_Kcr3Mr-97">
+          <mxGeometry x="70" y="430" width="150" height="32.31" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-82" value="解析注解@PropertySource" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontColor=#000000;strokeWidth=2;fillColor=#3399FF;gradientColor=none;verticalAlign=middle;" vertex="1" parent="OsvczPMILkOng_Kcr3Mr-97">
+          <mxGeometry x="70" y="370" width="150" height="29.04" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-83" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;fontColor=#000000;endArrow=classic;endFill=1;strokeWidth=2;" edge="1" parent="OsvczPMILkOng_Kcr3Mr-97" source="OsvczPMILkOng_Kcr3Mr-79" target="OsvczPMILkOng_Kcr3Mr-82">
+          <mxGeometry y="-460" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-86" value="解析注解@ComponentScan" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontColor=#000000;strokeWidth=2;fillColor=#3399FF;gradientColor=none;verticalAlign=middle;" vertex="1" parent="OsvczPMILkOng_Kcr3Mr-97">
+          <mxGeometry x="70" y="310" width="150" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-87" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;fontColor=#000000;endArrow=classic;endFill=1;strokeWidth=2;" edge="1" parent="OsvczPMILkOng_Kcr3Mr-97" source="OsvczPMILkOng_Kcr3Mr-82" target="OsvczPMILkOng_Kcr3Mr-86">
+          <mxGeometry y="-460" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-90" value="解析注解@Import" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontColor=#000000;strokeWidth=2;fillColor=#3399FF;gradientColor=none;verticalAlign=middle;" vertex="1" parent="OsvczPMILkOng_Kcr3Mr-97">
+          <mxGeometry x="70" y="240" width="150" height="31.54" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-91" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;fontColor=#000000;endArrow=classic;endFill=1;strokeWidth=2;" edge="1" parent="OsvczPMILkOng_Kcr3Mr-97" source="OsvczPMILkOng_Kcr3Mr-86" target="OsvczPMILkOng_Kcr3Mr-90">
+          <mxGeometry y="-460" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-92" value="解析注解@ImportResource" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontColor=#000000;strokeWidth=2;fillColor=#3399FF;gradientColor=none;verticalAlign=middle;" vertex="1" parent="OsvczPMILkOng_Kcr3Mr-97">
+          <mxGeometry x="70" y="180" width="150" height="31.53" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-93" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;fontColor=#000000;endArrow=classic;endFill=1;strokeWidth=2;" edge="1" parent="OsvczPMILkOng_Kcr3Mr-97" source="OsvczPMILkOng_Kcr3Mr-90" target="OsvczPMILkOng_Kcr3Mr-92">
+          <mxGeometry y="-460" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-95" value="解析注解@Bean" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontColor=#000000;strokeWidth=2;fillColor=#3399FF;gradientColor=none;verticalAlign=middle;" vertex="1" parent="OsvczPMILkOng_Kcr3Mr-97">
+          <mxGeometry x="70" y="110" width="150" height="31.54" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-96" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;fontColor=#000000;endArrow=classic;endFill=1;strokeWidth=2;" edge="1" parent="OsvczPMILkOng_Kcr3Mr-97" source="OsvczPMILkOng_Kcr3Mr-92" target="OsvczPMILkOng_Kcr3Mr-95">
+          <mxGeometry y="-460" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-98" value="&lt;pre style=&quot;background-color: #2b2b2b ; color: #a9b7c6 ; font-family: &amp;#34;jetbrains mono&amp;#34; ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;/** &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;解析注解&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;@ComponentScan&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;， &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;@ComponentScan&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;注解除了常用的&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;basePackage&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;之外，还有&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;includeFilters&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;，&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;excludeFilters&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;等属性  &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;*/&lt;br&gt;&lt;/span&gt;Set&amp;lt;&lt;span style=&quot;background-color: #52503a&quot;&gt;AnnotationAttributes&lt;/span&gt;&amp;gt; componentScans = AnnotationConfigUtils.&lt;span style=&quot;font-style: italic&quot;&gt;attributesForRepeatable&lt;/span&gt;(&lt;br&gt;      sourceClass.getMetadata()&lt;span style=&quot;color: #cc7832&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;color: #bbb529&quot;&gt;ComponentScans&lt;/span&gt;.&lt;span style=&quot;color: #cc7832&quot;&gt;class, &lt;/span&gt;&lt;span style=&quot;color: #bbb529&quot;&gt;ComponentScan&lt;/span&gt;.&lt;span style=&quot;color: #cc7832&quot;&gt;class&lt;/span&gt;)&lt;span style=&quot;color: #cc7832&quot;&gt;;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;/** &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;如果没有加&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;@ComponentScan&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;注解或者用&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;@Condition&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;注解跳过的，就不再进入这个&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;if */&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #cc7832&quot;&gt;if &lt;/span&gt;(!componentScans.isEmpty() &amp;amp;&amp;amp;&lt;br&gt;      !&lt;span style=&quot;color: #cc7832&quot;&gt;this&lt;/span&gt;.&lt;span style=&quot;color: #9876aa&quot;&gt;conditionEvaluator&lt;/span&gt;.shouldSkip(sourceClass.getMetadata()&lt;span style=&quot;color: #cc7832&quot;&gt;, &lt;/span&gt;ConfigurationPhase.&lt;span style=&quot;color: #9876aa ; font-style: italic&quot;&gt;REGISTER_BEAN&lt;/span&gt;)) {&lt;br&gt;   &lt;span style=&quot;color: #cc7832&quot;&gt;for &lt;/span&gt;(AnnotationAttributes componentScan : componentScans) {&lt;br&gt;      &lt;span style=&quot;color: #808080&quot;&gt;// The config class is annotated with @ComponentScan -&amp;gt; perform the scan immediately&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #808080&quot;&gt;      &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;/** &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;如果一个类配置了&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;@ComponentScan&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;注解，则会立即执行&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;parse(...)&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;进行扫描，&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;sourceClass.getMetadata().getClassName()&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;就是配置类的名称 &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;*/&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;      &lt;/span&gt;Set&amp;lt;BeanDefinitionHolder&amp;gt; scannedBeanDefinitions =&lt;br&gt;            &lt;span style=&quot;color: #cc7832&quot;&gt;this&lt;/span&gt;.&lt;span style=&quot;color: #9876aa&quot;&gt;componentScanParser&lt;/span&gt;.parse(componentScan&lt;span style=&quot;color: #cc7832&quot;&gt;, &lt;/span&gt;sourceClass.getMetadata().getClassName())&lt;span style=&quot;color: #cc7832&quot;&gt;;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #cc7832&quot;&gt;      &lt;/span&gt;&lt;span style=&quot;color: #808080&quot;&gt;// Check the set of scanned definitions for any further config classes and parse recursively if needed&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #808080&quot;&gt;      &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;/** &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;检查其他的配置类是否设置了扫描定义，并且在需要的是否递归解析 &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;*/&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;      &lt;/span&gt;&lt;span style=&quot;color: #cc7832&quot;&gt;for &lt;/span&gt;(BeanDefinitionHolder holder : scannedBeanDefinitions) {&lt;br&gt;         BeanDefinition bdCand = holder.getBeanDefinition().getOriginatingBeanDefinition()&lt;span style=&quot;color: #cc7832&quot;&gt;;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #cc7832&quot;&gt;         if &lt;/span&gt;(bdCand == &lt;span style=&quot;color: #cc7832&quot;&gt;null&lt;/span&gt;) {&lt;br&gt;            bdCand = holder.getBeanDefinition()&lt;span style=&quot;color: #cc7832&quot;&gt;;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #cc7832&quot;&gt;         &lt;/span&gt;}&lt;br&gt;         &lt;span style=&quot;color: #cc7832&quot;&gt;if &lt;/span&gt;(ConfigurationClassUtils.&lt;span style=&quot;font-style: italic&quot;&gt;checkConfigurationClassCandidate&lt;/span&gt;(bdCand&lt;span style=&quot;color: #cc7832&quot;&gt;, this&lt;/span&gt;.&lt;span style=&quot;color: #9876aa&quot;&gt;metadataReaderFactory&lt;/span&gt;)) {&lt;br&gt;            &lt;span style=&quot;color: #808080&quot;&gt;// &lt;/span&gt;&lt;span style=&quot;color: #808080 ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;二次扫描，因为可能组件类有被&lt;/span&gt;&lt;span style=&quot;color: #808080&quot;&gt;@Bean&lt;/span&gt;&lt;span style=&quot;color: #808080 ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;标记的方法，或者组件类本身也有&lt;/span&gt;&lt;span style=&quot;color: #808080&quot;&gt;@ComponentScan&lt;/span&gt;&lt;span style=&quot;color: #808080 ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;注解，需要再一次扫描&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #808080 ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;            &lt;/span&gt;parse(bdCand.getBeanClassName()&lt;span style=&quot;color: #cc7832&quot;&gt;, &lt;/span&gt;holder.getBeanName())&lt;span style=&quot;color: #cc7832&quot;&gt;;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #cc7832&quot;&gt;         &lt;/span&gt;}&lt;br&gt;      }&lt;br&gt;   }&lt;br&gt;}&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
+          <mxGeometry x="370" y="-240" width="900" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-99" value="" style="endArrow=none;dashed=1;html=1;fontSize=12;fontColor=#000000;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="PTcHWUxUaR2ETi6THgpn-1" source="OsvczPMILkOng_Kcr3Mr-98" target="OsvczPMILkOng_Kcr3Mr-86">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="920" y="330" as="sourcePoint" />
+            <mxPoint x="970" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-103" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;fontColor=#000000;endArrow=classic;endFill=1;strokeWidth=2;" edge="1" parent="PTcHWUxUaR2ETi6THgpn-1" source="OsvczPMILkOng_Kcr3Mr-100" target="OsvczPMILkOng_Kcr3Mr-102">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-100" value="&lt;font color=&quot;#009900&quot;&gt;&lt;b&gt;ConditionEvaluator#&lt;/b&gt;&lt;/font&gt;shoudSkip()&lt;br&gt;解析@Conditional是否跳过注解？" style="rhombus;whiteSpace=wrap;html=1;rounded=0;strokeWidth=2;fillColor=#99CCFF;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
+          <mxGeometry x="1650" y="266.25" width="255" height="102.5" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-101" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;fontColor=#000000;endArrow=classic;endFill=1;strokeWidth=2;" edge="1" parent="PTcHWUxUaR2ETi6THgpn-1" source="OsvczPMILkOng_Kcr3Mr-86" target="OsvczPMILkOng_Kcr3Mr-100">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-105" value="" style="group" vertex="1" connectable="0" parent="PTcHWUxUaR2ETi6THgpn-1">
+          <mxGeometry x="1933" y="261.25" width="270" height="112.5" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-102" value="for（componentScan : componentScans）" style="shape=umlFrame;whiteSpace=wrap;html=1;rounded=0;fontSize=12;fontColor=#000000;strokeWidth=2;fillColor=#FFFFFF;gradientColor=#ffffff;verticalAlign=middle;width=240;height=23;" vertex="1" parent="OsvczPMILkOng_Kcr3Mr-105">
+          <mxGeometry width="270" height="112.5" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-104" value="&lt;b&gt;&lt;font color=&quot;#009900&quot;&gt;ComponentScanAnnotationParser&lt;/font&gt;&lt;/b&gt;#&lt;br&gt;parser()" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontColor=#000000;strokeWidth=2;fillColor=#99CCFF;gradientColor=none;verticalAlign=middle;" vertex="1" parent="OsvczPMILkOng_Kcr3Mr-105">
+          <mxGeometry x="20" y="42.5" width="220" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-109" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;fontColor=#000000;endArrow=classic;endFill=1;strokeWidth=2;" edge="1" parent="PTcHWUxUaR2ETi6THgpn-1" source="OsvczPMILkOng_Kcr3Mr-106" target="OsvczPMILkOng_Kcr3Mr-108">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-111" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;fontColor=#000000;endArrow=classic;endFill=1;strokeWidth=2;" edge="1" parent="PTcHWUxUaR2ETi6THgpn-1" source="OsvczPMILkOng_Kcr3Mr-106" target="OsvczPMILkOng_Kcr3Mr-110">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-106" value="scanner = new ClassPathBeanDefinitionScanner()&lt;br&gt;用来扫描我们classpath下标注了@Service、@Component、@Respository、@Controller" style="whiteSpace=wrap;html=1;rounded=0;strokeWidth=2;gradientColor=#ffffff;fillColor=#99CCFF;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
+          <mxGeometry x="2250" y="275.63" width="210" height="83.75" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-107" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;fontColor=#000000;endArrow=classic;endFill=1;strokeWidth=2;" edge="1" parent="PTcHWUxUaR2ETi6THgpn-1" source="OsvczPMILkOng_Kcr3Mr-102" target="OsvczPMILkOng_Kcr3Mr-106">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-108" value="将@ComponentScan的信息保存到scanner。&lt;br&gt;excludeFilters、includeFilters、ScopedProxyMode、LayInit ..." style="whiteSpace=wrap;html=1;rounded=0;strokeWidth=2;fillColor=#99CCFF;gradientColor=#ffffff;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
+          <mxGeometry x="2250" y="400" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-113" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;fontColor=#000000;endArrow=classic;endFill=1;strokeWidth=2;" edge="1" parent="PTcHWUxUaR2ETi6THgpn-1" source="OsvczPMILkOng_Kcr3Mr-110" target="OsvczPMILkOng_Kcr3Mr-112">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-110" value="&lt;b&gt;&lt;font color=&quot;#009900&quot;&gt;ClassPathBeanDefinitionScanner&lt;/font&gt;&lt;/b&gt;#&lt;br&gt;doScan()" style="whiteSpace=wrap;html=1;rounded=0;strokeWidth=2;fillColor=#99CCFF;gradientColor=#ffffff;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
+          <mxGeometry x="2530" y="276.88" width="210" height="82.5" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-112" value="for(basePackage : basePackages)" style="shape=umlFrame;whiteSpace=wrap;html=1;rounded=0;fontSize=12;fontColor=#000000;strokeWidth=2;fillColor=#FFFFFF;gradientColor=#ffffff;verticalAlign=middle;width=210;height=30;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
+          <mxGeometry x="2810" y="240" width="300" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="OsvczPMILkOng_Kcr3Mr-114" value="根据包名找到符合条件的BeanDefinition&lt;br&gt;findCandidateComponents(basePackage)" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontColor=#000000;strokeWidth=2;fillColor=#99CCFF;gradientColor=none;verticalAlign=middle;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
+          <mxGeometry x="2835" y="287" width="250" height="43" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
