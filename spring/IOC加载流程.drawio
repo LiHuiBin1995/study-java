@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-08-27T05:36:14.937Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="Z6vN1YQGUU2h8o8V7C0W" version="14.9.9" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2021-08-27T06:00:14.004Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="Lm1e9GgTBwmpgSkLZmjr" version="14.9.9" type="github" pages="5">
   <diagram id="eFSnvH-j5v0lLI5UnApI" name="IOC加载流程">
     <mxGraphModel dx="1265" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -761,7 +761,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="A4gQQk15oYMopLN9AB3x" name="invokeBeanFactoryPostProcessor">
-    <mxGraphModel dx="4184" dy="2437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#D0D0D0" math="0" shadow="0">
+    <mxGraphModel dx="2708" dy="1697" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#D0D0D0" math="0" shadow="0">
       <root>
         <mxCell id="PTcHWUxUaR2ETi6THgpn-0" />
         <mxCell id="PTcHWUxUaR2ETi6THgpn-1" parent="PTcHWUxUaR2ETi6THgpn-0" />
@@ -1815,7 +1815,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="PJwYh3WYLzozlUBya1ux-190" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;strokeColor=#9673a6;strokeWidth=2;fillColor=#e1d5e7;verticalAlign=middle;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
-          <mxGeometry x="1020" y="1510" width="590" height="710" as="geometry" />
+          <mxGeometry x="1020" y="1510" width="590" height="950" as="geometry" />
         </mxCell>
         <mxCell id="PJwYh3WYLzozlUBya1ux-191" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;fontColor=#000000;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="PTcHWUxUaR2ETi6THgpn-1" source="PJwYh3WYLzozlUBya1ux-146" target="PJwYh3WYLzozlUBya1ux-190">
           <mxGeometry relative="1" as="geometry" />
@@ -1829,7 +1829,7 @@
           <mxGeometry x="1020" y="1510" width="590" height="60" as="geometry" />
         </mxCell>
         <mxCell id="PJwYh3WYLzozlUBya1ux-198" value="for(configClass : configurationModel)" style="shape=umlFrame;whiteSpace=wrap;html=1;rounded=0;fontSize=12;fontColor=#000000;strokeWidth=2;fillColor=#FFFFFF;gradientColor=#ffffff;verticalAlign=middle;width=230;height=30;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
-          <mxGeometry x="1080" y="1620" width="430" height="520" as="geometry" />
+          <mxGeometry x="1080" y="1620" width="430" height="570" as="geometry" />
         </mxCell>
         <mxCell id="PJwYh3WYLzozlUBya1ux-200" value="注册配置类到容器中" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;rounded=0;verticalAlign=middle;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
           <mxGeometry x="1080" y="1580" width="440" height="40" as="geometry" />
@@ -1845,6 +1845,9 @@
         <mxCell id="PJwYh3WYLzozlUBya1ux-201" value="判断配置类是不是通过@Import导入的&lt;br&gt;configClass.isImported() ?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;fontSize=12;strokeColor=#9673a6;strokeWidth=2;fillColor=#e1d5e7;verticalAlign=middle;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
           <mxGeometry x="1175" y="1664" width="230" height="90" as="geometry" />
         </mxCell>
+        <mxCell id="PJwYh3WYLzozlUBya1ux-209" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;fontColor=#000000;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="PTcHWUxUaR2ETi6THgpn-1" source="PJwYh3WYLzozlUBya1ux-202" target="PJwYh3WYLzozlUBya1ux-208">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="PJwYh3WYLzozlUBya1ux-202" value="registerBeanDefinition&lt;br&gt;&lt;font color=&quot;#ff0000&quot;&gt;beanDefinitionMap&lt;/font&gt;.put(beanName,beanDefinition);&lt;br&gt;&lt;font color=&quot;#ff0000&quot;&gt;beanDefinitionNames&lt;/font&gt;.add(beanName);" style="whiteSpace=wrap;html=1;rounded=0;strokeColor=#9673a6;strokeWidth=2;fillColor=#e1d5e7;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
           <mxGeometry x="1140" y="1810" width="300" height="60" as="geometry" />
         </mxCell>
@@ -1856,6 +1859,59 @@
         </mxCell>
         <mxCell id="PJwYh3WYLzozlUBya1ux-207" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/finish_flag-128.png;rounded=0;fontSize=12;fontColor=#000000;strokeColor=#000000;strokeWidth=2;fillColor=#99CCFF;gradientColor=none;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
           <mxGeometry x="1390" y="1790" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJwYh3WYLzozlUBya1ux-217" value="在这里把之前添加的BeanMethod开始注册为Bean定义 - ConfigurationClassBeanDefinition 即@Bean" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;rounded=0;verticalAlign=middle;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
+          <mxGeometry x="1450" y="1950" width="300" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="PJwYh3WYLzozlUBya1ux-221" value="" style="group" vertex="1" connectable="0" parent="PTcHWUxUaR2ETi6THgpn-1">
+          <mxGeometry x="1122.5" y="1890" width="317.5" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="PJwYh3WYLzozlUBya1ux-218" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontColor=#000000;strokeColor=#000000;strokeWidth=2;fillColor=#ffffff;gradientColor=none;verticalAlign=middle;" vertex="1" parent="PJwYh3WYLzozlUBya1ux-221">
+          <mxGeometry x="26" y="70" width="284" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="PJwYh3WYLzozlUBya1ux-208" value="for(beanMethod : configClass.getBeanMethods())" style="shape=umlFrame;whiteSpace=wrap;html=1;rounded=0;fontSize=12;fontColor=#000000;strokeWidth=2;fillColor=#FFFFFF;gradientColor=#ffffff;verticalAlign=middle;width=280;height=30;" vertex="1" parent="PJwYh3WYLzozlUBya1ux-221">
+          <mxGeometry x="17.5" y="20" width="300" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="PJwYh3WYLzozlUBya1ux-210" value="&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;@Bean - BeanMethods&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" vertex="1" parent="PJwYh3WYLzozlUBya1ux-221">
+          <mxGeometry width="155" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="PJwYh3WYLzozlUBya1ux-211" value="解析@Conditional" style="rhombus;whiteSpace=wrap;html=1;rounded=0;fontSize=12;strokeColor=#9673a6;strokeWidth=2;fillColor=#e1d5e7;verticalAlign=middle;" vertex="1" parent="PJwYh3WYLzozlUBya1ux-221">
+          <mxGeometry x="77.5" y="100" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PJwYh3WYLzozlUBya1ux-212" value="registerBeanDefinition&lt;br&gt;&lt;font color=&quot;#ff0000&quot;&gt;beanDefinitionMap&lt;/font&gt;.put(beanName,beanDefinition);&lt;br&gt;&lt;font color=&quot;#ff0000&quot;&gt;beanDefinitionNames&lt;/font&gt;.add(beanName);" style="whiteSpace=wrap;html=1;rounded=0;strokeColor=#9673a6;strokeWidth=2;fillColor=#e1d5e7;" vertex="1" parent="PJwYh3WYLzozlUBya1ux-221">
+          <mxGeometry x="27.5" y="210" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PJwYh3WYLzozlUBya1ux-213" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;fontColor=#000000;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="PJwYh3WYLzozlUBya1ux-221" source="PJwYh3WYLzozlUBya1ux-211" target="PJwYh3WYLzozlUBya1ux-212">
+          <mxGeometry as="geometry" />
+        </mxCell>
+        <mxCell id="PJwYh3WYLzozlUBya1ux-214" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontColor=#000000;" vertex="1" connectable="0" parent="PJwYh3WYLzozlUBya1ux-213">
+          <mxGeometry x="-0.3233" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PJwYh3WYLzozlUBya1ux-219" value="loadBeanDefinitionsForBeanMethod(beanMethod)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" vertex="1" parent="PJwYh3WYLzozlUBya1ux-221">
+          <mxGeometry x="78.5" y="70" width="191.5" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="PJwYh3WYLzozlUBya1ux-224" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/finish_flag-128.png;rounded=0;fontSize=12;fontColor=#000000;strokeColor=#000000;strokeWidth=2;fillColor=#99CCFF;gradientColor=none;" vertex="1" parent="PJwYh3WYLzozlUBya1ux-221">
+          <mxGeometry x="267.5" y="190" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJwYh3WYLzozlUBya1ux-216" value="ConfigurationPhase#REGISTER_BEAN" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;rounded=0;verticalAlign=middle;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
+          <mxGeometry x="940" y="2000" width="250" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PJwYh3WYLzozlUBya1ux-222" value="loadBeanDefinitionsFromImportedResources()" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontColor=#ffffff;strokeColor=#2D7600;strokeWidth=2;fillColor=#60a917;verticalAlign=middle;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
+          <mxGeometry x="1150" y="2240" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJwYh3WYLzozlUBya1ux-223" value="" style="endArrow=classic;html=1;fontSize=12;fontColor=#000000;strokeColor=#000000;strokeWidth=2;exitX=0.483;exitY=1.002;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="PTcHWUxUaR2ETi6THgpn-1" source="PJwYh3WYLzozlUBya1ux-198" target="PJwYh3WYLzozlUBya1ux-222">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1180" y="2290" as="sourcePoint" />
+            <mxPoint x="1230" y="2240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PJwYh3WYLzozlUBya1ux-225" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/finish_flag-128.png;rounded=0;fontSize=12;fontColor=#000000;strokeColor=#000000;strokeWidth=2;fillColor=#99CCFF;gradientColor=none;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
+          <mxGeometry x="1400" y="2210" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJwYh3WYLzozlUBya1ux-226" value="即@ImportResource" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;rounded=0;verticalAlign=middle;" vertex="1" parent="PTcHWUxUaR2ETi6THgpn-1">
+          <mxGeometry x="1440" y="2240" width="190" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
