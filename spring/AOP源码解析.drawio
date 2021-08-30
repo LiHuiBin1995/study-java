@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-08-30T08:44:50.816Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="CdUGObv6nFrKom2GzgPp" version="15.0.3" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-08-30T08:58:44.730Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="Kqq6gIOZwlkTomfM4whK" version="15.0.3" type="github" pages="2">
   <diagram id="2z5CUgGZHuWxxsyof4mT" name="第 1 页">
     <mxGraphModel dx="2092" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -236,13 +236,16 @@
           <mxGeometry x="130" y="135" width="80" height="20" as="geometry" />
         </mxCell>
         <mxCell id="AeU2hq5m6KdZr8ENlgC_-27" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="1337.5" y="1680" width="245" height="270" as="geometry" />
+          <mxGeometry x="1337.5" y="1680" width="245" height="400" as="geometry" />
         </mxCell>
         <mxCell id="AeU2hq5m6KdZr8ENlgC_-24" value="for(beanName : beanNames)" style="shape=umlFrame;whiteSpace=wrap;html=1;rounded=0;fontSize=12;fontColor=#000000;strokeWidth=2;fillColor=#FFFFFF;gradientColor=#ffffff;verticalAlign=middle;width=190;height=30;" vertex="1" parent="AeU2hq5m6KdZr8ENlgC_-27">
-          <mxGeometry width="245" height="270" as="geometry" />
+          <mxGeometry width="245" height="400" as="geometry" />
         </mxCell>
         <mxCell id="AeU2hq5m6KdZr8ENlgC_-26" value="遍历所有beanName，解析出被@AspectJ标记的类" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;verticalAlign=middle;" vertex="1" parent="AeU2hq5m6KdZr8ENlgC_-27">
-          <mxGeometry x="22.5" y="60" width="190" height="50" as="geometry" />
+          <mxGeometry x="22.5" y="47.958888888888886" width="190" height="74.07407407407408" as="geometry" />
+        </mxCell>
+        <mxCell id="AeU2hq5m6KdZr8ENlgC_-40" value="提取Aspect类中所有的Advice方法" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;verticalAlign=middle;" vertex="1" parent="AeU2hq5m6KdZr8ENlgC_-27">
+          <mxGeometry x="22.5" y="240" width="190" height="50" as="geometry" />
         </mxCell>
         <mxCell id="AeU2hq5m6KdZr8ENlgC_-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="AeU2hq5m6KdZr8ENlgC_-26" target="AeU2hq5m6KdZr8ENlgC_-30">
           <mxGeometry relative="1" as="geometry">
@@ -257,11 +260,55 @@
             <mxPoint x="-36" y="32" as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="AeU2hq5m6KdZr8ENlgC_-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="AeU2hq5m6KdZr8ENlgC_-30" target="AeU2hq5m6KdZr8ENlgC_-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AeU2hq5m6KdZr8ENlgC_-36" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="AeU2hq5m6KdZr8ENlgC_-35">
+          <mxGeometry x="-0.3064" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="AeU2hq5m6KdZr8ENlgC_-30" value="根据class对象判断是不是切面?&lt;br&gt;this.advisorFactory.isAspect(beanType)" style="rhombus;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;fillColor=#ffffff;verticalAlign=middle;" vertex="1" parent="1">
           <mxGeometry x="1720" y="1716.25" width="290" height="97.5" as="geometry" />
         </mxCell>
         <mxCell id="AeU2hq5m6KdZr8ENlgC_-31" value="&lt;pre style=&quot;background-color: #2b2b2b ; color: #a9b7c6 ; font-family: &amp;quot;jetbrains mono&amp;quot; ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;/**&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt; * &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;quot;courier new&amp;quot;&quot;&gt;去类上面查询有没有&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;@Aspect&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;quot;courier new&amp;quot;&quot;&gt;注解&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;quot;courier new&amp;quot;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;* &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-weight: bold ; font-style: italic&quot;&gt;@param &lt;/span&gt;&lt;span style=&quot;color: #8a653b ; font-style: italic&quot;&gt;clazz&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #8a653b ; font-style: italic&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;* &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-weight: bold ; font-style: italic&quot;&gt;@return&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-weight: bold ; font-style: italic&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;*/&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #cc7832&quot;&gt;private boolean &lt;/span&gt;&lt;span style=&quot;color: #ffc66d&quot;&gt;hasAspectAnnotation&lt;/span&gt;(Class&amp;lt;?&amp;gt; clazz) {&lt;br&gt;   &lt;span style=&quot;color: #cc7832&quot;&gt;return &lt;/span&gt;(AnnotationUtils.&lt;span style=&quot;font-style: italic&quot;&gt;findAnnotation&lt;/span&gt;(clazz&lt;span style=&quot;color: #cc7832&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;color: #bbb529&quot;&gt;Aspect&lt;/span&gt;.&lt;span style=&quot;color: #cc7832&quot;&gt;class&lt;/span&gt;) != &lt;span style=&quot;color: #cc7832&quot;&gt;null&lt;/span&gt;)&lt;span style=&quot;color: #cc7832&quot;&gt;;&lt;br&gt;&lt;/span&gt;}&lt;/pre&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="2050" y="1570" width="450" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="AeU2hq5m6KdZr8ENlgC_-34" value="加入到缓存中&lt;br&gt;aspectNames.add(beanName)" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="2130" y="1735" width="175" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AeU2hq5m6KdZr8ENlgC_-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=oval;endFill=1;strokeColor=#000000;strokeWidth=2;dashed=1;" edge="1" parent="1" source="AeU2hq5m6KdZr8ENlgC_-40" target="AeU2hq5m6KdZr8ENlgC_-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AeU2hq5m6KdZr8ENlgC_-45" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1654" y="1880" width="446" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="AeU2hq5m6KdZr8ENlgC_-42" value="&lt;pre style=&quot;background-color: #2b2b2b ; color: #a9b7c6 ; font-family: &amp;quot;jetbrains mono&amp;quot; ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;/** &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;quot;courier new&amp;quot;&quot;&gt;这里才会真正的获取通知对象 &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;*/&lt;br&gt;&lt;/span&gt;List&amp;lt;Advisor&amp;gt; classAdvisors = &lt;span style=&quot;color: #cc7832&quot;&gt;this&lt;/span&gt;.&lt;span style=&quot;color: #9876aa&quot;&gt;advisorFactory&lt;/span&gt;.getAdvisors(factory)&lt;span style=&quot;color: #cc7832&quot;&gt;;&lt;/span&gt;&lt;/pre&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="AeU2hq5m6KdZr8ENlgC_-45">
+          <mxGeometry y="30" width="446" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="AeU2hq5m6KdZr8ENlgC_-43" value="&lt;font color=&quot;#00ff00&quot;&gt;&lt;b&gt;获取切面类所有通知&lt;/b&gt;&lt;/font&gt;" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;strokeColor=#d6b656;fontColor=#666600;rounded=0;verticalAlign=middle;fillColor=#000000;" vertex="1" parent="AeU2hq5m6KdZr8ENlgC_-45">
+          <mxGeometry x="5.693617021276596" width="204.97021276595746" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="AeU2hq5m6KdZr8ENlgC_-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="AeU2hq5m6KdZr8ENlgC_-34" target="AeU2hq5m6KdZr8ENlgC_-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AeU2hq5m6KdZr8ENlgC_-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;dashed=1;startArrow=none;startFill=0;endArrow=oval;endFill=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="AeU2hq5m6KdZr8ENlgC_-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1455" y="1910" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AeU2hq5m6KdZr8ENlgC_-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="AeU2hq5m6KdZr8ENlgC_-42" target="AeU2hq5m6KdZr8ENlgC_-49">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2350" y="1945" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AeU2hq5m6KdZr8ENlgC_-48" value="&lt;b&gt;&lt;font color=&quot;#009900&quot;&gt;ReflectiveAspectJAdvisorFactory&lt;/font&gt;&lt;/b&gt;#&lt;br&gt;getAdvisors" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="AeU2hq5m6KdZr8ENlgC_-47">
+          <mxGeometry x="-0.168" y="1" relative="1" as="geometry">
+            <mxPoint x="14" y="27" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AeU2hq5m6KdZr8ENlgC_-49" value="&lt;pre style=&quot;background-color: #2b2b2b ; color: #a9b7c6 ; font-family: &amp;#34;jetbrains mono&amp;#34; ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;/** &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;获取切面类中的所有方法，但是该方法不会解析标注了&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;@PointCut&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;注解的方法 &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;*/&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #cc7832&quot;&gt;for &lt;/span&gt;(Method method : getAdvisorMethods(aspectClass)) {&lt;span style=&quot;color: #808080&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #808080&quot;&gt;   &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;/** &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;解析切面中的方法 只要方法中带了&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;@Before&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;、&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;@After&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;、&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;@Around&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;、&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;@AfterReturning&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;、&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;@AfterThrowing&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;都会解析&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;* &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;并且将注解包装为一个&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;Advisor&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;    */&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;   &lt;/span&gt;Advisor advisor = getAdvisor(method&lt;span style=&quot;color: #cc7832&quot;&gt;, &lt;/span&gt;lazySingletonAspectInstanceFactory&lt;span style=&quot;color: #cc7832&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;color: #6897bb&quot;&gt;0&lt;/span&gt;&lt;span style=&quot;color: #cc7832&quot;&gt;, &lt;/span&gt;aspectName)&lt;span style=&quot;color: #cc7832&quot;&gt;;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #cc7832&quot;&gt;   if &lt;/span&gt;(advisor != &lt;span style=&quot;color: #cc7832&quot;&gt;null&lt;/span&gt;) {&lt;br&gt;      advisors.add(advisor)&lt;span style=&quot;color: #cc7832&quot;&gt;;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #cc7832&quot;&gt;   &lt;/span&gt;}&lt;br&gt;}&lt;br&gt;&lt;br&gt;&lt;/pre&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2420" y="1930" width="720" height="200" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
