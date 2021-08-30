@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-08-30T06:33:22.650Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="SXM-QzV0Vp6PiKo5_sOQ" version="15.0.3" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-08-30T06:43:58.595Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="wE3pJq5dwo0SGNevGbvu" version="15.0.3" type="github" pages="2">
   <diagram id="2z5CUgGZHuWxxsyof4mT" name="第 1 页">
     <mxGraphModel dx="2249" dy="804" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -149,12 +149,64 @@
     </mxGraphModel>
   </diagram>
   <diagram id="0Uptjd44pe4Rfi0elNdB" name="事务-解析advisor">
-    <mxGraphModel dx="1265" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1054" dy="528" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="v8cWUvuZ9zfSbZIENwyd-0" />
         <mxCell id="v8cWUvuZ9zfSbZIENwyd-1" parent="v8cWUvuZ9zfSbZIENwyd-0" />
+        <mxCell id="iQwucLWinpSZb__WJoZx-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="v8cWUvuZ9zfSbZIENwyd-1" source="iQwucLWinpSZb__WJoZx-0" target="iQwucLWinpSZb__WJoZx-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="iQwucLWinpSZb__WJoZx-0" value="super.findCandidateAdvisors()" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#A9C4EB;strokeWidth=2;" vertex="1" parent="v8cWUvuZ9zfSbZIENwyd-1">
           <mxGeometry x="100" y="200" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iQwucLWinpSZb__WJoZx-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="v8cWUvuZ9zfSbZIENwyd-1" source="iQwucLWinpSZb__WJoZx-1" target="iQwucLWinpSZb__WJoZx-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iQwucLWinpSZb__WJoZx-5" value="没有被解析&lt;br&gt;if(advisorNames == null) {" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iQwucLWinpSZb__WJoZx-4">
+          <mxGeometry x="-0.26" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iQwucLWinpSZb__WJoZx-1" value="是否被解析过？&lt;br&gt;这里只会解析一次，后续保存到缓存中" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#A9C4EB;" vertex="1" parent="v8cWUvuZ9zfSbZIENwyd-1">
+          <mxGeometry x="340" y="300" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="iQwucLWinpSZb__WJoZx-3" value="从容器中获取所有类型为Advisor的beanName" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#A9C4EB;" vertex="1" parent="v8cWUvuZ9zfSbZIENwyd-1">
+          <mxGeometry x="342.5" y="480" width="245" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iQwucLWinpSZb__WJoZx-6" value="&lt;pre style=&quot;background-color: #2b2b2b ; color: #a9b7c6 ; font-family: &amp;quot;jetbrains mono&amp;quot; ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;/**&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt; * cachedAdvisorBeanNames&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;quot;courier new&amp;quot;&quot;&gt;是用来保存我们的&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;Advisor&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;quot;courier new&amp;quot;&quot;&gt;全类名称的&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;quot;courier new&amp;quot;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;* &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;quot;courier new&amp;quot;&quot;&gt;会在第一个单实例&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;bean&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;quot;courier new&amp;quot;&quot;&gt;的时候会把这个&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;Advisor&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;quot;courier new&amp;quot;&quot;&gt;名解析出来&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;quot;courier new&amp;quot;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;*/&lt;br&gt;&lt;/span&gt;String[] advisorNames = &lt;span style=&quot;color: #cc7832&quot;&gt;this&lt;/span&gt;.&lt;span style=&quot;color: #9876aa&quot;&gt;cachedAdvisorBeanNames&lt;/span&gt;&lt;span style=&quot;color: #cc7832&quot;&gt;;&lt;/span&gt;&lt;/pre&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="v8cWUvuZ9zfSbZIENwyd-1">
+          <mxGeometry x="780" y="290" width="400" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="iQwucLWinpSZb__WJoZx-7" value="" style="endArrow=oval;dashed=1;html=1;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=0;" edge="1" parent="v8cWUvuZ9zfSbZIENwyd-1" source="iQwucLWinpSZb__WJoZx-1" target="iQwucLWinpSZb__WJoZx-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="640" y="460" as="sourcePoint" />
+            <mxPoint x="690" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iQwucLWinpSZb__WJoZx-10" value="" style="group" vertex="1" connectable="0" parent="v8cWUvuZ9zfSbZIENwyd-1">
+          <mxGeometry x="780" y="410" width="650" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="iQwucLWinpSZb__WJoZx-8" value="&lt;pre style=&quot;background-color: #2b2b2b ; color: #a9b7c6 ; font-family: &amp;quot;jetbrains mono&amp;quot; ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;/**&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt; * &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;quot;courier new&amp;quot;&quot;&gt;找到所有包含&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;Advisor&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;quot;courier new&amp;quot;&quot;&gt;的&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;bean&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;quot;courier new&amp;quot;&quot;&gt;名字&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;quot;courier new&amp;quot;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;* &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;quot;courier new&amp;quot;&quot;&gt;去找我们的容器中读取实现了&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;Advisor&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;quot;courier new&amp;quot;&quot;&gt;接口的实现类，而我们的事务注解&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;@EnableTransactionManagement&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt; * &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;quot;courier new&amp;quot;&quot;&gt;导入了一个叫&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;ProxyTransactionManagementConfiguration,&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;quot;courier new&amp;quot;&quot;&gt;而在这个配置类中配置了：&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;quot;courier new&amp;quot;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;* &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-weight: bold ; font-style: italic&quot;&gt;@Bean(name=TransactionManagementConfigUtils.TRANSACTION_ADVISOR_BEAN_NAME)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-weight: bold ; font-style: italic&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;* &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-weight: bold ; font-style: italic&quot;&gt;@Role(BeanDefinition.ROLE_INFRASTRUCTURE)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-weight: bold ; font-style: italic&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;* public BeanFactoryTransactionAttributeSourceAdvisor transactionAdvisor();&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt; * &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;quot;courier new&amp;quot;&quot;&gt;然后把他的名字获取出来保存到本类的属性变量&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;cachedAdvisorBeanNames&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;quot;courier new&amp;quot;&quot;&gt;中&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;quot;courier new&amp;quot;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;*/&lt;br&gt;&lt;/span&gt;advisorNames = BeanFactoryUtils.&lt;span style=&quot;font-style: italic&quot;&gt;beanNamesForTypeIncludingAncestors&lt;/span&gt;(&lt;br&gt;      &lt;span style=&quot;color: #cc7832&quot;&gt;this&lt;/span&gt;.&lt;span style=&quot;color: #9876aa&quot;&gt;beanFactory&lt;/span&gt;&lt;span style=&quot;color: #cc7832&quot;&gt;, &lt;/span&gt;Advisor.&lt;span style=&quot;color: #cc7832&quot;&gt;class, true, false&lt;/span&gt;)&lt;span style=&quot;color: #cc7832&quot;&gt;;&lt;/span&gt;&lt;/pre&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="iQwucLWinpSZb__WJoZx-10">
+          <mxGeometry width="650" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="iQwucLWinpSZb__WJoZx-9" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=none;strokeColor=#CC0000;" vertex="1" parent="iQwucLWinpSZb__WJoZx-10">
+          <mxGeometry x="130" y="180" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="iQwucLWinpSZb__WJoZx-11" value="" style="endArrow=oval;dashed=1;html=1;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=0;" edge="1" parent="v8cWUvuZ9zfSbZIENwyd-1" source="iQwucLWinpSZb__WJoZx-3" target="iQwucLWinpSZb__WJoZx-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="590" y="524.5" as="sourcePoint" />
+            <mxPoint x="780" y="524.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iQwucLWinpSZb__WJoZx-12" value="&lt;pre style=&quot;background-color: rgb(43 , 43 , 43) ; color: rgb(169 , 183 , 198) ; font-family: &amp;#34;jetbrains mono&amp;#34; ; font-size: 9.8pt ; line-height: 100%&quot;&gt;&lt;span style=&quot;color: #cc7832&quot;&gt;this&lt;/span&gt;.&lt;span style=&quot;color: #9876aa&quot;&gt;cachedAdvisorBeanNames &lt;/span&gt;= advisorNames&lt;span style=&quot;color: #cc7832&quot;&gt;;&lt;/span&gt;&lt;/pre&gt;" style="text;whiteSpace=wrap;html=1;spacing=0;spacingTop=0;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;horizontal=1;" vertex="1" parent="v8cWUvuZ9zfSbZIENwyd-1">
+          <mxGeometry x="953" y="700" width="304" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="iQwucLWinpSZb__WJoZx-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeWidth=2;dashed=1;" edge="1" parent="v8cWUvuZ9zfSbZIENwyd-1" source="iQwucLWinpSZb__WJoZx-8" target="iQwucLWinpSZb__WJoZx-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iQwucLWinpSZb__WJoZx-14" value="加入到缓存中，下次直接从缓存中获取" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iQwucLWinpSZb__WJoZx-13">
+          <mxGeometry x="-0.3333" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
