@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-09-01T04:19:40.537Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="wGCrdQZettdlq6QBFjfB" version="15.0.3" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-09-01T04:44:57.274Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="N526dQoy2RTtw0YtkuNr" version="15.0.3" type="github" pages="3">
   <diagram id="2z5CUgGZHuWxxsyof4mT" name="AOP源码解析">
     <mxGraphModel dx="2249" dy="804" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -803,7 +803,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="XMI8VgcxCRO873QNPglf" name="动态代理">
-    <mxGraphModel dx="2080" dy="2361" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1248" dy="1884" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0r1X8fQSBWkzYG3iUQH2-0" />
         <mxCell id="0r1X8fQSBWkzYG3iUQH2-1" parent="0r1X8fQSBWkzYG3iUQH2-0" />
@@ -1215,6 +1215,26 @@
         </mxCell>
         <mxCell id="0r1X8fQSBWkzYG3iUQH2-151" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;strokeColor=#000000;strokeWidth=1;fillColor=#007FFF;opacity=50;" vertex="1" parent="0r1X8fQSBWkzYG3iUQH2-1">
           <mxGeometry x="3280" y="329" width="530" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="0r1X8fQSBWkzYG3iUQH2-154" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeWidth=2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="0r1X8fQSBWkzYG3iUQH2-1" source="0r1X8fQSBWkzYG3iUQH2-47" target="0r1X8fQSBWkzYG3iUQH2-155">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="255.5" y="1260.0350000000003" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0r1X8fQSBWkzYG3iUQH2-157" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="0r1X8fQSBWkzYG3iUQH2-1" source="0r1X8fQSBWkzYG3iUQH2-155" target="0r1X8fQSBWkzYG3iUQH2-156">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0r1X8fQSBWkzYG3iUQH2-155" value="是否满足创建动态代理的条件？&lt;br&gt;" style="rhombus;whiteSpace=wrap;html=1;fontSize=15;strokeColor=#000000;strokeWidth=2;fillColor=#007FFF;" vertex="1" parent="0r1X8fQSBWkzYG3iUQH2-1">
+          <mxGeometry x="93.31" y="1310" width="324.46" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="0r1X8fQSBWkzYG3iUQH2-159" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;startArrow=none;startFill=0;endArrow=oval;endFill=1;strokeColor=#000000;strokeWidth=2;dashed=1;" edge="1" parent="0r1X8fQSBWkzYG3iUQH2-1" source="0r1X8fQSBWkzYG3iUQH2-156" target="0r1X8fQSBWkzYG3iUQH2-158">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0r1X8fQSBWkzYG3iUQH2-156" value="没有符合的advisor就不创建动态代理，标记之后也直接忽略" style="whiteSpace=wrap;html=1;fontSize=15;strokeWidth=2;fillColor=#007FFF;" vertex="1" parent="0r1X8fQSBWkzYG3iUQH2-1">
+          <mxGeometry x="124.42000000000002" y="1440" width="262.23" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0r1X8fQSBWkzYG3iUQH2-158" value="&lt;pre style=&quot;background-color: #2b2b2b ; color: #a9b7c6 ; font-family: &amp;quot;jetbrains mono&amp;quot; ; font-size: 9.8pt&quot;&gt;&lt;br&gt;&lt;span style=&quot;color: #cc7832&quot;&gt;this&lt;/span&gt;.&lt;span style=&quot;color: #9876aa&quot;&gt;advisedBeans&lt;/span&gt;.put(cacheKey&lt;span style=&quot;color: #cc7832&quot;&gt;, &lt;/span&gt;Boolean.&lt;span style=&quot;color: #9876aa ; font-style: italic&quot;&gt;FALSE&lt;/span&gt;)&lt;span style=&quot;color: #cc7832&quot;&gt;;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #cc7832&quot;&gt;return &lt;/span&gt;bean&lt;span style=&quot;color: #cc7832&quot;&gt;;&lt;br&gt;&lt;/span&gt;&lt;/pre&gt;" style="text;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="0r1X8fQSBWkzYG3iUQH2-1">
+          <mxGeometry x="100.81" y="1550" width="309.46" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
