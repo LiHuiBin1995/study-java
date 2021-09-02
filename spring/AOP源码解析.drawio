@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-09-02T08:22:33.354Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="gdSAVWRUxBMU-TPrstIW" version="15.0.3" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2021-09-02T08:24:50.833Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="99gK8wT7tMZwq6HizIFE" version="15.0.3" type="github" pages="4">
   <diagram id="2z5CUgGZHuWxxsyof4mT" name="AOP源码解析">
     <mxGraphModel dx="1972" dy="546" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -2038,10 +2038,35 @@
           <mxGeometry x="945" y="2550" width="510" height="177" as="geometry" />
         </mxCell>
         <mxCell id="2IIuYGpbAV8Tqa_VImtP-198" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontColor=#000000;strokeWidth=2;verticalAlign=middle;opacity=40;strokeColor=none;fillColor=#66B2FF;" vertex="1" parent="bF5vYxYyOjAi4rwTEDQr-1">
-          <mxGeometry x="950" y="2630.5" width="450" height="20" as="geometry" />
+          <mxGeometry x="947" y="2630.5" width="450" height="20" as="geometry" />
         </mxCell>
         <mxCell id="2IIuYGpbAV8Tqa_VImtP-201" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px&quot;&gt;前置&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontColor=#CC0000;strokeWidth=2;verticalAlign=middle;fillColor=#FFFFFF;" vertex="1" parent="bF5vYxYyOjAi4rwTEDQr-1">
           <mxGeometry x="1355" y="2570" width="45" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="2IIuYGpbAV8Tqa_VImtP-202" value="&lt;pre style=&quot;background-color: #2b2b2b ; color: #a9b7c6 ; font-family: &amp;quot;jetbrains mono&amp;quot; ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;color: #808080&quot;&gt;// We start with an index of -1 and increment early.&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;/** &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;quot;courier new&amp;quot;&quot;&gt;从&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;-1&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;quot;courier new&amp;quot;&quot;&gt;开始，结束条件执行目标方法是下标&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;quot;courier new&amp;quot;&quot;&gt;拦截器的长度 &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;- 1&lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic ; font-family: &amp;quot;courier new&amp;quot;&quot;&gt;（执行了最后一个拦截器的时候） &lt;/span&gt;&lt;span style=&quot;color: #629755 ; font-style: italic&quot;&gt;*/&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #cc7832&quot;&gt;if &lt;/span&gt;(&lt;span style=&quot;color: #cc7832&quot;&gt;this&lt;/span&gt;.&lt;span style=&quot;color: #9876aa&quot;&gt;currentInterceptorIndex &lt;/span&gt;== &lt;span style=&quot;color: #cc7832&quot;&gt;this&lt;/span&gt;.&lt;span style=&quot;color: #9876aa&quot;&gt;interceptorsAndDynamicMethodMatchers&lt;/span&gt;.size() - &lt;span style=&quot;color: #6897bb&quot;&gt;1&lt;/span&gt;) {&lt;br&gt;   &lt;span style=&quot;color: #cc7832&quot;&gt;return &lt;/span&gt;invokeJoinpoint()&lt;span style=&quot;color: #cc7832&quot;&gt;;&lt;br&gt;&lt;/span&gt;}&lt;br&gt;&lt;/pre&gt;" style="text;whiteSpace=wrap;html=1;fontSize=20;fontColor=#CC0000;" vertex="1" parent="bF5vYxYyOjAi4rwTEDQr-1">
+          <mxGeometry x="945" y="2760" width="590" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="2IIuYGpbAV8Tqa_VImtP-205" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=20;fontColor=#CC0000;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="bF5vYxYyOjAi4rwTEDQr-1" source="2IIuYGpbAV8Tqa_VImtP-203" target="2IIuYGpbAV8Tqa_VImtP-204">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="890" y="2674" />
+              <mxPoint x="890" y="2835" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2IIuYGpbAV8Tqa_VImtP-206" value="5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=20;fontColor=#CC0000;" vertex="1" connectable="0" parent="2IIuYGpbAV8Tqa_VImtP-205">
+          <mxGeometry x="-0.1127" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2IIuYGpbAV8Tqa_VImtP-203" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontColor=#000000;strokeWidth=2;fillColor=#FF66B3;verticalAlign=middle;opacity=40;strokeColor=none;" vertex="1" parent="bF5vYxYyOjAi4rwTEDQr-1">
+          <mxGeometry x="947" y="2664" width="400" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="2IIuYGpbAV8Tqa_VImtP-204" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontColor=#000000;strokeWidth=2;verticalAlign=middle;opacity=40;strokeColor=none;fillColor=#66B2FF;" vertex="1" parent="bF5vYxYyOjAi4rwTEDQr-1">
+          <mxGeometry x="947" y="2825" width="450" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="2IIuYGpbAV8Tqa_VImtP-207" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px&quot;&gt;自置&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontColor=#CC0000;strokeWidth=2;verticalAlign=middle;fillColor=#FFFFFF;" vertex="1" parent="bF5vYxYyOjAi4rwTEDQr-1">
+          <mxGeometry x="1415" y="2770" width="45" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
