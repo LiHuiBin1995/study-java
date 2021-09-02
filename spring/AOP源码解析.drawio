@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-09-02T03:43:10.213Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="t72rXF6E817kQehBP2ed" version="15.0.3" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2021-09-02T05:54:49.541Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="AQOEHi9yBOn4TRF9Xrw4" version="15.0.3" type="github" pages="4">
   <diagram id="2z5CUgGZHuWxxsyof4mT" name="AOP源码解析">
     <mxGraphModel dx="1972" dy="546" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1329,7 +1329,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ssqW_myI3cUUA-k0gMA7" name="AOP-调用代理">
-    <mxGraphModel dx="1347" dy="642" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1347" dy="706" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="bF5vYxYyOjAi4rwTEDQr-0" />
         <mxCell id="bF5vYxYyOjAi4rwTEDQr-1" parent="bF5vYxYyOjAi4rwTEDQr-0" />
@@ -1483,6 +1483,16 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="2IIuYGpbAV8Tqa_VImtP-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;fontColor=#000000;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="bF5vYxYyOjAi4rwTEDQr-1" source="2IIuYGpbAV8Tqa_VImtP-16" target="2IIuYGpbAV8Tqa_VImtP-33">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1840" y="830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2IIuYGpbAV8Tqa_VImtP-31" value="2、advisor本身实现了Interceptor&lt;br&gt;比如AspectJAfterThrowingAdvice" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontColor=#000000;" vertex="1" connectable="0" parent="2IIuYGpbAV8Tqa_VImtP-30">
+          <mxGeometry x="-0.2738" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="2IIuYGpbAV8Tqa_VImtP-16" value="通知大致有两种转换方式：&lt;br&gt;&lt;ol&gt;&lt;li&gt;通过适配器&lt;/li&gt;&lt;li&gt;advisor本身实现了Interceptor&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#FFF2CC;align=left;" vertex="1" parent="bF5vYxYyOjAi4rwTEDQr-1">
           <mxGeometry x="1710" y="600" width="260.01" height="100" as="geometry" />
         </mxCell>
@@ -1504,6 +1514,15 @@
         </mxCell>
         <mxCell id="2IIuYGpbAV8Tqa_VImtP-28" value="2 = {MethodBeforeAdviceInterceptor@5744} &#xa;4 = {AfterReturningAdviceInterceptor@5746}" style="text;whiteSpace=wrap;html=1;fontSize=12;fontColor=#000000;" vertex="1" parent="bF5vYxYyOjAi4rwTEDQr-1">
           <mxGeometry x="1710" y="459.5" width="260" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="2IIuYGpbAV8Tqa_VImtP-34" value="" style="group" vertex="1" connectable="0" parent="bF5vYxYyOjAi4rwTEDQr-1">
+          <mxGeometry x="1690" y="839.5" width="300" height="99.5" as="geometry" />
+        </mxCell>
+        <mxCell id="2IIuYGpbAV8Tqa_VImtP-32" value="&lt;pre style=&quot;background-color: #2b2b2b ; color: #a9b7c6 ; font-family: &amp;quot;jetbrains mono&amp;quot; ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;color: #cc7832&quot;&gt;if &lt;/span&gt;(advice &lt;span style=&quot;color: #cc7832&quot;&gt;instanceof &lt;/span&gt;MethodInterceptor) {&lt;br&gt;   interceptors.add((MethodInterceptor) advice)&lt;span style=&quot;color: #cc7832&quot;&gt;;&lt;br&gt;&lt;/span&gt;}&lt;br&gt;&lt;/pre&gt;" style="text;whiteSpace=wrap;html=1;fontSize=12;fontColor=#000000;" vertex="1" parent="2IIuYGpbAV8Tqa_VImtP-34">
+          <mxGeometry y="19.5" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2IIuYGpbAV8Tqa_VImtP-33" value="&lt;b&gt;&lt;font color=&quot;#006600&quot;&gt;DefaultAdvisorAdapterRegistry&lt;/font&gt;&lt;/b&gt;#&lt;br&gt;getInterceptors" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;rounded=0;verticalAlign=middle;" vertex="1" parent="2IIuYGpbAV8Tqa_VImtP-34">
+          <mxGeometry width="300" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
