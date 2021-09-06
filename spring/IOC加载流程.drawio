@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-08-28T05:42:00.455Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="HRT-Eg4DZWxwPDwoEnhg" version="15.0.3" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2021-09-06T06:23:32.366Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="3Ek-xuKMVszCteD9cfjb" version="15.0.6" type="github" pages="6">
   <diagram id="eFSnvH-j5v0lLI5UnApI" name="IOC加载流程">
-    <mxGraphModel dx="1422" dy="804" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1248" dy="715" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -761,7 +761,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="A4gQQk15oYMopLN9AB3x" name="invokeBeanFactoryPostProcessor">
-    <mxGraphModel dx="6394" dy="3849" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#D0D0D0" math="0" shadow="0">
+    <mxGraphModel dx="2902" dy="1884" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#D0D0D0" math="0" shadow="0">
       <root>
         <mxCell id="PTcHWUxUaR2ETi6THgpn-0" />
         <mxCell id="PTcHWUxUaR2ETi6THgpn-1" parent="PTcHWUxUaR2ETi6THgpn-0" />
@@ -2036,6 +2036,38 @@
         </mxCell>
         <mxCell id="PJwYh3WYLzozlUBya1ux-276" value="到目前为止实现了FactoryRegistryPostProcessor接口的都调用完毕，最主要的工作还是&lt;br&gt;调用了内置ConfigurationClassPostProcessor扫描了bean定义，和调用了自定义的FactoryRegistryPostProcessor注册Bean定义" style="shape=singleArrow;whiteSpace=wrap;html=1;arrowWidth=0.4166666666666667;arrowSize=0.0883495145631068;shadow=0;fontSize=12;fontColor=#000000;strokeColor=#000000;strokeWidth=2;gradientColor=none;verticalAlign=middle;fillColor=#66FFFF;" parent="PTcHWUxUaR2ETi6THgpn-1" vertex="1">
           <mxGeometry x="-290.5" y="1890" width="1020" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="kYuzxJ-SofdcyHwiqMbB" name="invokeBeanDefinitionRegistryPostProcessors方法调用链">
+    <mxGraphModel dx="1040" dy="596" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="B12ZaKydX3cXDAdMMmLN-0" />
+        <mxCell id="B12ZaKydX3cXDAdMMmLN-1" parent="B12ZaKydX3cXDAdMMmLN-0" />
+        <mxCell id="B12ZaKydX3cXDAdMMmLN-7" value="&lt;pre style=&quot;background-color: #2b2b2b ; color: #a9b7c6 ; font-family: &amp;#34;jetbrains mono&amp;#34; ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;color: #ffc66d&quot;&gt;AnnotationConfigApplicationContext&lt;/span&gt;&lt;/pre&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="B12ZaKydX3cXDAdMMmLN-1">
+          <mxGeometry x="20" y="70" width="250" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="B12ZaKydX3cXDAdMMmLN-8" value="&lt;pre style=&quot;background-color: #2b2b2b ; color: #a9b7c6 ; font-family: &amp;#34;jetbrains mono&amp;#34; ; font-size: 9.8pt&quot;&gt;refresh()&lt;/pre&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;lifelineDashed=0;" vertex="1" parent="B12ZaKydX3cXDAdMMmLN-1">
+          <mxGeometry x="320" y="70" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="B12ZaKydX3cXDAdMMmLN-10" value="&lt;pre style=&quot;background-color: #2b2b2b ; color: #a9b7c6 ; font-family: &amp;#34;jetbrains mono&amp;#34; ; font-size: 9.8pt&quot;&gt;&lt;pre style=&quot;font-family: &amp;#34;jetbrains mono&amp;#34; ; font-size: 9.8pt&quot;&gt;invokeBeanFactoryPostProcessors(beanFactory)&lt;/pre&gt;&lt;/pre&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;lifelineDashed=0;" vertex="1" parent="B12ZaKydX3cXDAdMMmLN-1">
+          <mxGeometry x="460" y="70" width="410" height="450" as="geometry" />
+        </mxCell>
+        <mxCell id="B12ZaKydX3cXDAdMMmLN-11" value="实例化并调用已经&lt;br&gt;注册的BeanFactoryPostProcessor" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="B12ZaKydX3cXDAdMMmLN-1" target="B12ZaKydX3cXDAdMMmLN-10">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="370" y="180" as="sourcePoint" />
+            <mxPoint x="570" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="B12ZaKydX3cXDAdMMmLN-9" value="刷新容器" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="B12ZaKydX3cXDAdMMmLN-1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="150" y="160" as="sourcePoint" />
+            <mxPoint x="370" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="B12ZaKydX3cXDAdMMmLN-13" value="&lt;pre style=&quot;background-color: #2b2b2b ; color: #a9b7c6 ; font-family: &amp;#34;jetbrains mono&amp;#34; ; font-size: 9.8pt&quot;&gt;PostProcessorRegistrationDelegate#&lt;/pre&gt;&lt;pre style=&quot;background-color: #2b2b2b ; color: #a9b7c6 ; font-family: &amp;#34;jetbrains mono&amp;#34; ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;font-style: italic&quot;&gt;invokeBeanFactoryPostProcessors&lt;/span&gt;&lt;/pre&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;lifelineDashed=0;" vertex="1" parent="B12ZaKydX3cXDAdMMmLN-1">
+          <mxGeometry x="960" y="70" width="390" height="300" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
