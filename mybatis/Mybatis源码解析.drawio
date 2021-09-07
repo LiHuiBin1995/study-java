@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-09-07T11:55:04.632Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="G18TGs7cCqzbH6Fzgf20" version="15.0.6" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2021-09-07T11:55:40.675Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="jPuGOmgBEultJfmS9wJi" version="15.0.6" type="github" pages="5">
   <diagram id="f9PYaqPUCNv4eE4WrcOT" name="SqlSessionFactoryBuilder执行链">
     <mxGraphModel dx="1145" dy="619" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -506,7 +506,7 @@
         <mxCell id="o5d4NoyY1DI0xDawPwkb-8" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fontSize=15;fontColor=#000000;strokeWidth=2;fillColor=#E5CCFF;align=center;" vertex="1" parent="eDok2I5n16Jq_VbiEiWo-12">
           <mxGeometry x="75" y="920" width="10" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="o5d4NoyY1DI0xDawPwkb-9" value="13、executor=(Executor)interceptorChain.pluginAll(statementHandler);&lt;br&gt;使用每个拦截器重新包装executor并返回" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;labelBackgroundColor=none;fontSize=15;fontColor=#000000;strokeWidth=2;exitX=0.5;exitY=0.629;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" target="o5d4NoyY1DI0xDawPwkb-8" parent="eDok2I5n16Jq_VbiEiWo-12" source="eDok2I5n16Jq_VbiEiWo-12">
+        <mxCell id="o5d4NoyY1DI0xDawPwkb-9" value="13、executor=(Executor)interceptorChain.pluginAll(statementHandler);&lt;br&gt;使用每个拦截器重新包装executor并返回" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;labelBackgroundColor=none;fontSize=15;fontColor=#000000;strokeWidth=2;exitX=0.5;exitY=0.629;exitDx=0;exitDy=0;exitPerimeter=0;fontStyle=1" edge="1" target="o5d4NoyY1DI0xDawPwkb-8" parent="eDok2I5n16Jq_VbiEiWo-12" source="eDok2I5n16Jq_VbiEiWo-12">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="75" y="930" as="sourcePoint" />
             <Array as="points">
@@ -518,7 +518,7 @@
         <mxCell id="o5d4NoyY1DI0xDawPwkb-13" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fontSize=15;fontColor=#000000;strokeWidth=2;fillColor=#E5CCFF;align=center;" vertex="1" parent="eDok2I5n16Jq_VbiEiWo-12">
           <mxGeometry x="75" y="990" width="10" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="o5d4NoyY1DI0xDawPwkb-14" value="14、创建ParameterHandler：&lt;br&gt;executor=(ParameterHandler)interceptorChain.pluginAll(executor);" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;labelBackgroundColor=none;fontSize=15;fontColor=#000000;strokeWidth=2;" edge="1" parent="eDok2I5n16Jq_VbiEiWo-12" target="o5d4NoyY1DI0xDawPwkb-13">
+        <mxCell id="o5d4NoyY1DI0xDawPwkb-14" value="14、创建ParameterHandler：&lt;br&gt;executor=(ParameterHandler)interceptorChain.pluginAll(executor);" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;labelBackgroundColor=none;fontSize=15;fontColor=#000000;strokeWidth=2;fontStyle=1" edge="1" parent="eDok2I5n16Jq_VbiEiWo-12" target="o5d4NoyY1DI0xDawPwkb-13">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="80" y="970" as="sourcePoint" />
             <Array as="points">
@@ -529,7 +529,7 @@
         <mxCell id="o5d4NoyY1DI0xDawPwkb-16" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fontSize=15;fontColor=#000000;strokeWidth=2;fillColor=#E5CCFF;align=center;" vertex="1" parent="eDok2I5n16Jq_VbiEiWo-12">
           <mxGeometry x="75" y="1060" width="10" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="o5d4NoyY1DI0xDawPwkb-17" value="15、创建ResultHandler：&lt;br&gt;executor=(ResultHandler)interceptorChain.pluginAll(executor);" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;labelBackgroundColor=none;fontSize=15;fontColor=#000000;strokeWidth=2;" edge="1" parent="eDok2I5n16Jq_VbiEiWo-12" target="o5d4NoyY1DI0xDawPwkb-16">
+        <mxCell id="o5d4NoyY1DI0xDawPwkb-17" value="15、创建ResultHandler：&lt;br&gt;executor=(ResultHandler)interceptorChain.pluginAll(executor);" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;labelBackgroundColor=none;fontSize=15;fontColor=#000000;strokeWidth=2;fontStyle=1" edge="1" parent="eDok2I5n16Jq_VbiEiWo-12" target="o5d4NoyY1DI0xDawPwkb-16">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="80" y="1040" as="sourcePoint" />
             <Array as="points">
@@ -540,7 +540,7 @@
         <mxCell id="o5d4NoyY1DI0xDawPwkb-18" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fontSize=15;fontColor=#000000;strokeWidth=2;fillColor=#E5CCFF;align=center;" vertex="1" parent="eDok2I5n16Jq_VbiEiWo-12">
           <mxGeometry x="75" y="1140" width="10" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="o5d4NoyY1DI0xDawPwkb-19" value="16、预编译sql产生PreparedStatement对象" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;labelBackgroundColor=none;fontSize=15;fontColor=#000000;strokeWidth=2;" edge="1" parent="eDok2I5n16Jq_VbiEiWo-12" target="o5d4NoyY1DI0xDawPwkb-18">
+        <mxCell id="o5d4NoyY1DI0xDawPwkb-19" value="16、预编译sql产生PreparedStatement对象" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;labelBackgroundColor=none;fontSize=15;fontColor=#000000;strokeWidth=2;fontStyle=1" edge="1" parent="eDok2I5n16Jq_VbiEiWo-12" target="o5d4NoyY1DI0xDawPwkb-18">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="80" y="1120" as="sourcePoint" />
             <Array as="points">
@@ -551,7 +551,7 @@
         <mxCell id="o5d4NoyY1DI0xDawPwkb-20" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fontSize=15;fontColor=#000000;strokeWidth=2;fillColor=#E5CCFF;align=center;" vertex="1" parent="eDok2I5n16Jq_VbiEiWo-12">
           <mxGeometry x="75" y="1220" width="10" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="o5d4NoyY1DI0xDawPwkb-21" value="17、调用ParameterHandler设置参数" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;labelBackgroundColor=none;fontSize=15;fontColor=#000000;strokeWidth=2;" edge="1" parent="eDok2I5n16Jq_VbiEiWo-12" target="o5d4NoyY1DI0xDawPwkb-20">
+        <mxCell id="o5d4NoyY1DI0xDawPwkb-21" value="17、调用ParameterHandler设置参数" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;labelBackgroundColor=none;fontSize=15;fontColor=#000000;strokeWidth=2;fontStyle=1" edge="1" parent="eDok2I5n16Jq_VbiEiWo-12" target="o5d4NoyY1DI0xDawPwkb-20">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="80" y="1200" as="sourcePoint" />
             <Array as="points">
@@ -562,7 +562,7 @@
         <mxCell id="o5d4NoyY1DI0xDawPwkb-22" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fontSize=15;fontColor=#000000;strokeWidth=2;fillColor=#E5CCFF;align=center;" vertex="1" parent="eDok2I5n16Jq_VbiEiWo-12">
           <mxGeometry x="75" y="1300" width="10" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="o5d4NoyY1DI0xDawPwkb-23" value="18、调用TypeHandler给sql预编译设置参数" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;labelBackgroundColor=none;fontSize=15;fontColor=#000000;strokeWidth=2;" edge="1" parent="eDok2I5n16Jq_VbiEiWo-12" target="o5d4NoyY1DI0xDawPwkb-22">
+        <mxCell id="o5d4NoyY1DI0xDawPwkb-23" value="18、调用TypeHandler给sql预编译设置参数" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;labelBackgroundColor=none;fontSize=15;fontColor=#000000;strokeWidth=2;fontStyle=1" edge="1" parent="eDok2I5n16Jq_VbiEiWo-12" target="o5d4NoyY1DI0xDawPwkb-22">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="80" y="1280" as="sourcePoint" />
             <Array as="points">
@@ -573,7 +573,7 @@
         <mxCell id="o5d4NoyY1DI0xDawPwkb-24" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fontSize=15;fontColor=#000000;strokeWidth=2;fillColor=#E5CCFF;align=center;" vertex="1" parent="eDok2I5n16Jq_VbiEiWo-12">
           <mxGeometry x="75" y="1380" width="10" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="o5d4NoyY1DI0xDawPwkb-25" value="19、查出数据使用ResultSetHandler处理结果，&lt;br&gt;使用TypeHandler获取value值" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;labelBackgroundColor=none;fontSize=15;fontColor=#000000;strokeWidth=2;" edge="1" parent="eDok2I5n16Jq_VbiEiWo-12" target="o5d4NoyY1DI0xDawPwkb-24">
+        <mxCell id="o5d4NoyY1DI0xDawPwkb-25" value="19、查出数据使用ResultSetHandler处理结果，&lt;br&gt;使用TypeHandler获取value值" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;labelBackgroundColor=none;fontSize=15;fontColor=#000000;strokeWidth=2;fontStyle=1" edge="1" parent="eDok2I5n16Jq_VbiEiWo-12" target="o5d4NoyY1DI0xDawPwkb-24">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="80" y="1360" as="sourcePoint" />
             <Array as="points">
@@ -651,13 +651,13 @@
             <mxPoint x="28" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="o5d4NoyY1DI0xDawPwkb-26" value="20、后续连接关闭" style="html=1;verticalAlign=bottom;endArrow=block;labelBackgroundColor=none;fontSize=15;fontColor=#000000;strokeWidth=2;dashed=1;exitX=0.5;exitY=0.969;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="KXraFinjTLZmdq-h9i8h-1" source="eDok2I5n16Jq_VbiEiWo-12" target="eDok2I5n16Jq_VbiEiWo-4">
+        <mxCell id="o5d4NoyY1DI0xDawPwkb-26" value="20、后续连接关闭" style="html=1;verticalAlign=bottom;endArrow=block;labelBackgroundColor=none;fontSize=15;fontColor=#000000;strokeWidth=2;dashed=1;exitX=0.5;exitY=0.969;exitDx=0;exitDy=0;exitPerimeter=0;fontStyle=1" edge="1" parent="KXraFinjTLZmdq-h9i8h-1" source="eDok2I5n16Jq_VbiEiWo-12" target="eDok2I5n16Jq_VbiEiWo-4">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="1340" y="1450" as="sourcePoint" />
             <mxPoint x="510" y="1560" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="o5d4NoyY1DI0xDawPwkb-27" value="21、返回list结果" style="html=1;verticalAlign=bottom;endArrow=block;dashed=1;labelBackgroundColor=none;fontSize=15;fontColor=#000000;strokeWidth=2;exitX=0.496;exitY=0.984;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="KXraFinjTLZmdq-h9i8h-1" source="eDok2I5n16Jq_VbiEiWo-4" target="eDok2I5n16Jq_VbiEiWo-0">
+        <mxCell id="o5d4NoyY1DI0xDawPwkb-27" value="21、返回list结果" style="html=1;verticalAlign=bottom;endArrow=block;dashed=1;labelBackgroundColor=none;fontSize=15;fontColor=#000000;strokeWidth=2;exitX=0.496;exitY=0.984;exitDx=0;exitDy=0;exitPerimeter=0;fontStyle=1" edge="1" parent="KXraFinjTLZmdq-h9i8h-1" source="eDok2I5n16Jq_VbiEiWo-4" target="eDok2I5n16Jq_VbiEiWo-0">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="490" y="1422" as="sourcePoint" />
             <mxPoint x="100" y="1470" as="targetPoint" />
