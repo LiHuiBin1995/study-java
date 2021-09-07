@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-09-07T08:02:49.994Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="6Iw6-PLpVBT1jT9hiQqz" version="15.0.6" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2021-09-07T08:21:32.072Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="z734wuYs04WkCib0fKDC" version="15.0.6" type="github" pages="5">
   <diagram id="f9PYaqPUCNv4eE4WrcOT" name="SqlSessionFactoryBuilder执行链">
     <mxGraphModel dx="1145" dy="619" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -389,6 +389,14 @@
             <mxPoint x="-38" y="-15" as="offset" />
           </mxGeometry>
         </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="SAo6lxPZmH1W0BaqRmfS" name="查询语句执行流程">
+    <mxGraphModel dx="1145" dy="619" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="KXraFinjTLZmdq-h9i8h-0" />
+        <mxCell id="KXraFinjTLZmdq-h9i8h-1" parent="KXraFinjTLZmdq-h9i8h-0" />
       </root>
     </mxGraphModel>
   </diagram>
