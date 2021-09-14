@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-09-14T07:57:33.631Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="oH1gl-jS0pUa_rgjdfir" version="15.1.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-09-14T07:59:15.101Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="PGRgc_HTAGVNPzhfBURh" version="15.1.0" type="github" pages="2">
   <diagram id="JIe8NJO4PfeCDfPx7Qfq" name="主从复制(全量复制)流程图">
     <mxGraphModel dx="2075" dy="715" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -126,6 +126,26 @@
           <mxGeometry x="-0.1219" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="5mzJCpqkuLQu6e3D8To6" name="主从复制(部分复制，端点续传)流程图">
+    <mxGraphModel dx="1248" dy="715" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="p-8Ig2HTG_j2djmtFjmN-0" />
+        <mxCell id="p-8Ig2HTG_j2djmtFjmN-1" parent="p-8Ig2HTG_j2djmtFjmN-0" />
+        <mxCell id="p-8Ig2HTG_j2djmtFjmN-2" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#F8CECC;" vertex="1" parent="p-8Ig2HTG_j2djmtFjmN-1">
+          <mxGeometry x="70" y="150" width="220" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="p-8Ig2HTG_j2djmtFjmN-3" value="Master" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="p-8Ig2HTG_j2djmtFjmN-1">
+          <mxGeometry x="160" y="150" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="p-8Ig2HTG_j2djmtFjmN-4" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#F8CECC;" vertex="1" parent="p-8Ig2HTG_j2djmtFjmN-1">
+          <mxGeometry x="560" y="150" width="220" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="p-8Ig2HTG_j2djmtFjmN-5" value="Slave" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="p-8Ig2HTG_j2djmtFjmN-1">
+          <mxGeometry x="650" y="150" width="40" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
