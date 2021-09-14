@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-09-14T08:17:03.881Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="WiiUOZ-wrOAkY7ssZIkh" version="15.1.0" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-09-14T08:21:32.858Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="mrX2dW37o1naTWQEydsJ" version="15.1.0" type="github" pages="3">
   <diagram id="JIe8NJO4PfeCDfPx7Qfq" name="主从复制(全量复制)流程图">
     <mxGraphModel dx="2075" dy="715" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -220,6 +220,14 @@
             <mxPoint x="18" as="offset" />
           </mxGeometry>
         </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="NJT8VXo0Gd6L0EWyexdD" name="主从复制风暴架构调整">
+    <mxGraphModel dx="1248" dy="715" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="Fq5teD8oAcoIZFXAcFlm-0" />
+        <mxCell id="Fq5teD8oAcoIZFXAcFlm-1" parent="Fq5teD8oAcoIZFXAcFlm-0" />
       </root>
     </mxGraphModel>
   </diagram>
