@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-09-18T04:22:55.945Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="BMi7185VHnO3JMhyAxaN" version="15.2.7" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2021-09-24T01:47:04.514Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="bCLohDREonoQ9yewU-Dh" version="15.2.7" type="github" pages="7">
   <diagram id="JIe8NJO4PfeCDfPx7Qfq" name="主从复制(全量复制)流程图">
-    <mxGraphModel dx="2075" dy="715" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1958" dy="594" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -131,7 +131,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="5mzJCpqkuLQu6e3D8To6" name="主从复制(部分复制，端点续传)流程图">
-    <mxGraphModel dx="2075" dy="715" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1958" dy="594" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="p-8Ig2HTG_j2djmtFjmN-0" />
         <mxCell id="p-8Ig2HTG_j2djmtFjmN-1" parent="p-8Ig2HTG_j2djmtFjmN-0" />
@@ -224,7 +224,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="NJT8VXo0Gd6L0EWyexdD" name="主从复制风暴架构调整">
-    <mxGraphModel dx="1248" dy="715" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1131" dy="594" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="Fq5teD8oAcoIZFXAcFlm-0" />
         <mxCell id="Fq5teD8oAcoIZFXAcFlm-1" parent="Fq5teD8oAcoIZFXAcFlm-0" />
@@ -289,7 +289,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="m8hd9kfRPmxVmE04sbQZ" name="混合持久化文件格式">
-    <mxGraphModel dx="1248" dy="715" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1131" dy="594" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="fJU4eyrORz79Iy5mc1NI-0" />
         <mxCell id="fJU4eyrORz79Iy5mc1NI-1" parent="fJU4eyrORz79Iy5mc1NI-0" />
@@ -303,7 +303,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ix976UkHYHJuBCqXF_JA" name="哨兵高可用架构">
-    <mxGraphModel dx="1248" dy="715" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1131" dy="594" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="BN_XNQRyTks0l5K4xwSn-0" />
         <mxCell id="BN_XNQRyTks0l5K4xwSn-1" parent="BN_XNQRyTks0l5K4xwSn-0" />
@@ -380,7 +380,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="2dj4dAk6ivfuqT3m364C" name="高可用架构">
-    <mxGraphModel dx="1468" dy="841" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1331" dy="699" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0_dQO1Zb_ruKB6YeNUj8-0" />
         <mxCell id="0_dQO1Zb_ruKB6YeNUj8-1" parent="0_dQO1Zb_ruKB6YeNUj8-0" />
@@ -467,6 +467,29 @@
             <mxPoint x="690" y="300" as="sourcePoint" />
             <mxPoint x="620" y="420" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="xB97zk3wd8gwG-Ntjw_G" name="主从架构">
+    <mxGraphModel dx="1131" dy="594" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="Eeb2s6xXUlz7WF6P4SOf-0" />
+        <mxCell id="Eeb2s6xXUlz7WF6P4SOf-1" parent="Eeb2s6xXUlz7WF6P4SOf-0" />
+        <mxCell id="Eeb2s6xXUlz7WF6P4SOf-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=none;startFill=0;strokeWidth=2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="Eeb2s6xXUlz7WF6P4SOf-1" source="Eeb2s6xXUlz7WF6P4SOf-4" target="Eeb2s6xXUlz7WF6P4SOf-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Eeb2s6xXUlz7WF6P4SOf-3" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;strokeWidth=2;" edge="1" parent="Eeb2s6xXUlz7WF6P4SOf-1" source="Eeb2s6xXUlz7WF6P4SOf-4" target="Eeb2s6xXUlz7WF6P4SOf-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Eeb2s6xXUlz7WF6P4SOf-4" value="master" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#D4E1F5;" vertex="1" parent="Eeb2s6xXUlz7WF6P4SOf-1">
+          <mxGeometry x="300" y="180" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Eeb2s6xXUlz7WF6P4SOf-5" value="slaver" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#FFCCCC;" vertex="1" parent="Eeb2s6xXUlz7WF6P4SOf-1">
+          <mxGeometry x="240" y="290" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Eeb2s6xXUlz7WF6P4SOf-6" value="slaver" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#FFCCCC;" vertex="1" parent="Eeb2s6xXUlz7WF6P4SOf-1">
+          <mxGeometry x="360" y="290" width="100" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
