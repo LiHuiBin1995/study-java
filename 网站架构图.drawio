@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-09-28T02:21:50.747Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="TWNutzP9xDXd_-_JfA5S" version="15.3.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-09-28T02:25:58.193Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="wXWPKb-dRigpvjediKzT" version="15.3.1" type="github">
   <diagram id="IPC0HBHVtDNUuMCplvsE" name="第 1 页">
     <mxGraphModel dx="1248" dy="686" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -68,6 +68,36 @@
         </mxCell>
         <mxCell id="Cw3_puenSxwjHgjDXRye-22" value="Lua动态渲染模板" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1" vertex="1" parent="Cw3_puenSxwjHgjDXRye-25">
           <mxGeometry x="10" y="10" width="170" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw3_puenSxwjHgjDXRye-27" value="&amp;nbsp; &amp;nbsp; &amp;nbsp; Web层" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;strokeWidth=2;fillColor=#D4E1F5;dashed=1;verticalAlign=top;align=left;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="80" y="360" width="660" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw3_puenSxwjHgjDXRye-30" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="100" y="410" width="150" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw3_puenSxwjHgjDXRye-28" value="&lt;b&gt;Web1&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;strokeWidth=2;fillColor=#FFFF33;verticalAlign=top;" vertex="1" parent="Cw3_puenSxwjHgjDXRye-30">
+          <mxGeometry width="150" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw3_puenSxwjHgjDXRye-29" value="Ehcache" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;strokeWidth=2;fillColor=#CC99FF;verticalAlign=middle;" vertex="1" parent="Cw3_puenSxwjHgjDXRye-30">
+          <mxGeometry x="15" y="41.5" width="120" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw3_puenSxwjHgjDXRye-31" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="320" y="410" width="150" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw3_puenSxwjHgjDXRye-32" value="&lt;b&gt;Web2&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;strokeWidth=2;fillColor=#FFFF33;verticalAlign=top;" vertex="1" parent="Cw3_puenSxwjHgjDXRye-31">
+          <mxGeometry width="150" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw3_puenSxwjHgjDXRye-33" value="Ehcache" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;strokeWidth=2;fillColor=#CC99FF;verticalAlign=middle;" vertex="1" parent="Cw3_puenSxwjHgjDXRye-31">
+          <mxGeometry x="15" y="41.5" width="120" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw3_puenSxwjHgjDXRye-34" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="550" y="410" width="150" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw3_puenSxwjHgjDXRye-35" value="&lt;b&gt;Web3&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;strokeWidth=2;fillColor=#FFFF33;verticalAlign=top;" vertex="1" parent="Cw3_puenSxwjHgjDXRye-34">
+          <mxGeometry width="150" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw3_puenSxwjHgjDXRye-36" value="Ehcache" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;strokeWidth=2;fillColor=#CC99FF;verticalAlign=middle;" vertex="1" parent="Cw3_puenSxwjHgjDXRye-34">
+          <mxGeometry x="15" y="41.5" width="120" height="47" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
