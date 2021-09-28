@@ -1,1 +1,25 @@
-<mxfile host="app.diagrams.net" modified="2021-09-28T02:13:25.398Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" version="15.3.1" etag="SOCSIftB__AAtk3kfkuc" type="github"><diagram id="IPC0HBHVtDNUuMCplvsE">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-09-28T02:15:23.824Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="DHIaoPuaiw7XmeIsOouC" version="15.3.1" type="github">
+  <diagram id="IPC0HBHVtDNUuMCplvsE" name="第 1 页">
+    <mxGraphModel dx="1248" dy="686" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Cw3_puenSxwjHgjDXRye-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="Cw3_puenSxwjHgjDXRye-1" target="Cw3_puenSxwjHgjDXRye-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw3_puenSxwjHgjDXRye-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="Cw3_puenSxwjHgjDXRye-1" target="Cw3_puenSxwjHgjDXRye-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw3_puenSxwjHgjDXRye-1" value="LVS+Keepalived" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6D0DE;" vertex="1" parent="1">
+          <mxGeometry x="330" y="70" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw3_puenSxwjHgjDXRye-2" value="Nginx(分发层)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6D0DE;" vertex="1" parent="1">
+          <mxGeometry x="210" y="160" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw3_puenSxwjHgjDXRye-5" value="Nginx(分发层)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6D0DE;" vertex="1" parent="1">
+          <mxGeometry x="450" y="160" width="130" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
