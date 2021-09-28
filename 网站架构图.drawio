@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-09-28T02:26:34.267Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="D3rXquhC7q3Qojvv6MDV" version="15.3.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-09-28T02:29:10.398Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="17-xym2Lb6gtaxbsfcAh" version="15.3.1" type="github">
   <diagram id="IPC0HBHVtDNUuMCplvsE" name="第 1 页">
     <mxGraphModel dx="1248" dy="686" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -64,7 +64,7 @@
           <mxGeometry x="360" y="220" width="70" height="20" as="geometry" />
         </mxCell>
         <mxCell id="Cw3_puenSxwjHgjDXRye-25" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="790" y="235" width="320" height="130" as="geometry" />
+          <mxGeometry x="921" y="235" width="320" height="130" as="geometry" />
         </mxCell>
         <mxCell id="Cw3_puenSxwjHgjDXRye-19" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#66B2FF;dashed=1;strokeWidth=2;" vertex="1" parent="Cw3_puenSxwjHgjDXRye-25">
           <mxGeometry width="320" height="130" as="geometry" />
@@ -110,6 +110,24 @@
         </mxCell>
         <mxCell id="Cw3_puenSxwjHgjDXRye-36" value="Ehcache" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;strokeWidth=2;fillColor=#CC99FF;verticalAlign=middle;" vertex="1" parent="Cw3_puenSxwjHgjDXRye-34">
           <mxGeometry x="15" y="41.5" width="120" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw3_puenSxwjHgjDXRye-48" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="921" y="440" width="320" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw3_puenSxwjHgjDXRye-42" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#66B2FF;dashed=1;strokeWidth=2;" vertex="1" parent="Cw3_puenSxwjHgjDXRye-48">
+          <mxGeometry width="320" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw3_puenSxwjHgjDXRye-45" value="Redis集群" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1" vertex="1" parent="Cw3_puenSxwjHgjDXRye-48">
+          <mxGeometry x="10" y="10" width="170" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw3_puenSxwjHgjDXRye-46" value="Redis主从" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;strokeWidth=2;fillColor=#66FF66;align=center;verticalAlign=middle;" vertex="1" parent="Cw3_puenSxwjHgjDXRye-48">
+          <mxGeometry x="35" y="55" width="114" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw3_puenSxwjHgjDXRye-47" value="Redis主从" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;strokeWidth=2;fillColor=#66FF66;align=center;verticalAlign=middle;" vertex="1" parent="Cw3_puenSxwjHgjDXRye-48">
+          <mxGeometry x="180" y="55" width="114" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw3_puenSxwjHgjDXRye-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=13;strokeWidth=2;" edge="1" parent="1" source="Cw3_puenSxwjHgjDXRye-27" target="Cw3_puenSxwjHgjDXRye-42">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
