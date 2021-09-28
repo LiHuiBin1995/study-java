@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-09-28T02:18:19.199Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="mxgpj8h_f84HGgdGrXAg" version="15.3.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-09-28T02:20:40.835Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="X_NWr-gWQ_N3wBy63uFM" version="15.3.1" type="github">
   <diagram id="IPC0HBHVtDNUuMCplvsE" name="第 1 页">
     <mxGraphModel dx="1248" dy="686" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -10,7 +10,7 @@
         <mxCell id="Cw3_puenSxwjHgjDXRye-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="Cw3_puenSxwjHgjDXRye-1" target="Cw3_puenSxwjHgjDXRye-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Cw3_puenSxwjHgjDXRye-1" value="LVS+Keepalived" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6D0DE;" vertex="1" parent="1">
+        <mxCell id="Cw3_puenSxwjHgjDXRye-1" value="LVS+Keepalived" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6D0DE;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="330" y="70" width="130" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Cw3_puenSxwjHgjDXRye-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="Cw3_puenSxwjHgjDXRye-2" target="Cw3_puenSxwjHgjDXRye-7">
@@ -22,7 +22,7 @@
         <mxCell id="Cw3_puenSxwjHgjDXRye-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="Cw3_puenSxwjHgjDXRye-2" target="Cw3_puenSxwjHgjDXRye-14">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Cw3_puenSxwjHgjDXRye-2" value="Nginx(分发层)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9AC7BF;" vertex="1" parent="1">
+        <mxCell id="Cw3_puenSxwjHgjDXRye-2" value="Nginx(分发层)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9AC7BF;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="210" y="160" width="130" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Cw3_puenSxwjHgjDXRye-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="Cw3_puenSxwjHgjDXRye-5" target="Cw3_puenSxwjHgjDXRye-7">
@@ -34,20 +34,32 @@
         <mxCell id="Cw3_puenSxwjHgjDXRye-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;" edge="1" parent="1" source="Cw3_puenSxwjHgjDXRye-5" target="Cw3_puenSxwjHgjDXRye-14">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Cw3_puenSxwjHgjDXRye-5" value="Nginx(分发层)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9AC7BF;" vertex="1" parent="1">
+        <mxCell id="Cw3_puenSxwjHgjDXRye-5" value="Nginx(分发层)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9AC7BF;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="450" y="160" width="130" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Cw3_puenSxwjHgjDXRye-7" value="Nginx(应用层)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF4C3;" vertex="1" parent="1">
+        <mxCell id="Cw3_puenSxwjHgjDXRye-7" value="Nginx(应用层)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF4C3;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="330" y="280" width="130" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Cw3_puenSxwjHgjDXRye-10" value="Nginx(应用层)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF4C3;" vertex="1" parent="1">
+        <mxCell id="Cw3_puenSxwjHgjDXRye-10" value="Nginx(应用层)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF4C3;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="120" y="280" width="130" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Cw3_puenSxwjHgjDXRye-14" value="Nginx(应用层)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF4C3;" vertex="1" parent="1">
+        <mxCell id="Cw3_puenSxwjHgjDXRye-14" value="Nginx(应用层)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF4C3;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="540" y="280" width="130" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Cw3_puenSxwjHgjDXRye-18" value="hash转发" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=13;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="360" y="220" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw3_puenSxwjHgjDXRye-19" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#66B2FF;dashed=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="800" y="220" width="320" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw3_puenSxwjHgjDXRye-20" value="HTML模板" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;fillColor=#97D077;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="830" y="260" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw3_puenSxwjHgjDXRye-21" value="本地缓存" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;fillColor=#66FFFF;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="980" y="260" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw3_puenSxwjHgjDXRye-22" value="Lua动态渲染模板" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="790" y="230" width="170" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
