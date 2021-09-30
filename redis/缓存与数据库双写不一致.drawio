@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-09-30T05:47:13.987Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="EGiTNt53PKS4r87Gyk_I" version="15.3.1" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-09-30T05:47:29.522Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="8lMBbT9xFZu6iXJU6tVv" version="15.3.1" type="github" pages="2">
   <diagram id="EJi81lrPLxUWqyqAcyIe" name="双写不一致情况">
     <mxGraphModel dx="1248" dy="686" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -10,7 +10,7 @@
             <mxPoint x="60" y="690" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="AaJ2Im61UXtHoCQsoIxq-2" value="执行时间轴" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="AaJ2Im61UXtHoCQsoIxq-1">
+        <mxCell id="AaJ2Im61UXtHoCQsoIxq-2" value="执行时间轴" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1" vertex="1" connectable="0" parent="AaJ2Im61UXtHoCQsoIxq-1">
           <mxGeometry x="-0.2281" y="-3" relative="1" as="geometry">
             <mxPoint y="15" as="offset" />
           </mxGeometry>
@@ -47,7 +47,7 @@
             <mxPoint x="40" y="650" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_4PScrkvI3SqUnbokafy-1" value="执行时间轴" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="_4PScrkvI3SqUnbokafy-0">
+        <mxCell id="_4PScrkvI3SqUnbokafy-1" value="执行时间轴" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1" vertex="1" connectable="0" parent="_4PScrkvI3SqUnbokafy-0">
           <mxGeometry x="-0.1334" y="-2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
