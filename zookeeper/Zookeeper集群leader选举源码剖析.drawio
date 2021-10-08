@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-08T07:44:00.572Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="l6xtopI1JNs-VNQ5FGje" version="15.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-08T07:47:20.243Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="pGy4BJCnOGxo4moDruA0" version="15.4.3" type="github">
   <diagram id="SoEcYwhc6m7pzwqqew_2" name="第 1 页">
     <mxGraphModel dx="2075" dy="686" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -229,8 +229,25 @@
         <mxCell id="losnIFv3CeqP07pF8Fcl-6" value="adminServer.start();" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1">
           <mxGeometry x="1091" y="665" width="150" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-13" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="losnIFv3CeqP07pF8Fcl-9" target="losnIFv3CeqP07pF8Fcl-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="losnIFv3CeqP07pF8Fcl-9" value="startLeaderElection();" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FF3333;" vertex="1" parent="1">
           <mxGeometry x="1091" y="770" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-15" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="losnIFv3CeqP07pF8Fcl-12" target="losnIFv3CeqP07pF8Fcl-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-16" value="初始化选举数据管理器" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="losnIFv3CeqP07pF8Fcl-15">
+          <mxGeometry x="0.1341" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-12" value="createElectionAlgorithm(electionType);" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="770" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-14" value="createCnxnManager();" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="1710" y="660" width="179" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
