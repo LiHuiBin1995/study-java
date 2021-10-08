@@ -1,57 +1,57 @@
-<mxfile host="app.diagrams.net" modified="2021-10-08T07:34:14.542Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="m0zbOxRMu3rwSc7V0qTV" version="15.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-08T07:37:41.236Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="ZQpPTwRlHqkyy7nYFegH" version="15.4.3" type="github">
   <diagram id="SoEcYwhc6m7pzwqqew_2" name="第 1 页">
     <mxGraphModel dx="2075" dy="686" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="ZCuFaapzUTEh5m-6mNR0-1" target="ZCuFaapzUTEh5m-6mNR0-2">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" parent="1" source="ZCuFaapzUTEh5m-6mNR0-1" target="ZCuFaapzUTEh5m-6mNR0-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-1" value="QuorumPeerMain.main服务端启动主类" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#B9E0A5;" vertex="1" parent="1">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-1" value="QuorumPeerMain.main服务端启动主类" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#B9E0A5;" parent="1" vertex="1">
           <mxGeometry x="50" y="90" width="130" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="ZCuFaapzUTEh5m-6mNR0-2" target="ZCuFaapzUTEh5m-6mNR0-4">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" parent="1" source="ZCuFaapzUTEh5m-6mNR0-2" target="ZCuFaapzUTEh5m-6mNR0-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-6" value="解析配置文件，&lt;br&gt;并将配置信息加载到内存" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ZCuFaapzUTEh5m-6mNR0-5">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-6" value="解析配置文件，&lt;br&gt;并将配置信息加载到内存" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="ZCuFaapzUTEh5m-6mNR0-5" vertex="1" connectable="0">
           <mxGeometry x="-0.2467" y="-1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-2" value="main.initializeAndRun" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-2" value="main.initializeAndRun" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#FFFFFF;" parent="1" vertex="1">
           <mxGeometry x="50" y="190" width="130" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="ZCuFaapzUTEh5m-6mNR0-4" target="ZCuFaapzUTEh5m-6mNR0-7">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" parent="1" source="ZCuFaapzUTEh5m-6mNR0-4" target="ZCuFaapzUTEh5m-6mNR0-7" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-9" value="开始并清理快照文件任务" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ZCuFaapzUTEh5m-6mNR0-8">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-9" value="开始并清理快照文件任务" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="ZCuFaapzUTEh5m-6mNR0-8" vertex="1" connectable="0">
           <mxGeometry x="-0.1563" y="-1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-4" value="config.parse(args[0]);" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;html=1;" vertex="1" parent="1">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-4" value="config.parse(args[0]);" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;html=1;" parent="1" vertex="1">
           <mxGeometry x="50" y="300" width="130" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="ZCuFaapzUTEh5m-6mNR0-7" target="ZCuFaapzUTEh5m-6mNR0-10">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" parent="1" source="ZCuFaapzUTEh5m-6mNR0-7" target="ZCuFaapzUTEh5m-6mNR0-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-14" value="集群启动核心流程" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#FF0000;fontStyle=1" vertex="1" connectable="0" parent="ZCuFaapzUTEh5m-6mNR0-11">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-14" value="集群启动核心流程" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#FF0000;fontStyle=1" parent="ZCuFaapzUTEh5m-6mNR0-11" vertex="1" connectable="0">
           <mxGeometry x="-0.2615" y="-1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="ZCuFaapzUTEh5m-6mNR0-7" target="ZCuFaapzUTEh5m-6mNR0-12">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" parent="1" source="ZCuFaapzUTEh5m-6mNR0-7" target="ZCuFaapzUTEh5m-6mNR0-12" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-15" value="单机启动&lt;br&gt;核心流程" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#FF0000;fontStyle=1" vertex="1" connectable="0" parent="ZCuFaapzUTEh5m-6mNR0-13">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-15" value="单机启动&lt;br&gt;核心流程" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#FF0000;fontStyle=1" parent="ZCuFaapzUTEh5m-6mNR0-13" vertex="1" connectable="0">
           <mxGeometry x="0.1463" y="-1" relative="1" as="geometry">
             <mxPoint x="7" y="1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-7" value="purgeMgr.start();" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;html=1;" vertex="1" parent="1">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-7" value="purgeMgr.start();" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;html=1;" parent="1" vertex="1">
           <mxGeometry x="50" y="410" width="130" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-17" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;strokeWidth=2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZCuFaapzUTEh5m-6mNR0-10" target="ZCuFaapzUTEh5m-6mNR0-16">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-17" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;strokeWidth=2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="ZCuFaapzUTEh5m-6mNR0-10" target="ZCuFaapzUTEh5m-6mNR0-16" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="230" y="550" />
@@ -59,15 +59,15 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-19" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;strokeWidth=2;" edge="1" parent="1" source="ZCuFaapzUTEh5m-6mNR0-10" target="ZCuFaapzUTEh5m-6mNR0-18">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-19" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;strokeWidth=2;" parent="1" source="ZCuFaapzUTEh5m-6mNR0-10" target="ZCuFaapzUTEh5m-6mNR0-18" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-20" value="初始化服务端连接对象&lt;br&gt;ZK默认使用NIO&lt;br&gt;官方推荐使用Netty" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="ZCuFaapzUTEh5m-6mNR0-19">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-20" value="初始化服务端连接对象&lt;br&gt;ZK默认使用NIO&lt;br&gt;官方推荐使用Netty" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" parent="ZCuFaapzUTEh5m-6mNR0-19" vertex="1" connectable="0">
           <mxGeometry x="0.3101" y="-7" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-30" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;strokeWidth=2;" edge="1" parent="1" source="ZCuFaapzUTEh5m-6mNR0-10" target="ZCuFaapzUTEh5m-6mNR0-29">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-30" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;strokeWidth=2;" parent="1" source="ZCuFaapzUTEh5m-6mNR0-10" target="ZCuFaapzUTEh5m-6mNR0-29" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="320" y="550" />
@@ -75,20 +75,20 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-31" value="获取本服务节点对象" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="ZCuFaapzUTEh5m-6mNR0-30">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-31" value="获取本服务节点对象" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" parent="ZCuFaapzUTEh5m-6mNR0-30" vertex="1" connectable="0">
           <mxGeometry x="0.1461" y="-5" relative="1" as="geometry">
             <mxPoint x="35" y="-2" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-33" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;strokeWidth=2;" edge="1" parent="1" source="ZCuFaapzUTEh5m-6mNR0-10" target="ZCuFaapzUTEh5m-6mNR0-32">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-33" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;strokeWidth=2;" parent="1" source="ZCuFaapzUTEh5m-6mNR0-10" target="ZCuFaapzUTEh5m-6mNR0-32" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-34" value="设置选举类型&lt;br&gt;默认为3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="ZCuFaapzUTEh5m-6mNR0-33">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-34" value="设置选举类型&lt;br&gt;默认为3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" parent="ZCuFaapzUTEh5m-6mNR0-33" vertex="1" connectable="0">
           <mxGeometry x="0.1197" y="-6" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-36" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;strokeWidth=2;" edge="1" parent="1" source="ZCuFaapzUTEh5m-6mNR0-10" target="ZCuFaapzUTEh5m-6mNR0-35">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-36" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;strokeWidth=2;" parent="1" source="ZCuFaapzUTEh5m-6mNR0-10" target="ZCuFaapzUTEh5m-6mNR0-35" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="380" y="550" />
@@ -96,69 +96,69 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-37" value="初始化内存&lt;br&gt;数据库对象" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="ZCuFaapzUTEh5m-6mNR0-36">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-37" value="初始化内存&lt;br&gt;数据库对象" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" parent="ZCuFaapzUTEh5m-6mNR0-36" vertex="1" connectable="0">
           <mxGeometry x="0.1899" y="-5" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-39" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;strokeWidth=2;" edge="1" parent="1" source="ZCuFaapzUTEh5m-6mNR0-10" target="ZCuFaapzUTEh5m-6mNR0-38">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-39" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;strokeWidth=2;" parent="1" source="ZCuFaapzUTEh5m-6mNR0-10" target="ZCuFaapzUTEh5m-6mNR0-38" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-40" value="将上面创建的初始服务&lt;br&gt;连接对象放入到本服务节点对象中" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="ZCuFaapzUTEh5m-6mNR0-39">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-40" value="将上面创建的初始服务&lt;br&gt;连接对象放入到本服务节点对象中" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" parent="ZCuFaapzUTEh5m-6mNR0-39" vertex="1" connectable="0">
           <mxGeometry x="0.1642" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-42" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;strokeWidth=2;" edge="1" parent="1" source="ZCuFaapzUTEh5m-6mNR0-10" target="ZCuFaapzUTEh5m-6mNR0-41">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-42" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;strokeWidth=2;" parent="1" source="ZCuFaapzUTEh5m-6mNR0-10" target="ZCuFaapzUTEh5m-6mNR0-41" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-43" value="启动服务节点" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="ZCuFaapzUTEh5m-6mNR0-42">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-43" value="启动服务节点" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" parent="ZCuFaapzUTEh5m-6mNR0-42" vertex="1" connectable="0">
           <mxGeometry x="0.0371" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-10" value="runFromConfig(config);" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#99FF99;html=1;" vertex="1" parent="1">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-10" value="runFromConfig(config);" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#99FF99;html=1;" parent="1" vertex="1">
           <mxGeometry x="50" y="530" width="130" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-12" value="ZooKeeperServerMain.main(args);" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#99FF99;html=1;fontColor=#000000;" vertex="1" parent="1">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-12" value="ZooKeeperServerMain.main(args);" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#99FF99;html=1;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="-240" y="410" width="190" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-16" value="ManagedUtil.registerLog4jMBeans();" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;html=1;" vertex="1" parent="1">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-16" value="ManagedUtil.registerLog4jMBeans();" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;html=1;" parent="1" vertex="1">
           <mxGeometry x="330" y="100" width="210" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-23" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontColor=#000000;strokeWidth=2;dashed=1;" edge="1" parent="1" source="ZCuFaapzUTEh5m-6mNR0-18" target="ZCuFaapzUTEh5m-6mNR0-21">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-23" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontColor=#000000;strokeWidth=2;dashed=1;" parent="1" source="ZCuFaapzUTEh5m-6mNR0-18" target="ZCuFaapzUTEh5m-6mNR0-21" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-25" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;strokeWidth=2;" edge="1" parent="1" source="ZCuFaapzUTEh5m-6mNR0-18" target="ZCuFaapzUTEh5m-6mNR0-24">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-25" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;strokeWidth=2;" parent="1" source="ZCuFaapzUTEh5m-6mNR0-18" target="ZCuFaapzUTEh5m-6mNR0-24" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-28" value="初始化Netty线程组&lt;br&gt;bossGroup和WorkerGroup" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="ZCuFaapzUTEh5m-6mNR0-25">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-28" value="初始化Netty线程组&lt;br&gt;bossGroup和WorkerGroup" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" parent="ZCuFaapzUTEh5m-6mNR0-25" vertex="1" connectable="0">
           <mxGeometry x="0.1819" y="1" relative="1" as="geometry">
             <mxPoint x="-22" y="1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-18" value="cnxnFactory = ServerCnxnFactory.createFactory();" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;html=1;" vertex="1" parent="1">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-18" value="cnxnFactory = ServerCnxnFactory.createFactory();" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;html=1;" parent="1" vertex="1">
           <mxGeometry x="400" y="200" width="210" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-21" value="如果要使用Netty通信框架需要加入启动参数&lt;br&gt;-Dzookeeper.server.CnxnFactory=org.apache.zookeeper.server.NettyServerCnxnFactory" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;rounded=0;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-21" value="如果要使用Netty通信框架需要加入启动参数&lt;br&gt;-Dzookeeper.server.CnxnFactory=org.apache.zookeeper.server.NettyServerCnxnFactory" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;rounded=0;verticalAlign=middle;" parent="1" vertex="1">
           <mxGeometry x="600" y="140" width="569" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-24" value="NettyServerCnxnFactory()" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;html=1;" vertex="1" parent="1">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-24" value="NettyServerCnxnFactory()" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;html=1;" parent="1" vertex="1">
           <mxGeometry x="880" y="200" width="210" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-29" value="quorumPeer =QuorumPeerMain.getQuorumPeer();" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;html=1;" vertex="1" parent="1">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-29" value="quorumPeer =QuorumPeerMain.getQuorumPeer();" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;html=1;" parent="1" vertex="1">
           <mxGeometry x="530" y="290" width="290" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-32" value="quorumPeer.setElectionType(config.getElectionAlg());" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;html=1;" vertex="1" parent="1">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-32" value="quorumPeer.setElectionType(config.getElectionAlg());" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;html=1;" parent="1" vertex="1">
           <mxGeometry x="530" y="350" width="290" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-35" value="quorumPeer.setZKDatabase(new ZKDatabase(quorumPeer.getTxnFactory()));" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-35" value="quorumPeer.setZKDatabase(new ZKDatabase(quorumPeer.getTxnFactory()));" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;" parent="1" vertex="1">
           <mxGeometry x="530" y="430" width="290" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-38" value="quorumPeer.setCnxnFactory(cnxnFactory);" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;html=1;" vertex="1" parent="1">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-38" value="quorumPeer.setCnxnFactory(cnxnFactory);" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;html=1;" parent="1" vertex="1">
           <mxGeometry x="530" y="530" width="250" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-45" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;strokeWidth=2;" edge="1" parent="1" source="ZCuFaapzUTEh5m-6mNR0-41" target="ZCuFaapzUTEh5m-6mNR0-44">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-45" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;strokeWidth=2;" parent="1" source="ZCuFaapzUTEh5m-6mNR0-41" target="ZCuFaapzUTEh5m-6mNR0-44" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="840" y="680" />
@@ -166,12 +166,12 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-46" value="加载文件数据到内存" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="ZCuFaapzUTEh5m-6mNR0-45">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-46" value="加载文件数据到内存" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" parent="ZCuFaapzUTEh5m-6mNR0-45" vertex="1" connectable="0">
           <mxGeometry x="-0.1107" y="-2" relative="1" as="geometry">
             <mxPoint x="8" y="23" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-48" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;strokeWidth=2;" edge="1" parent="1" source="ZCuFaapzUTEh5m-6mNR0-41" target="ZCuFaapzUTEh5m-6mNR0-47">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-48" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;strokeWidth=2;" parent="1" source="ZCuFaapzUTEh5m-6mNR0-41" target="ZCuFaapzUTEh5m-6mNR0-47" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="930" y="680" />
@@ -179,19 +179,25 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-49" value="启动Netty服务" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="ZCuFaapzUTEh5m-6mNR0-48">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-49" value="启动Netty服务" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" parent="ZCuFaapzUTEh5m-6mNR0-48" vertex="1" connectable="0">
           <mxGeometry x="0.1286" y="7" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-41" value="quorumPeer.start();" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FF6666;" vertex="1" parent="1">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-41" value="quorumPeer.start();" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FF6666;" parent="1" vertex="1">
           <mxGeometry x="530" y="660" width="150" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-44" value="loadDataBase();" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1">
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-44" value="loadDataBase();" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;" parent="1" vertex="1">
           <mxGeometry x="1100" y="460" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="ZCuFaapzUTEh5m-6mNR0-47" value="startServerCnxnFactory();" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1">
+        <mxCell id="losnIFv3CeqP07pF8Fcl-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="ZCuFaapzUTEh5m-6mNR0-47" target="losnIFv3CeqP07pF8Fcl-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-47" value="startServerCnxnFactory();" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;" parent="1" vertex="1">
           <mxGeometry x="1091" y="550" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-1" value="NettyServerCnxnFactory.start()" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="1321" y="550" width="179" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
