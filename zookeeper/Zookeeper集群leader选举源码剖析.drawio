@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-08T08:03:09.036Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="fNDS2qK0yI9P1Cu2RPHs" version="15.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-08T08:06:53.148Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="vrciSrVod_0eEC7Fe-l1" version="15.4.3" type="github">
   <diagram id="SoEcYwhc6m7pzwqqew_2" name="第 1 页">
     <mxGraphModel dx="2075" dy="686" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -316,11 +316,28 @@
         <mxCell id="losnIFv3CeqP07pF8Fcl-31" value="WorkerSender.run()" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1">
           <mxGeometry x="2530" y="820" width="120" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-39" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="losnIFv3CeqP07pF8Fcl-33" target="losnIFv3CeqP07pF8Fcl-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-42" value="从接收层接收队列(LinkedBlockingQueue)里取出选票" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="losnIFv3CeqP07pF8Fcl-39">
+          <mxGeometry x="-0.1601" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="losnIFv3CeqP07pF8Fcl-33" value="WorkerReceiver.run()" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1">
           <mxGeometry x="2530" y="930" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="losnIFv3CeqP07pF8Fcl-35" value="sendqueue.poll(3000, TimeUnit.MILLISECONDS);" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FF3333;" vertex="1" parent="1">
           <mxGeometry x="2770" y="710" width="290" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-41" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="losnIFv3CeqP07pF8Fcl-38" target="losnIFv3CeqP07pF8Fcl-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-38" value="manager.pollRecvQueue(3000, TimeUnit.MILLISECONDS);" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="2770" y="1020" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-40" value="recvQueue.poll(timeout, unit);" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="3010" y="1020" width="190" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
