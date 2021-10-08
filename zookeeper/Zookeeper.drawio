@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-08T04:23:42.739Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="wNz9Z3cMVhIXWtBUz1dI" version="15.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-08T04:24:56.623Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="S1FikHOQNlrFHHfGb1o3" version="15.4.3" type="github">
   <diagram id="_tMo0X6HMqpLmebG8TdS" name="第 1 页">
     <mxGraphModel dx="1248" dy="686" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -108,7 +108,10 @@
           <mxGeometry x="550" y="815" width="230" height="75" as="geometry" />
         </mxCell>
         <mxCell id="WodsEw-OZz7wl92d_zAY-18" value="启动或leader宕机选举leader流程" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=20;" vertex="1" parent="1">
-          <mxGeometry x="186" y="70" width="339" height="50" as="geometry" />
+          <mxGeometry x="290" y="30" width="339" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="WodsEw-OZz7wl92d_zAY-19" value="选票格式Vote = （myid，ZXID）" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="289" y="140" width="250" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
