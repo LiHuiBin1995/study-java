@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-08T08:24:39.153Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="J2qHKqGzHUU_tsBXf7ew" version="15.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-08T08:26:11.186Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="ullWohjZhv7fngcdo5Zr" version="15.4.3" type="github">
   <diagram id="SoEcYwhc6m7pzwqqew_2" name="第 1 页">
     <mxGraphModel dx="2075" dy="686" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -383,35 +383,52 @@
         <mxCell id="losnIFv3CeqP07pF8Fcl-49" value="this.mySid == sid ？" style="rhombus;whiteSpace=wrap;rounded=0;strokeWidth=2;fillColor=#FFFFFF;html=1;" vertex="1" parent="1">
           <mxGeometry x="3400" y="782.5" width="160" height="65" as="geometry" />
         </mxCell>
-        <mxCell id="losnIFv3CeqP07pF8Fcl-51" value="如果选票接收机器是自己，就将选票放入到自己的接收队列中&lt;br&gt;&lt;br&gt;" style="whiteSpace=wrap;rounded=0;strokeWidth=2;fillColor=#FF6666;verticalAlign=top;html=1;" vertex="1" parent="1">
-          <mxGeometry x="3700" y="585" width="340" height="145" as="geometry" />
-        </mxCell>
         <mxCell id="losnIFv3CeqP07pF8Fcl-59" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;strokeWidth=2;" edge="1" parent="1" source="losnIFv3CeqP07pF8Fcl-55" target="losnIFv3CeqP07pF8Fcl-58">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="losnIFv3CeqP07pF8Fcl-55" value="ArrayBlockingQueue&lt;ByteBuffer&gt; bq = new ArrayBlockingQueue&lt;ByteBuffer&gt;(&#xa;   SEND_CAPACITY);&#xa;ArrayBlockingQueue&lt;ByteBuffer&gt; oldq = queueSendMap.putIfAbsent(sid, bq);" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1">
           <mxGeometry x="3670" y="800" width="440" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="losnIFv3CeqP07pF8Fcl-58" value="放入传输层待发送队列中" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FF3333;verticalAlign=top;" vertex="1" parent="1">
+        <mxCell id="losnIFv3CeqP07pF8Fcl-67" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;strokeWidth=2;" edge="1" parent="1" source="losnIFv3CeqP07pF8Fcl-58" target="losnIFv3CeqP07pF8Fcl-66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-70" value="与对方sid机器建立连接" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="losnIFv3CeqP07pF8Fcl-67">
+          <mxGeometry x="-0.1342" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-66" value="connectOne(sid);" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="3835" y="1130" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-68" value="" style="group" vertex="1" connectable="0" parent="1">
           <mxGeometry x="3790" y="920" width="200" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="losnIFv3CeqP07pF8Fcl-62" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;strokeWidth=2;" edge="1" parent="1" source="losnIFv3CeqP07pF8Fcl-60" target="losnIFv3CeqP07pF8Fcl-61">
+        <mxCell id="losnIFv3CeqP07pF8Fcl-58" value="放入传输层待发送队列中" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FF3333;verticalAlign=top;" vertex="1" parent="losnIFv3CeqP07pF8Fcl-68">
+          <mxGeometry width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-60" value="addToSendQueue(bq, b);" style="rounded=0;whiteSpace=wrap;fontColor=#000000;fillColor=#B3FF66;verticalAlign=middle;html=1;" vertex="1" parent="losnIFv3CeqP07pF8Fcl-68">
+          <mxGeometry x="25" y="30" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-61" value="queue.add(buffer);" style="rounded=0;whiteSpace=wrap;fontColor=#000000;fillColor=#B3FF66;verticalAlign=middle;" vertex="1" parent="losnIFv3CeqP07pF8Fcl-68">
+          <mxGeometry x="25" y="90" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-62" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;strokeWidth=2;" edge="1" parent="losnIFv3CeqP07pF8Fcl-68" source="losnIFv3CeqP07pF8Fcl-60" target="losnIFv3CeqP07pF8Fcl-61">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="losnIFv3CeqP07pF8Fcl-60" value="addToSendQueue(bq, b);" style="rounded=0;whiteSpace=wrap;fontColor=#000000;fillColor=#B3FF66;verticalAlign=middle;html=1;" vertex="1" parent="1">
-          <mxGeometry x="3815" y="950" width="150" height="30" as="geometry" />
+        <mxCell id="losnIFv3CeqP07pF8Fcl-69" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="3700" y="585" width="340" height="145" as="geometry" />
         </mxCell>
-        <mxCell id="losnIFv3CeqP07pF8Fcl-61" value="queue.add(buffer);" style="rounded=0;whiteSpace=wrap;fontColor=#000000;fillColor=#B3FF66;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry x="3815" y="1010" width="150" height="30" as="geometry" />
+        <mxCell id="losnIFv3CeqP07pF8Fcl-51" value="如果选票接收机器是自己，就将选票放入到自己的接收队列中&lt;br&gt;&lt;br&gt;" style="whiteSpace=wrap;rounded=0;strokeWidth=2;fillColor=#FF6666;verticalAlign=top;html=1;" vertex="1" parent="losnIFv3CeqP07pF8Fcl-69">
+          <mxGeometry width="340" height="145" as="geometry" />
         </mxCell>
-        <mxCell id="losnIFv3CeqP07pF8Fcl-65" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontColor=#000000;strokeWidth=2;" edge="1" parent="1" source="losnIFv3CeqP07pF8Fcl-63" target="losnIFv3CeqP07pF8Fcl-64">
+        <mxCell id="losnIFv3CeqP07pF8Fcl-63" value="addToRecvQueue(new Message(b.duplicate(), sid));" style="rounded=0;whiteSpace=wrap;fontColor=#000000;fillColor=#B3FF66;verticalAlign=middle;" vertex="1" parent="losnIFv3CeqP07pF8Fcl-69">
+          <mxGeometry x="20" y="35" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-64" value="recvQueue.add(msg);" style="rounded=0;whiteSpace=wrap;fontColor=#000000;fillColor=#B3FF66;verticalAlign=middle;" vertex="1" parent="losnIFv3CeqP07pF8Fcl-69">
+          <mxGeometry x="95" y="95" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-65" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontColor=#000000;strokeWidth=2;" edge="1" parent="losnIFv3CeqP07pF8Fcl-69" source="losnIFv3CeqP07pF8Fcl-63" target="losnIFv3CeqP07pF8Fcl-64">
           <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="losnIFv3CeqP07pF8Fcl-63" value="addToRecvQueue(new Message(b.duplicate(), sid));" style="rounded=0;whiteSpace=wrap;fontColor=#000000;fillColor=#B3FF66;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry x="3720" y="620" width="300" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="losnIFv3CeqP07pF8Fcl-64" value="recvQueue.add(msg);" style="rounded=0;whiteSpace=wrap;fontColor=#000000;fillColor=#B3FF66;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry x="3795" y="680" width="150" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
