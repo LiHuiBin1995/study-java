@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-08T07:42:28.024Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="wm2YpMruqW2SNEFqYdDv" version="15.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-08T07:42:52.982Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="k-JbnW5V29Q6Wk9JxBga" version="15.4.3" type="github">
   <diagram id="SoEcYwhc6m7pzwqqew_2" name="第 1 页">
     <mxGraphModel dx="2075" dy="686" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -187,7 +187,7 @@
         <mxCell id="losnIFv3CeqP07pF8Fcl-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;curved=1;" edge="1" parent="1" source="ZCuFaapzUTEh5m-6mNR0-41" target="losnIFv3CeqP07pF8Fcl-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="losnIFv3CeqP07pF8Fcl-8" value="启动内嵌Jetty服务，默认8080端口" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="losnIFv3CeqP07pF8Fcl-7">
+        <mxCell id="losnIFv3CeqP07pF8Fcl-8" value="启动内嵌Jetty服务，默认8080端口&lt;br&gt;用来查看服务端状态信息" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="losnIFv3CeqP07pF8Fcl-7">
           <mxGeometry x="0.3201" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
