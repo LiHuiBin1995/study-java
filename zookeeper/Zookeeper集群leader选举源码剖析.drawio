@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-10-08T06:40:44.415Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="FuJKKeNFT55kLyJ__qbo" version="15.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-08T06:48:50.607Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="48_L_hfeTZWxlUcJKRhu" version="15.4.3" type="github">
   <diagram id="SoEcYwhc6m7pzwqqew_2" name="第 1 页">
-    <mxGraphModel dx="1248" dy="686" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2075" dy="686" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -10,8 +10,52 @@
         <mxCell id="ZCuFaapzUTEh5m-6mNR0-1" value="QuorumPeerMain.main服务端启动主类" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#B9E0A5;" vertex="1" parent="1">
           <mxGeometry x="50" y="90" width="130" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="ZCuFaapzUTEh5m-6mNR0-2" target="ZCuFaapzUTEh5m-6mNR0-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-6" value="解析配置文件，&lt;br&gt;并将配置信息加载到内存" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ZCuFaapzUTEh5m-6mNR0-5">
+          <mxGeometry x="-0.2467" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="ZCuFaapzUTEh5m-6mNR0-2" value="main.initializeAndRun" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1">
           <mxGeometry x="50" y="190" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="ZCuFaapzUTEh5m-6mNR0-4" target="ZCuFaapzUTEh5m-6mNR0-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-9" value="开始并清理快照文件任务" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ZCuFaapzUTEh5m-6mNR0-8">
+          <mxGeometry x="-0.1563" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-4" value="config.parse(args[0]);" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="300" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="ZCuFaapzUTEh5m-6mNR0-7" target="ZCuFaapzUTEh5m-6mNR0-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-14" value="集群启动核心流程" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#FF0000;fontStyle=1" vertex="1" connectable="0" parent="ZCuFaapzUTEh5m-6mNR0-11">
+          <mxGeometry x="-0.2615" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="ZCuFaapzUTEh5m-6mNR0-7" target="ZCuFaapzUTEh5m-6mNR0-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-15" value="单机启动&lt;br&gt;核心流程" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#FF0000;fontStyle=1" vertex="1" connectable="0" parent="ZCuFaapzUTEh5m-6mNR0-13">
+          <mxGeometry x="0.1463" y="-1" relative="1" as="geometry">
+            <mxPoint x="7" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-7" value="purgeMgr.start();" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="410" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-10" value="runFromConfig(config);" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="530" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-12" value="ZooKeeperServerMain.main(args);" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-240" y="410" width="190" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
