@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-08T09:28:00.449Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="xSM5hsvcfqzFRKABgKG_" version="15.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-08T09:32:39.472Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="Ys3FGJURN1CBHOdJ1xz7" version="15.4.3" type="github">
   <diagram id="SoEcYwhc6m7pzwqqew_2" name="第 1 页">
     <mxGraphModel dx="2075" dy="686" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -557,6 +557,14 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-116" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;fontColor=#FF0000;strokeWidth=2;" edge="1" parent="1" source="losnIFv3CeqP07pF8Fcl-95" target="losnIFv3CeqP07pF8Fcl-115">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-117" value="while ((self.getPeerState() == ServerState.LOOKING) &amp;&amp;&#xa;        (!stop))&#xa;当节点是选举状态会不断地从应用层接收队列里拿选票做选举" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontColor=#FF0000;" vertex="1" connectable="0" parent="losnIFv3CeqP07pF8Fcl-116">
+          <mxGeometry x="0.0542" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="losnIFv3CeqP07pF8Fcl-95" value="makeLEStrategy().lookForLeader()" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FF3333;" vertex="1" parent="1">
           <mxGeometry x="1700" y="1339.5" width="200.5" height="30" as="geometry" />
         </mxCell>
@@ -590,6 +598,17 @@
         </mxCell>
         <mxCell id="losnIFv3CeqP07pF8Fcl-111" value="getInitLastLoggedZxid()" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1">
           <mxGeometry x="2420" y="1235" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-118" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;fontColor=#FF0000;strokeWidth=2;dashed=1;dashPattern=1 2;" edge="1" parent="1" source="losnIFv3CeqP07pF8Fcl-115" target="losnIFv3CeqP07pF8Fcl-74">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2700" y="1545" />
+              <mxPoint x="2700" y="1250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-115" value="Notification n = recvqueue.poll(notTimeout,&#xa;        TimeUnit.MILLISECONDS);" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FF6666;" vertex="1" parent="1">
+          <mxGeometry x="2100" y="1520" width="200" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
