@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-08T07:23:34.170Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="JS-ALvmLV1Dgev8BrQip" version="15.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-08T07:26:43.641Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="ZrbNsqLsj3-vJ62TqzUj" version="15.4.3" type="github">
   <diagram id="SoEcYwhc6m7pzwqqew_2" name="第 1 页">
     <mxGraphModel dx="2075" dy="686" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -88,6 +88,27 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-36" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;strokeWidth=2;" edge="1" parent="1" source="ZCuFaapzUTEh5m-6mNR0-10" target="ZCuFaapzUTEh5m-6mNR0-35">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="550" />
+              <mxPoint x="380" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-37" value="初始化内存&lt;br&gt;数据库对象" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="ZCuFaapzUTEh5m-6mNR0-36">
+          <mxGeometry x="0.1899" y="-5" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-39" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;strokeWidth=2;" edge="1" parent="1" source="ZCuFaapzUTEh5m-6mNR0-10" target="ZCuFaapzUTEh5m-6mNR0-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-40" value="将上面创建的初始服务&lt;br&gt;连接对象放入到本服务节点对象中" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="ZCuFaapzUTEh5m-6mNR0-39">
+          <mxGeometry x="0.1642" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="ZCuFaapzUTEh5m-6mNR0-10" value="runFromConfig(config);" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#99FF99;html=1;" vertex="1" parent="1">
           <mxGeometry x="50" y="530" width="130" height="40" as="geometry" />
         </mxCell>
@@ -122,6 +143,12 @@
         </mxCell>
         <mxCell id="ZCuFaapzUTEh5m-6mNR0-32" value="quorumPeer.setElectionType(config.getElectionAlg());" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;html=1;" vertex="1" parent="1">
           <mxGeometry x="530" y="350" width="290" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-35" value="quorumPeer.setZKDatabase(new ZKDatabase(quorumPeer.getTxnFactory()));" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="530" y="430" width="290" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZCuFaapzUTEh5m-6mNR0-38" value="quorumPeer.setCnxnFactory(cnxnFactory);" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;html=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="530" width="250" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
