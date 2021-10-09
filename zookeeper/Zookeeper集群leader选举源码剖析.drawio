@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-09T02:26:17.598Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="CNONyWfBMm5zVUL0a4oS" version="15.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-09T02:36:39.861Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="lDXmuMqWHUs9NGlNvZR3" version="15.4.3" type="github">
   <diagram id="SoEcYwhc6m7pzwqqew_2" name="第 1 页">
     <mxGraphModel dx="1770" dy="1733" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -985,8 +985,30 @@
         <mxCell id="losnIFv3CeqP07pF8Fcl-216" value="sendqueue.offer(notmsg);" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FF6666;" vertex="1" parent="1">
           <mxGeometry x="2795" y="2575" width="200" height="50" as="geometry" />
         </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-223" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;fontColor=#000000;strokeWidth=2;" edge="1" parent="1" source="losnIFv3CeqP07pF8Fcl-219" target="losnIFv3CeqP07pF8Fcl-222">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-224" value="过半选举leader逻辑" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontColor=#000000;" vertex="1" connectable="0" parent="losnIFv3CeqP07pF8Fcl-223">
+          <mxGeometry x="-0.2653" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="losnIFv3CeqP07pF8Fcl-219" value="recvset.put(n.sid, new Vote(n.leader, n.zxid, n.electionEpoch, n.peerEpoch));" style="whiteSpace=wrap;align=center;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1">
           <mxGeometry x="2378.75" y="2700" width="210" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-226" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;fontColor=#000000;strokeWidth=2;" edge="1" parent="1" source="losnIFv3CeqP07pF8Fcl-222" target="losnIFv3CeqP07pF8Fcl-225">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-227" value="for循环选票箱里收到的选票&lt;br&gt;与本机投的leader选票做对比&lt;br&gt;如果相等，将投票机器sid加入voteSet" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontColor=#000000;" vertex="1" connectable="0" parent="losnIFv3CeqP07pF8Fcl-226">
+          <mxGeometry x="0.0794" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-222" value="termPredicate(recvset,&#xa;        new Vote(proposedLeader, proposedZxid,&#xa;                logicalclock.get(), proposedEpoch))" style="whiteSpace=wrap;align=center;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="2363.75" y="2840" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-225" value="if (vote.equals(entry.getValue())) {&#xa;    voteSet.addAck(entry.getKey());&#xa;}" style="whiteSpace=wrap;align=left;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="2870" y="2730" width="200" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
