@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-09T01:49:54.634Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="E5Na6SHX0aQyjbtRujkc" version="15.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-09T01:52:07.427Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="Yx7Q06--Eer9rqQXQsBB" version="15.4.3" type="github">
   <diagram id="SoEcYwhc6m7pzwqqew_2" name="第 1 页">
     <mxGraphModel dx="1958" dy="1846" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -902,14 +902,22 @@
         <mxCell id="losnIFv3CeqP07pF8Fcl-193" value="RecvWorker rw = new RecvWorker(sock, din, sid, sw);&#xa;rw.start();" style="whiteSpace=wrap;rounded=0;strokeWidth=2;fillColor=#FFFFFF;align=left;verticalAlign=middle;" vertex="1" parent="1">
           <mxGeometry x="3970" y="240" width="300" height="70" as="geometry" />
         </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-208" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=12;fontColor=#000000;strokeWidth=2;" edge="1" parent="1" source="losnIFv3CeqP07pF8Fcl-196" target="losnIFv3CeqP07pF8Fcl-207">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-209" value="SendWorker" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontColor=#000000;html=1;" vertex="1" connectable="0" parent="losnIFv3CeqP07pF8Fcl-208">
+          <mxGeometry x="-0.2079" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="losnIFv3CeqP07pF8Fcl-196" value="// 给发送给选票sid这台机器创建一个选票发送器&#xa;SendWorker sw = new SendWorker(sock, sid);&#xa;&#xa;// 将选票发送器与sid对应放入map中&#xa;senderWorkerMap.put(sid, sw);&#xa;&#xa;// 给发送选票sid机器初始化一个发送选票队列放入map中&#xa;queueSendMap.putIfAbsent(sid,&#xa;        new ArrayBlockingQueue&lt;ByteBuffer&gt;(SEND_CAPACITY));&#xa;&#xa;// 启动选票发送器线程&#xa;sw.start();" style="whiteSpace=wrap;rounded=0;strokeWidth=2;fillColor=#FFFFFF;align=left;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="4070" y="392.5" width="340" height="177.5" as="geometry" />
         </mxCell>
         <mxCell id="losnIFv3CeqP07pF8Fcl-203" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;fontColor=#000000;strokeWidth=2;" edge="1" parent="1" source="losnIFv3CeqP07pF8Fcl-199" target="losnIFv3CeqP07pF8Fcl-202">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="losnIFv3CeqP07pF8Fcl-199" value="rw.start();" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FF3333;" vertex="1" parent="1">
-          <mxGeometry x="4400" y="260" width="190" height="30" as="geometry" />
+        <mxCell id="losnIFv3CeqP07pF8Fcl-199" value="rw.run();" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="4400" y="260" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="losnIFv3CeqP07pF8Fcl-205" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=12;fontColor=#000000;strokeWidth=2;" edge="1" parent="1" source="losnIFv3CeqP07pF8Fcl-202" target="losnIFv3CeqP07pF8Fcl-204">
           <mxGeometry relative="1" as="geometry" />
@@ -920,10 +928,13 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="losnIFv3CeqP07pF8Fcl-202" value="addToRecvQueue(new Message(message.duplicate(), sid));" style="whiteSpace=wrap;rounded=0;strokeWidth=2;fillColor=#FFFFFF;align=left;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry x="4670" y="245" width="208" height="60" as="geometry" />
+          <mxGeometry x="4580" y="250" width="208" height="60" as="geometry" />
         </mxCell>
         <mxCell id="losnIFv3CeqP07pF8Fcl-204" value="recvQueue.add(msg);" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FF3333;" vertex="1" parent="1">
-          <mxGeometry x="5060" y="215" width="190" height="30" as="geometry" />
+          <mxGeometry x="4990" y="260" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-207" value="sw.run();" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="4580" y="460" width="110" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
