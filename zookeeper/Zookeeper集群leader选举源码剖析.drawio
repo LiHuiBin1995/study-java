@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-10-09T02:20:44.569Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="gE4dDlsZ2N2K9umNMURP" version="15.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-09T02:26:17.598Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="CNONyWfBMm5zVUL0a4oS" version="15.4.3" type="github">
   <diagram id="SoEcYwhc6m7pzwqqew_2" name="第 1 页">
-    <mxGraphModel dx="2443" dy="2136" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1770" dy="1733" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -784,6 +784,22 @@
         <mxCell id="losnIFv3CeqP07pF8Fcl-156" value="updateProposal(n.leader, n.zxid, n.peerEpoch);" style="whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;html=1;" vertex="1" parent="1">
           <mxGeometry x="2887.5" y="2470" width="255" height="50" as="geometry" />
         </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-217" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;fontColor=#000000;strokeWidth=2;" edge="1" parent="1" source="losnIFv3CeqP07pF8Fcl-158" target="losnIFv3CeqP07pF8Fcl-216">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-218" value="给所有其他参与投票的节点&lt;br&gt;发送选票到应用层发送队列" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontColor=#000000;" vertex="1" connectable="0" parent="losnIFv3CeqP07pF8Fcl-217">
+          <mxGeometry x="-0.1512" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-220" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;fontColor=#000000;strokeWidth=2;" edge="1" parent="1" source="losnIFv3CeqP07pF8Fcl-158" target="losnIFv3CeqP07pF8Fcl-219">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-221" value="将接收到的选票放入选票箱" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontColor=#000000;" vertex="1" connectable="0" parent="losnIFv3CeqP07pF8Fcl-220">
+          <mxGeometry x="-0.1672" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="losnIFv3CeqP07pF8Fcl-158" value="sendNotifications();&#xa;发送选票" style="whiteSpace=wrap;align=center;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1">
           <mxGeometry x="2378.75" y="2580" width="210" height="40" as="geometry" />
         </mxCell>
@@ -965,6 +981,12 @@
         </mxCell>
         <mxCell id="losnIFv3CeqP07pF8Fcl-210" value="// 取出发送选票队列&#xa;ArrayBlockingQueue&lt;ByteBuffer&gt; bq = queueSendMap.get(sid);&#xa;&#xa;// 发送选票&#xa;send(b);" style="whiteSpace=wrap;rounded=0;strokeWidth=2;fillColor=#FFFFFF;align=left;verticalAlign=middle;" vertex="1" parent="1">
           <mxGeometry x="4840" y="430" width="360" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-216" value="sendqueue.offer(notmsg);" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FF6666;" vertex="1" parent="1">
+          <mxGeometry x="2795" y="2575" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-219" value="recvset.put(n.sid, new Vote(n.leader, n.zxid, n.electionEpoch, n.peerEpoch));" style="whiteSpace=wrap;align=center;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="2378.75" y="2700" width="210" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
