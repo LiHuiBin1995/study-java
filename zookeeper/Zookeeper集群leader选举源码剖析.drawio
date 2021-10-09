@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-10-09T02:04:16.848Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="CvlfDEW_Zlz-14hpI5b_" version="15.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-09T02:06:06.842Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="6S9LqUP63-vFpURc7iFQ" version="15.4.3" type="github">
   <diagram id="SoEcYwhc6m7pzwqqew_2" name="第 1 页">
-    <mxGraphModel dx="3089" dy="2523" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2443" dy="2136" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -954,6 +954,14 @@
         </mxCell>
         <mxCell id="losnIFv3CeqP07pF8Fcl-207" value="sw.run();" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FF3333;" vertex="1" parent="1">
           <mxGeometry x="4580" y="460" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="losnIFv3CeqP07pF8Fcl-215" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;dashPattern=1 2;fontSize=12;fontColor=#000000;strokeWidth=2;" edge="1" parent="1" source="losnIFv3CeqP07pF8Fcl-210" target="losnIFv3CeqP07pF8Fcl-55">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="5330" y="470" />
+              <mxPoint x="5330" y="965" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="losnIFv3CeqP07pF8Fcl-210" value="// 取出发送选票队列&#xa;ArrayBlockingQueue&lt;ByteBuffer&gt; bq = queueSendMap.get(sid);&#xa;&#xa;// 发送选票&#xa;send(b);" style="whiteSpace=wrap;rounded=0;strokeWidth=2;fillColor=#FFFFFF;align=left;verticalAlign=middle;" vertex="1" parent="1">
           <mxGeometry x="4840" y="430" width="360" height="80" as="geometry" />
