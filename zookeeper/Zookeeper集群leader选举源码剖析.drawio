@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-10-10T04:51:40.441Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" etag="EIm5x4JB2Q2O5YIJW0_Q" version="15.5.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-10T04:56:08.594Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" etag="_6uNmXcxFEfMsvjzhMSQ" version="15.5.0" type="github">
   <diagram id="SoEcYwhc6m7pzwqqew_2" name="第 1 页">
-    <mxGraphModel dx="2249" dy="1941" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1396" dy="1478" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1185,8 +1185,19 @@
         <mxCell id="losnIFv3CeqP07pF8Fcl-274" value="while (self.isRunning()) {&#xa;  readPacket(qp);&#xa;  processPacket(qp);&#xa;}" style="whiteSpace=wrap;rounded=0;strokeWidth=2;fillColor=#FFFFFF;align=left;verticalAlign=top;" parent="1" vertex="1">
           <mxGeometry x="1363.75" y="2090" width="162.5" height="70" as="geometry" />
         </mxCell>
+        <mxCell id="4iUSUEwLVIgQrekgdMCO-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="4iUSUEwLVIgQrekgdMCO-1" target="4iUSUEwLVIgQrekgdMCO-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4iUSUEwLVIgQrekgdMCO-5" value="BinaryInputArchive.readRecord" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];html=1;" vertex="1" connectable="0" parent="4iUSUEwLVIgQrekgdMCO-4">
+          <mxGeometry x="-0.185" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="4iUSUEwLVIgQrekgdMCO-1" value="leaderIs.readRecord(pp, &quot;packet&quot;);" style="whiteSpace=wrap;rounded=0;strokeWidth=2;fillColor=#FFFFFF;align=center;verticalAlign=middle;" vertex="1" parent="1">
           <mxGeometry x="1599" y="2105" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4iUSUEwLVIgQrekgdMCO-3" value="r.deserialize(this, tag);" style="whiteSpace=wrap;rounded=0;strokeWidth=2;fillColor=#FFFFFF;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1599" y="2225" width="190" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
