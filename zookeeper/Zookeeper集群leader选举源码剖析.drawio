@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-10-10T06:00:18.363Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" etag="eO3Pzx8x6kZvsFoB0LCB" version="15.5.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-10T06:07:23.205Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" etag="yfj4_dksd2g3tDVOgiRO" version="15.5.0" type="github">
   <diagram id="SoEcYwhc6m7pzwqqew_2" name="第 1 页">
-    <mxGraphModel dx="2249" dy="1941" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1504" dy="1537" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1273,8 +1273,48 @@
         <mxCell id="4iUSUEwLVIgQrekgdMCO-22" value="leader.lead();" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1">
           <mxGeometry x="500" y="1555" width="150" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="4iUSUEwLVIgQrekgdMCO-28" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;strokeWidth=2;" edge="1" parent="1" source="4iUSUEwLVIgQrekgdMCO-24" target="4iUSUEwLVIgQrekgdMCO-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="4iUSUEwLVIgQrekgdMCO-24" value="zk.loadData();" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1">
           <mxGeometry x="500" y="1660" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4iUSUEwLVIgQrekgdMCO-30" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;strokeWidth=2;" edge="1" parent="1" source="4iUSUEwLVIgQrekgdMCO-27" target="4iUSUEwLVIgQrekgdMCO-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4iUSUEwLVIgQrekgdMCO-31" value="同步数据给从节点" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="4iUSUEwLVIgQrekgdMCO-30">
+          <mxGeometry x="-0.4038" y="1" relative="1" as="geometry">
+            <mxPoint x="18" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4iUSUEwLVIgQrekgdMCO-27" value="cnxAcceptor.start();" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="500" y="1770" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4iUSUEwLVIgQrekgdMCO-33" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;strokeWidth=2;" edge="1" parent="1" source="4iUSUEwLVIgQrekgdMCO-29" target="4iUSUEwLVIgQrekgdMCO-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4iUSUEwLVIgQrekgdMCO-29" value="LearnerCnxAcceptor.run()" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="790" y="1770" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4iUSUEwLVIgQrekgdMCO-35" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;strokeWidth=2;" edge="1" parent="1" source="4iUSUEwLVIgQrekgdMCO-32" target="4iUSUEwLVIgQrekgdMCO-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4iUSUEwLVIgQrekgdMCO-36" value="接收follower数据并开启线程处理" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="4iUSUEwLVIgQrekgdMCO-35">
+          <mxGeometry x="-0.2945" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4iUSUEwLVIgQrekgdMCO-32" value="s = ss.accept();" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="790" y="1880" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4iUSUEwLVIgQrekgdMCO-38" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;strokeWidth=2;" edge="1" parent="1" source="4iUSUEwLVIgQrekgdMCO-34" target="4iUSUEwLVIgQrekgdMCO-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4iUSUEwLVIgQrekgdMCO-34" value="LearnerHandler fh = new LearnerHandler(s, is, Leader.this);&#xa;fh.start();" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="765" y="1972.5" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4iUSUEwLVIgQrekgdMCO-37" value="LearnerHandler.run()" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="797.5" y="2100" width="135" height="27.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
