@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-10-10T06:09:44.271Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" etag="fFdnbzIto0V7A-lJ5U6f" version="15.5.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-10T06:39:31.781Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" etag="gPJ6cXtlRwWgD7wVoecr" version="15.5.0" type="github">
   <diagram id="SoEcYwhc6m7pzwqqew_2" name="第 1 页">
-    <mxGraphModel dx="1504" dy="1537" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1301" dy="1426" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1290,6 +1290,9 @@
             <mxPoint x="18" y="1" as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="4iUSUEwLVIgQrekgdMCO-43" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;strokeWidth=2;" edge="1" parent="1" source="4iUSUEwLVIgQrekgdMCO-27" target="4iUSUEwLVIgQrekgdMCO-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="4iUSUEwLVIgQrekgdMCO-27" value="cnxAcceptor.start();" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1">
           <mxGeometry x="500" y="1770" width="150" height="30" as="geometry" />
         </mxCell>
@@ -1324,6 +1327,49 @@
         </mxCell>
         <mxCell id="4iUSUEwLVIgQrekgdMCO-39" value="sockConnect(sock, addr, Math.min(self.tickTime * self.syncLimit, remainingInitLimitTime));" style="whiteSpace=wrap;rounded=0;strokeWidth=2;fillColor=#FF0000;html=1;" vertex="1" parent="1">
           <mxGeometry x="1027.5" y="1840" width="172.5" height="77.5" as="geometry" />
+        </mxCell>
+        <mxCell id="4iUSUEwLVIgQrekgdMCO-45" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;strokeWidth=2;" edge="1" parent="1" source="4iUSUEwLVIgQrekgdMCO-42" target="4iUSUEwLVIgQrekgdMCO-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4iUSUEwLVIgQrekgdMCO-48" value="leader跟所有的follower定时发送&lt;br&gt;ping请求保持长连接" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="4iUSUEwLVIgQrekgdMCO-45">
+          <mxGeometry x="-0.3697" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4iUSUEwLVIgQrekgdMCO-50" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;strokeWidth=2;" edge="1" parent="1" source="4iUSUEwLVIgQrekgdMCO-42" target="4iUSUEwLVIgQrekgdMCO-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4iUSUEwLVIgQrekgdMCO-42" value="startZkServer();" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="500" y="1880" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4iUSUEwLVIgQrekgdMCO-47" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;strokeWidth=2;" edge="1" parent="1" source="4iUSUEwLVIgQrekgdMCO-44" target="4iUSUEwLVIgQrekgdMCO-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4iUSUEwLVIgQrekgdMCO-44" value="for (LearnerHandler f : getLearners()) {&lt;br&gt;&amp;nbsp; f.ping();&lt;br&gt;}" style="whiteSpace=wrap;rounded=0;strokeWidth=2;fillColor=#FFFFFF;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="463.75" y="1995" width="222.5" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4iUSUEwLVIgQrekgdMCO-46" value="QuorumPacket ping = new QuorumPacket(Leader.PING, id, null, null);&lt;br&gt;queuePacket(ping);" style="whiteSpace=wrap;rounded=0;strokeWidth=2;fillColor=#FFFFFF;align=left;html=1;" vertex="1" parent="1">
+          <mxGeometry x="381.88" y="2170" width="386.25" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="4iUSUEwLVIgQrekgdMCO-53" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;strokeWidth=2;" edge="1" parent="1" source="4iUSUEwLVIgQrekgdMCO-49" target="4iUSUEwLVIgQrekgdMCO-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4iUSUEwLVIgQrekgdMCO-49" value="zk.startup();" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="140" y="1882.5" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4iUSUEwLVIgQrekgdMCO-55" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;strokeWidth=2;" edge="1" parent="1" source="4iUSUEwLVIgQrekgdMCO-52" target="4iUSUEwLVIgQrekgdMCO-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4iUSUEwLVIgQrekgdMCO-56" value="构建leader请求处理链" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="4iUSUEwLVIgQrekgdMCO-55">
+          <mxGeometry x="-0.3889" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4iUSUEwLVIgQrekgdMCO-52" value="super.startup();" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="140" y="1992.5" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4iUSUEwLVIgQrekgdMCO-54" value="ZooKeeperServer.setupRequestProcessors();" style="rounded=0;whiteSpace=wrap;strokeWidth=2;fillColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="85" y="2112.5" width="260" height="47.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
