@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-22T14:36:17.837Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36" etag="U6Gv0z-Asybp5MAcvINR" version="15.5.0" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-10-23T06:39:09.466Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36" etag="hmmUX1oL0-OdScMKvO6f" version="15.5.0" type="github" pages="3">
   <diagram id="3OGJys61MQPhKgDNW8TY" name="BIO">
     <mxGraphModel dx="818" dy="578" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -200,7 +200,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="LVAlEijrG5EFmigY7SKU" name="第 3 页">
-    <mxGraphModel dx="390" dy="275" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="818" dy="578" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="IEIGdqeCX3gwOpgYw1Vy-0" />
         <mxCell id="IEIGdqeCX3gwOpgYw1Vy-1" parent="IEIGdqeCX3gwOpgYw1Vy-0" />
@@ -230,7 +230,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="IEIGdqeCX3gwOpgYw1Vy-5" value="DefaultSelectorProvider.create()" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;strokeWidth=2;fillColor=#FFFFFF;verticalAlign=middle;" vertex="1" parent="IEIGdqeCX3gwOpgYw1Vy-1">
-          <mxGeometry x="20" y="230" width="200" height="40" as="geometry" />
+          <mxGeometry x="20" y="220" width="200" height="40" as="geometry" />
         </mxCell>
         <mxCell id="IEIGdqeCX3gwOpgYw1Vy-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;strokeWidth=2;" edge="1" parent="IEIGdqeCX3gwOpgYw1Vy-1" source="IEIGdqeCX3gwOpgYw1Vy-8" target="IEIGdqeCX3gwOpgYw1Vy-11">
           <mxGeometry relative="1" as="geometry" />
@@ -241,10 +241,27 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="IEIGdqeCX3gwOpgYw1Vy-8" value="EPollSelectorProvider.openSelector()" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;strokeWidth=2;fillColor=#FFFFFF;verticalAlign=middle;" vertex="1" parent="IEIGdqeCX3gwOpgYw1Vy-1">
-          <mxGeometry x="10" y="350" width="220" height="40" as="geometry" />
+          <mxGeometry x="10" y="310" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IEIGdqeCX3gwOpgYw1Vy-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;strokeWidth=2;" edge="1" parent="IEIGdqeCX3gwOpgYw1Vy-1" source="IEIGdqeCX3gwOpgYw1Vy-11" target="IEIGdqeCX3gwOpgYw1Vy-14">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="IEIGdqeCX3gwOpgYw1Vy-11" value="new EPollSelectorImpl(this)" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;strokeWidth=2;fillColor=#FFFFFF;verticalAlign=middle;" vertex="1" parent="IEIGdqeCX3gwOpgYw1Vy-1">
-          <mxGeometry x="20" y="470" width="200" height="30" as="geometry" />
+          <mxGeometry x="20" y="390" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IEIGdqeCX3gwOpgYw1Vy-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;strokeWidth=2;" edge="1" parent="IEIGdqeCX3gwOpgYw1Vy-1" source="IEIGdqeCX3gwOpgYw1Vy-14" target="IEIGdqeCX3gwOpgYw1Vy-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IEIGdqeCX3gwOpgYw1Vy-18" value="创建Epoll实例，用文件描述符epfd代表" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" vertex="1" connectable="0" parent="IEIGdqeCX3gwOpgYw1Vy-17">
+          <mxGeometry x="-0.1845" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IEIGdqeCX3gwOpgYw1Vy-14" value="new EPollArrayWrapper()" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;strokeWidth=2;fillColor=#FFFFFF;verticalAlign=middle;" vertex="1" parent="IEIGdqeCX3gwOpgYw1Vy-1">
+          <mxGeometry x="20" y="450" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IEIGdqeCX3gwOpgYw1Vy-16" value="epfd = epoolCreate()" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;strokeWidth=2;fillColor=#FFFFFF;verticalAlign=middle;" vertex="1" parent="IEIGdqeCX3gwOpgYw1Vy-1">
+          <mxGeometry x="20" y="530" width="200" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
