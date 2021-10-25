@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-25T05:15:24.376Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="Vk5zIWYm8oP1hJoQaNiX" version="15.5.1" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-10-25T05:19:12.395Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="ngKHRA9X9elwka8iEUic" version="15.5.1" type="github" pages="3">
   <diagram id="3OGJys61MQPhKgDNW8TY" name="BIO">
     <mxGraphModel dx="770" dy="520" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -381,8 +381,17 @@
         <mxCell id="FPpI28Vqq485mmJh-Fgz-27" value="Java_sun_nio_ch_EPollArrayWrapper&lt;br&gt;_epollWait" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;strokeWidth=2;fillColor=#FFFFFF;verticalAlign=middle;" vertex="1" parent="IEIGdqeCX3gwOpgYw1Vy-1">
           <mxGeometry x="745" y="565" width="240" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="FPpI28Vqq485mmJh-Fgz-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontColor=#000000;strokeWidth=2;dashed=1;" edge="1" parent="IEIGdqeCX3gwOpgYw1Vy-1" source="FPpI28Vqq485mmJh-Fgz-30" target="FPpI28Vqq485mmJh-Fgz-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="FPpI28Vqq485mmJh-Fgz-30" value="epoll_wait" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;strokeWidth=2;fillColor=#FF3333;verticalAlign=middle;" vertex="1" parent="IEIGdqeCX3gwOpgYw1Vy-1">
           <mxGeometry x="817.5" y="660" width="95" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FPpI28Vqq485mmJh-Fgz-33" value="当socket收到数据后，中断程序调用回调函数给epoll实例的事件就绪列表rdlist里添加该socket引用(这块是操作系统实现的)，当程序执行到epoll_wait时，如果rdlist已经引用了socket，那么epoll_wait直接返回，如果rdlist为空，阻塞进程" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;rounded=0;verticalAlign=middle;align=left;" vertex="1" parent="IEIGdqeCX3gwOpgYw1Vy-1">
+          <mxGeometry x="1020" y="680" width="320" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="FPpI28Vqq485mmJh-Fgz-34" value="中断是系统用来响应硬件设备请求的一种机制，操作系统接收到硬件的中断请求，会打断正在执行的进程，然后调用内核中的中断处理程序来响应请求" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;rounded=0;verticalAlign=middle;" vertex="1" parent="IEIGdqeCX3gwOpgYw1Vy-1">
+          <mxGeometry x="1020" y="810" width="320" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
