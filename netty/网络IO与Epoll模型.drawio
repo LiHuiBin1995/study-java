@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-25T04:36:37.441Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="NvqGjgSYlobMmuEmX8lt" version="15.5.1" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-10-25T04:39:29.787Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="3PgAIrrXz3hFIZtisQNX" version="15.5.1" type="github" pages="3">
   <diagram id="3OGJys61MQPhKgDNW8TY" name="BIO">
     <mxGraphModel dx="770" dy="520" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -260,6 +260,9 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="FPpI28Vqq485mmJh-Fgz-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;dashed=1;" edge="1" parent="IEIGdqeCX3gwOpgYw1Vy-1" source="IEIGdqeCX3gwOpgYw1Vy-14" target="FPpI28Vqq485mmJh-Fgz-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="IEIGdqeCX3gwOpgYw1Vy-14" value="new EPollArrayWrapper()" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;strokeWidth=2;fillColor=#FFFFFF;verticalAlign=middle;" parent="IEIGdqeCX3gwOpgYw1Vy-1" vertex="1">
           <mxGeometry x="20" y="450" width="200" height="30" as="geometry" />
         </mxCell>
@@ -301,8 +304,19 @@
         <mxCell id="FPpI28Vqq485mmJh-Fgz-4" value="SelectorImpl.register" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;strokeWidth=2;fillColor=#FFFFFF;verticalAlign=middle;" vertex="1" parent="IEIGdqeCX3gwOpgYw1Vy-1">
           <mxGeometry x="450" y="200" width="160" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="FPpI28Vqq485mmJh-Fgz-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="IEIGdqeCX3gwOpgYw1Vy-1" source="FPpI28Vqq485mmJh-Fgz-6" target="FPpI28Vqq485mmJh-Fgz-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FPpI28Vqq485mmJh-Fgz-12" value="将fd(就是socketChannel)&lt;br&gt;添加到内部的集合里" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#FF0000;fontStyle=1" vertex="1" connectable="0" parent="FPpI28Vqq485mmJh-Fgz-10">
+          <mxGeometry x="-0.1191" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="FPpI28Vqq485mmJh-Fgz-6" value="EPollSelectorImpl.implRegister" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;strokeWidth=2;fillColor=#FFFFFF;verticalAlign=middle;" vertex="1" parent="IEIGdqeCX3gwOpgYw1Vy-1">
           <mxGeometry x="435" y="290" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FPpI28Vqq485mmJh-Fgz-9" value="pollWrapper.add(fd)" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;strokeWidth=2;fillColor=#FFFFFF;verticalAlign=middle;" vertex="1" parent="IEIGdqeCX3gwOpgYw1Vy-1">
+          <mxGeometry x="435" y="410" width="190" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
