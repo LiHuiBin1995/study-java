@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-28T04:08:04.645Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="J-0Wc0_g3gwx4qRSszpE" version="15.5.1" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-10-28T04:10:20.712Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="8WxZ8DsVBs4Mw-Flvoac" version="15.5.1" type="github" pages="2">
   <diagram id="tBd2eVAR9nbwGEP9nhFC" name="Netty线程模型图">
     <mxGraphModel dx="1267" dy="809" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -170,7 +170,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="fAExpZiIWca5xK1e2uDy" name="Netty线程模型源码剖析图">
-    <mxGraphModel dx="887" dy="566" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="612" dy="390" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="gJNaKa122AA_8m1eaT0V-0" />
         <mxCell id="gJNaKa122AA_8m1eaT0V-1" parent="gJNaKa122AA_8m1eaT0V-0" />
@@ -237,8 +237,19 @@
         <mxCell id="owyl8TmlxD83-4JjsxsZ-15" value="channelFactory.newChannel()" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;verticalAlign=middle;" vertex="1" parent="gJNaKa122AA_8m1eaT0V-1">
           <mxGeometry x="430" y="250" width="170" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="owyl8TmlxD83-4JjsxsZ-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="gJNaKa122AA_8m1eaT0V-1" source="owyl8TmlxD83-4JjsxsZ-17" target="owyl8TmlxD83-4JjsxsZ-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="owyl8TmlxD83-4JjsxsZ-22" value="初始化channel，并将感兴趣的&lt;br&gt;事件设置为OP_ACCEPT" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="owyl8TmlxD83-4JjsxsZ-21">
+          <mxGeometry x="-0.28" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="owyl8TmlxD83-4JjsxsZ-17" value="NioServerSocketChannel()" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;verticalAlign=middle;" vertex="1" parent="gJNaKa122AA_8m1eaT0V-1">
           <mxGeometry x="430" y="340" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="owyl8TmlxD83-4JjsxsZ-20" value="super(null,channel,&lt;br&gt;SelectionKey.OP_ACCEPT)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;verticalAlign=middle;" vertex="1" parent="gJNaKa122AA_8m1eaT0V-1">
+          <mxGeometry x="430" y="430" width="170" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
