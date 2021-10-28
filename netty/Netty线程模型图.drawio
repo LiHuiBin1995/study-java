@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-28T09:55:41.550Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="0jf0lfXa4lq3BNq4eVoh" version="15.5.1" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-10-28T09:57:30.497Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="clu0wVV92mAoqjHHNydi" version="15.5.1" type="github" pages="2">
   <diagram id="tBd2eVAR9nbwGEP9nhFC" name="Netty线程模型图">
     <mxGraphModel dx="1267" dy="809" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -668,6 +668,9 @@
         </mxCell>
         <mxCell id="owyl8TmlxD83-4JjsxsZ-138" value="childGroup.register(child)" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="gJNaKa122AA_8m1eaT0V-1">
           <mxGeometry x="1160" y="1410" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="owyl8TmlxD83-4JjsxsZ-143" value="&lt;font color=&quot;#000000&quot;&gt;SocketChannel注册逻辑跟&lt;br&gt;ServerSocketChannel注册逻辑一样，&lt;br&gt;注册完会调用SocketChannel里的&lt;br&gt;ChannelInitializer把里面我们自己写的&lt;br&gt;Handler全部放入pipeline&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FF0000;" vertex="1" parent="gJNaKa122AA_8m1eaT0V-1">
+          <mxGeometry x="1130" y="1470" width="220" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
