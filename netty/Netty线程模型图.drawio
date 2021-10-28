@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-28T09:57:30.497Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="clu0wVV92mAoqjHHNydi" version="15.5.1" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-10-28T10:05:19.918Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="jRBrGEhrm8zD2RvqMlGn" version="15.5.1" type="github" pages="2">
   <diagram id="tBd2eVAR9nbwGEP9nhFC" name="Netty线程模型图">
     <mxGraphModel dx="1267" dy="809" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -170,7 +170,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="fAExpZiIWca5xK1e2uDy" name="Netty线程模型源码剖析图">
-    <mxGraphModel dx="739" dy="472" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1267" dy="809" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="gJNaKa122AA_8m1eaT0V-0" />
         <mxCell id="gJNaKa122AA_8m1eaT0V-1" parent="gJNaKa122AA_8m1eaT0V-0" />
@@ -632,6 +632,16 @@
         <mxCell id="owyl8TmlxD83-4JjsxsZ-134" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="gJNaKa122AA_8m1eaT0V-1" source="owyl8TmlxD83-4JjsxsZ-130" target="owyl8TmlxD83-4JjsxsZ-133">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="owyl8TmlxD83-4JjsxsZ-157" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;dashed=1;fontColor=#000000;endArrow=none;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="gJNaKa122AA_8m1eaT0V-1" source="owyl8TmlxD83-4JjsxsZ-130" target="owyl8TmlxD83-4JjsxsZ-59">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="880" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="owyl8TmlxD83-4JjsxsZ-158" value="从head开始调用ServerChannel的&lt;br&gt;pipeline里的所有InboundHandler" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="owyl8TmlxD83-4JjsxsZ-157">
+          <mxGeometry x="0.2219" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="owyl8TmlxD83-4JjsxsZ-130" value="pipline.fireChannelRead&lt;br&gt;(readBuf.get(i))" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="gJNaKa122AA_8m1eaT0V-1">
           <mxGeometry x="1160" y="1160" width="150" height="30" as="geometry" />
         </mxCell>
@@ -666,11 +676,63 @@
             </Array>
           </mxGeometry>
         </mxCell>
+        <mxCell id="owyl8TmlxD83-4JjsxsZ-145" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="gJNaKa122AA_8m1eaT0V-1" source="owyl8TmlxD83-4JjsxsZ-138" target="owyl8TmlxD83-4JjsxsZ-144">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="owyl8TmlxD83-4JjsxsZ-138" value="childGroup.register(child)" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="gJNaKa122AA_8m1eaT0V-1">
           <mxGeometry x="1160" y="1410" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="owyl8TmlxD83-4JjsxsZ-143" value="&lt;font color=&quot;#000000&quot;&gt;SocketChannel注册逻辑跟&lt;br&gt;ServerSocketChannel注册逻辑一样，&lt;br&gt;注册完会调用SocketChannel里的&lt;br&gt;ChannelInitializer把里面我们自己写的&lt;br&gt;Handler全部放入pipeline&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FF0000;" vertex="1" parent="gJNaKa122AA_8m1eaT0V-1">
           <mxGeometry x="1130" y="1470" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="owyl8TmlxD83-4JjsxsZ-147" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="gJNaKa122AA_8m1eaT0V-1" source="owyl8TmlxD83-4JjsxsZ-144" target="owyl8TmlxD83-4JjsxsZ-146">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="owyl8TmlxD83-4JjsxsZ-148" value="for循环处理&lt;br&gt;selectedKeys里的所有key" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="owyl8TmlxD83-4JjsxsZ-147">
+          <mxGeometry x="-0.1087" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="owyl8TmlxD83-4JjsxsZ-144" value="NioEventLoop.run()" style="whiteSpace=wrap;html=1;fillColor=#F8CECC;" vertex="1" parent="gJNaKa122AA_8m1eaT0V-1">
+          <mxGeometry x="757.63" y="1410" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="owyl8TmlxD83-4JjsxsZ-150" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="gJNaKa122AA_8m1eaT0V-1" source="owyl8TmlxD83-4JjsxsZ-146" target="owyl8TmlxD83-4JjsxsZ-149">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="owyl8TmlxD83-4JjsxsZ-151" value="OP_READ" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="owyl8TmlxD83-4JjsxsZ-150">
+          <mxGeometry x="-0.0871" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="owyl8TmlxD83-4JjsxsZ-146" value="processSelectedKey(k,(AbstractNioChannel)a)" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="gJNaKa122AA_8m1eaT0V-1">
+          <mxGeometry x="750.01" y="1300" width="135.25" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="owyl8TmlxD83-4JjsxsZ-153" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="gJNaKa122AA_8m1eaT0V-1" source="owyl8TmlxD83-4JjsxsZ-149" target="owyl8TmlxD83-4JjsxsZ-152">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="owyl8TmlxD83-4JjsxsZ-154" value="直接调用socketChannel的&lt;br&gt;pipeline里的所有handler&lt;br&gt;的channelRead方法" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="owyl8TmlxD83-4JjsxsZ-153">
+          <mxGeometry x="-0.3309" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="owyl8TmlxD83-4JjsxsZ-155" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontColor=#000000;dashed=1;endArrow=none;endFill=0;" edge="1" parent="gJNaKa122AA_8m1eaT0V-1" source="owyl8TmlxD83-4JjsxsZ-149" target="owyl8TmlxD83-4JjsxsZ-103">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="818" y="1190" />
+              <mxPoint x="1080" y="1190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="owyl8TmlxD83-4JjsxsZ-156" value="不同线程组里的线程的selector监听处理" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="owyl8TmlxD83-4JjsxsZ-155">
+          <mxGeometry x="-0.2229" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="owyl8TmlxD83-4JjsxsZ-149" value="unsafe.read()&lt;br&gt;(NioByteUnsafe)" style="whiteSpace=wrap;html=1;fillColor=#F8CECC;" vertex="1" parent="gJNaKa122AA_8m1eaT0V-1">
+          <mxGeometry x="766.3199999999999" y="1220" width="102.63" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="owyl8TmlxD83-4JjsxsZ-152" value="pipeline.fireChannelRead(byteBuf)" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="gJNaKa122AA_8m1eaT0V-1">
+          <mxGeometry x="930" y="1320" width="191.05" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
