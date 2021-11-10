@@ -1,5 +1,5 @@
-<mxfile host="app.diagrams.net" modified="2021-11-10T08:17:26.624Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="9wRTFh2tzfZ-NJ9d6H14" version="15.6.8" type="github" pages="2">
-  <diagram id="ATivfeKOni3P2LOzAWiQ" name="快速排序">
+<mxfile host="app.diagrams.net" modified="2021-11-10T08:17:47.130Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="hC5M8NOQwkLFaVS26cA3" version="15.6.8" type="github" pages="2">
+  <diagram id="ATivfeKOni3P2LOzAWiQ" name="快速排序s">
     <mxGraphModel dx="642" dy="460" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -535,7 +535,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="iAqZCfVzFS8ZcU3Juypn" name="第 2 页">
+  <diagram id="iAqZCfVzFS8ZcU3Juypn" name="快速排序">
     <mxGraphModel dx="906" dy="649" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="9tDJVaDeRIvUF-UNFt_V-0" />
