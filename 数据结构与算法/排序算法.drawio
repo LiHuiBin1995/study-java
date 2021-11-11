@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-10T08:34:00.678Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="nKeSm9FLh2pEXfbCb3HI" version="15.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-11-11T01:28:58.486Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="6pvR9pF4DpgB3jw4bf5t" version="15.6.8" type="github">
   <diagram id="iAqZCfVzFS8ZcU3Juypn" name="快速排序">
     <mxGraphModel dx="906" dy="649" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -304,8 +304,8 @@
             <mxPoint x="102.5" y="560" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="U9XbMlSnLYRfiFvfLZtf-107" value="没有找到比基准值小的数，继续循环，知道leftPointer == rightPointer&lt;br&gt;……" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontSize=20;fontColor=#000000;opacity=70;fontStyle=1" vertex="1" parent="9tDJVaDeRIvUF-UNFt_V-1">
-          <mxGeometry x="25" y="1010" width="727.5" height="30" as="geometry" />
+        <mxCell id="U9XbMlSnLYRfiFvfLZtf-107" value="没有找到比基准值小的数，继续循环，直到leftPointer == rightPointer&lt;br&gt;……" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontSize=20;fontColor=#000000;opacity=70;fontStyle=1" vertex="1" parent="9tDJVaDeRIvUF-UNFt_V-1">
+          <mxGeometry x="25" y="990" width="727.5" height="50" as="geometry" />
         </mxCell>
         <mxCell id="U9XbMlSnLYRfiFvfLZtf-108" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontSize=16;fontColor=#000000;strokeColor=#000000;strokeWidth=2;fillColor=#FFB366;" edge="1" parent="9tDJVaDeRIvUF-UNFt_V-1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
