@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-20T14:39:11.165Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="seEWUw12VknwlXmXGOlx" version="15.7.0" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-11-20T14:40:30.624Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="RMa507mAGb6bKIek-AW_" version="15.7.0" type="github" pages="2">
   <diagram id="eibKm1Qo0GK7cK8QXqjg" name="删除叶子节点">
     <mxGraphModel dx="1667" dy="601" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -286,7 +286,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="Hzcs2NQXFVVbVSe0Q8Sg" name="左子树为空，右子树不为空">
-    <mxGraphModel dx="1667" dy="601" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1815" dy="707" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="6olqhe2cZE4E7ebAaM1b-0" />
         <mxCell id="6olqhe2cZE4E7ebAaM1b-1" parent="6olqhe2cZE4E7ebAaM1b-0" />
@@ -479,6 +479,12 @@
         </mxCell>
         <mxCell id="H1cQvEeDvi55F9-AReTz-28" value="Y" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=2;" vertex="1" parent="6olqhe2cZE4E7ebAaM1b-1">
           <mxGeometry x="156" y="1250" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="08BADT-m4CmTmFkQUlFT-3" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontSize=40;fontColor=#FF3333;strokeColor=#000000;strokeWidth=2;fillColor=#FF9933;curved=1;" edge="1" parent="6olqhe2cZE4E7ebAaM1b-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-375" y="570" as="sourcePoint" />
+            <mxPoint x="-375" y="710" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
