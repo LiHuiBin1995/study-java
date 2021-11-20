@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-20T14:21:05.022Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="qaQxgioNN-rGsAc3Zkwn" version="15.7.0" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-11-20T14:21:41.159Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="piGHYFPkuKcgffszCqO1" version="15.7.0" type="github" pages="2">
   <diagram id="eibKm1Qo0GK7cK8QXqjg" name="删除叶子节点">
     <mxGraphModel dx="2249" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -278,6 +278,9 @@
             <mxPoint x="-347" y="1410" as="sourcePoint" />
             <mxPoint x="-347" y="1570" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="lAciNFz_R856pKdbt1xR-1" value="删除叶子节点" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=40;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="80" y="170" width="330" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
