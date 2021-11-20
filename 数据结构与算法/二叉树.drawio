@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-20T15:20:14.251Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="JyRyilhwNS9CvQG_Wr13" version="15.7.0" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-11-20T15:22:22.453Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="PNP50-zhfiGuMvhhGSH6" version="15.7.0" type="github" pages="3">
   <diagram id="eibKm1Qo0GK7cK8QXqjg" name="删除叶子节点">
     <mxGraphModel dx="1667" dy="601" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -692,6 +692,9 @@
         </mxCell>
         <mxCell id="EGKXgvfipB7MNi6xNfuj-28" value="Y" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=2;" vertex="1" parent="ViYExbjN6ZyvuO01gGlO-1">
           <mxGeometry x="20" y="1260" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WGxQCYdUIhDQJel5y4vh-0" value="M.left = L.left;&lt;br&gt;L.left = null;" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;verticalAlign=middle;" vertex="1" parent="ViYExbjN6ZyvuO01gGlO-1">
+          <mxGeometry x="-517.5" y="1290" width="295" height="130" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
