@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-23T06:52:14.666Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="fq0YdOU6ngaUFPDe1gJi" version="15.7.3" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-11-23T06:54:54.921Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="nwgWi5KTYybGpGaCkw6p" version="15.7.3" type="github" pages="2">
   <diagram id="hroVxoEWynnKc8vzWvlk" name="第 1 页">
     <mxGraphModel dx="502" dy="501" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -321,7 +321,7 @@
         <mxCell id="bhRdw-uG-aR3UtPoUEGK-16" value="22" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=15;fontColor=#FFFFFF;strokeWidth=2;fillColor=#6666FF;" vertex="1" parent="bhRdw-uG-aR3UtPoUEGK-1">
           <mxGeometry x="653" y="300" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="bhRdw-uG-aR3UtPoUEGK-60" value="从最后一个非叶子结点开始调整(第一个非叶子结点：arr.length / 2 - 1)" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;rounded=0;verticalAlign=middle;" vertex="1" parent="bhRdw-uG-aR3UtPoUEGK-1">
+        <mxCell id="bhRdw-uG-aR3UtPoUEGK-60" value="从最后一个非叶子结点开始调整(第一个非叶子结点：arr.length / 2 - 1 = 15/2-1 = 6，也就是46这个节点)&amp;nbsp;" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;rounded=0;verticalAlign=middle;" vertex="1" parent="bhRdw-uG-aR3UtPoUEGK-1">
           <mxGeometry x="770" y="650" width="240" height="80" as="geometry" />
         </mxCell>
         <mxCell id="bhRdw-uG-aR3UtPoUEGK-61" value="0" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;fontColor=#FF3333;" vertex="1" parent="bhRdw-uG-aR3UtPoUEGK-1">
@@ -593,6 +593,9 @@
         </mxCell>
         <mxCell id="bhRdw-uG-aR3UtPoUEGK-159" value="14" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;fontColor=#FF3333;" vertex="1" parent="bhRdw-uG-aR3UtPoUEGK-1">
           <mxGeometry x="680" y="371" width="23" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="bhRdw-uG-aR3UtPoUEGK-160" value="构建大顶堆" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#FF3333;" vertex="1" parent="bhRdw-uG-aR3UtPoUEGK-1">
+          <mxGeometry x="810" y="175" width="160" height="35" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
