@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-01T02:25:19.461Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="BriZKYQ1DKCYYHHiFQwJ" version="15.8.6" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-12-01T02:26:33.349Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="oM25mVubQ59ocqPjz2RY" version="15.8.6" type="github" pages="3">
   <diagram id="Wlbw1OocyxwhMAFg14BQ" name="图论">
     <mxGraphModel dx="1248" dy="686" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -678,6 +678,11 @@
             <mxPoint x="510" y="660" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="DLVyEPzpzh_db9Kylvf_-46" value="pop" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=15;fontColor=#000000;" vertex="1" connectable="0" parent="DLVyEPzpzh_db9Kylvf_-37">
+          <mxGeometry x="-0.1861" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="DLVyEPzpzh_db9Kylvf_-36" value="出队元素A" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontSize=15;fontColor=#000000;" vertex="1" parent="nkGSE_KQLFSdtMpJFnjW-1">
           <mxGeometry x="175" y="647.5" width="90" height="25" as="geometry" />
         </mxCell>
@@ -704,6 +709,9 @@
         </mxCell>
         <mxCell id="DLVyEPzpzh_db9Kylvf_-45" value="队列" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontSize=15;fontColor=#000000;" vertex="1" parent="nkGSE_KQLFSdtMpJFnjW-1">
           <mxGeometry x="60" y="757.5" width="40" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="DLVyEPzpzh_db9Kylvf_-47" value="3、重复第二步" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;fontColor=#000000;" vertex="1" parent="nkGSE_KQLFSdtMpJFnjW-1">
+          <mxGeometry x="80" y="840" width="110" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
