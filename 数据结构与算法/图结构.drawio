@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-02T04:05:59.062Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="UX8m_ZJhDurEyAT7BTTB" version="15.8.6" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2021-12-02T04:21:32.062Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="ylQS1xVlaVrFSfVIAijO" version="15.8.6" type="github" pages="4">
   <diagram id="Wlbw1OocyxwhMAFg14BQ" name="图论">
     <mxGraphModel dx="1468" dy="807" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1589,7 +1589,7 @@
         <mxCell id="JJMQGV5o_og3mZ4Zp6g8-70" value="&lt;span&gt;30&lt;/span&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=none;fontSize=15;fontColor=#000000;strokeWidth=2;fillColor=#99CCFF;" vertex="1" parent="ae3qtBighGhbPcU6-OeL-1">
           <mxGeometry x="400" y="1760" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="JJMQGV5o_og3mZ4Zp6g8-71" value="&lt;span&gt;100&lt;/span&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=none;fontSize=15;fontColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="ae3qtBighGhbPcU6-OeL-1">
+        <mxCell id="JJMQGV5o_og3mZ4Zp6g8-71" value="&lt;span&gt;90&lt;/span&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=none;fontSize=15;fontColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="ae3qtBighGhbPcU6-OeL-1">
           <mxGeometry x="440" y="1760" width="40" height="40" as="geometry" />
         </mxCell>
         <mxCell id="JJMQGV5o_og3mZ4Zp6g8-72" value="dis" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontSize=15;fontColor=#000000;fontStyle=1" vertex="1" parent="ae3qtBighGhbPcU6-OeL-1">
@@ -1621,6 +1621,9 @@
         </mxCell>
         <mxCell id="JJMQGV5o_og3mZ4Zp6g8-81" value="&lt;span&gt;10&lt;/span&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=none;fontSize=15;fontColor=#000000;strokeWidth=2;fillColor=#99CCFF;" vertex="1" parent="ae3qtBighGhbPcU6-OeL-1">
           <mxGeometry x="320" y="1760" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="JJMQGV5o_og3mZ4Zp6g8-82" value="这里选取的结点是loc=5，以结点“5”为起点可以到达结点“4”和结点“6”两个方向。&lt;br&gt;首先来看从结点“5”到结点“4”：权重是20，即data[5][4] = 20，所以这里dis[4]路径权重是结点“1”到结点“5”的路径权重加结点“5”到结点“4”的路径权重，即dis[5] + data[5][4] = 30+20=50，小于当前dis[4]中MAX，所以更新dis[4] = 50;&lt;br&gt;再看从结点“5”到结点“6”：权重是60，即data[5][6] = 60，同样这里dis[6]的路径权重是结点“1”到结点“5”的路径权重加结点“5”到结点“6”的路径权重，即dis[5] + data[5][6] = 30+60=90，小于当前dis[6]中的100，所以更新dis[6] = 90" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;rounded=0;verticalAlign=middle;labelBackgroundColor=none;align=left;" vertex="1" parent="ae3qtBighGhbPcU6-OeL-1">
+          <mxGeometry x="175" y="1810" width="595" height="150" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
