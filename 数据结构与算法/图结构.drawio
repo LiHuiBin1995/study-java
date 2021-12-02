@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-02T01:30:16.562Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="jU8-N8qassjM93b6-4F9" version="15.8.6" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2021-12-02T01:34:01.211Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="xenDO9zH6_Gko9HD28g4" version="15.8.6" type="github" pages="4">
   <diagram id="Wlbw1OocyxwhMAFg14BQ" name="图论">
     <mxGraphModel dx="1468" dy="807" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1444,6 +1444,9 @@
         </mxCell>
         <mxCell id="JJMQGV5o_og3mZ4Zp6g8-21" value="6" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;labelBackgroundColor=none;fontSize=15;fontColor=#000000;strokeWidth=2;" vertex="1" parent="ae3qtBighGhbPcU6-OeL-1">
           <mxGeometry x="470" y="110" width="55" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="JJMQGV5o_og3mZ4Zp6g8-22" value="2、以图结构中的“1”节点作为起始点，将结点“1”可以一步到达的关系结点的权重与dis数组中对应位置上的值作比较，如果比dis数组对应位置上的值小，就替换dis数组中的值" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontSize=15;fontColor=#000000;" vertex="1" parent="ae3qtBighGhbPcU6-OeL-1">
+          <mxGeometry x="140" y="1060" width="640" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
