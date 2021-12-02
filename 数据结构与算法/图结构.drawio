@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-01T10:31:54.021Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="yl2mrOvzbn9re05NsBuI" version="15.8.6" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2021-12-02T01:23:22.239Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="RLVFKTYmRE4jZAU05_SI" version="15.8.6" type="github" pages="4">
   <diagram id="Wlbw1OocyxwhMAFg14BQ" name="图论">
     <mxGraphModel dx="1468" dy="807" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1261,6 +1261,9 @@
         </mxCell>
         <mxCell id="ae3qtBighGhbPcU6-OeL-71" value="当前结点与其他结点存在关系" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontSize=15;fontColor=#000000;" vertex="1" parent="ae3qtBighGhbPcU6-OeL-72">
           <mxGeometry x="20" y="30" width="210" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ae3qtBighGhbPcU6-OeL-73" value="&lt;ol&gt;&lt;li&gt;创建一个dis数组，用来表示起始点到每个顶点的距离，最开始的时候我们将其赋值为无穷大&lt;/li&gt;&lt;li style=&quot;line-height: 22.4px ; box-sizing: content-box&quot;&gt;创建data[][]数组，用来存储图之间点与点的关系，边的距离&lt;/li&gt;&lt;li style=&quot;line-height: 22.4px ; box-sizing: content-box&quot;&gt;定义变量loc，初始赋值为起始点，用来存储当前的操作点，当前走的是第几个顶点&lt;/li&gt;&lt;li style=&quot;line-height: 22.4px ; box-sizing: content-box&quot;&gt;使用贪心的策略，先取dis数组中最小的值，也就是&lt;span style=&quot;font-weight: 700 ; margin: 0px ; padding: 0px ; border: 0px ; vertical-align: baseline ; line-height: 22.4px ; box-sizing: content-box&quot;&gt;取dis数组中离初始点最近的值&lt;/span&gt;&lt;/li&gt;&lt;li style=&quot;line-height: 22.4px ; box-sizing: content-box&quot;&gt;将loc赋值为当前取出的点，判断当前这个点可以到的其他点的路径长度，更新dis数组&lt;/li&gt;&lt;li style=&quot;line-height: 22.4px ; box-sizing: content-box&quot;&gt;&lt;span style=&quot;font-weight: 700 ; margin: 0px ; padding: 0px ; border: 0px ; vertical-align: baseline ; line-height: 22.4px ; box-sizing: content-box&quot;&gt;注意，dis数组中已经选取过的点我们不能再次进行选择&lt;/span&gt;&lt;/li&gt;&lt;li style=&quot;line-height: 22.4px ; box-sizing: content-box&quot;&gt;重复步骤4, 5操作，直到所有的点都处理完毕&lt;/li&gt;&lt;/ol&gt;" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;rounded=0;verticalAlign=middle;labelBackgroundColor=none;align=left;html=1;" vertex="1" parent="ae3qtBighGhbPcU6-OeL-1">
+          <mxGeometry x="560" y="220" width="550" height="290" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
