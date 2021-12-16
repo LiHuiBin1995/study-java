@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-16T09:30:37.891Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="RLo6NluR9qLOC_U7_cFs" version="15.9.6" type="github" pages="9">
+<mxfile host="app.diagrams.net" modified="2021-12-16T09:31:14.122Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="ydgV1nj_njR7_REY5jfY" version="15.9.6" type="github" pages="9">
   <diagram id="JrFSPCjuFUnZ7v7BHWO6" name="二叉树">
     <mxGraphModel dx="794" dy="552" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="192000" pageHeight="108000" math="0" shadow="0">
       <root>
@@ -1180,8 +1180,8 @@
         <mxCell id="Ct21ZAAm-CWYSVT3wcQW-55" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;readview:[100,200], 300&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" parent="Ct21ZAAm-CWYSVT3wcQW-1" vertex="1">
           <mxGeometry x="825" y="610" width="180" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="Eize9RsVOzV6z0VANb_H-0" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Ct21ZAAm-CWYSVT3wcQW-1">
-          <mxGeometry x="50" y="830" width="270" height="110" as="geometry" />
+        <mxCell id="Eize9RsVOzV6z0VANb_H-0" value="在可重复读隔离级别，当事务开启，执行任何查询sql时会生成当前事务的一致性视图read-view，该视图在事务结束之前都不会变化(如果是读已提交隔离级别在每次执行查询sql时都会重新生成)，这个视图由执行查询时所有未提交事务id数组（数组里最小的id为min_id）和已创建的最大事务id（max_id）组成，事务里的任何sql查询结果需要从对应版本链里的最新数据开始逐条跟read-view做比对从而得到最终的快照结果。&lt;br&gt;版本链比对规则：&lt;br&gt;1. 如果 row 的 trx_id 落在绿色部分( trx_id)&lt;br&gt;2. 如果 row 的 trx_id 落在红色部分( trx_id&amp;gt;max_id )，表示这个版本是由将来启动的事务生成的，是不可见的(若 row 的 trx_id 就是当前自己的事务是可见的）；&lt;br&gt;3. 如果 row 的 trx_id 落在黄色部分(min_id &amp;lt;=trx_id&amp;lt;= max_id)，那就包括两种情况&lt;br&gt;&amp;nbsp; &amp;nbsp; a. 若 row 的 trx_id 在视图数组中，表示这个版本是由还没提交的事务生成的，不可见(若 row 的 trx_id 就是当前自己的事务是可见的)；&lt;br&gt;&amp;nbsp; &amp;nbsp; b. 若 row 的 trx_id 不在视图数组中，表示这个版本是已经提交了的事务生成的，可见。&lt;br&gt;&lt;br&gt;对于删除的情况可以认为是update的特殊情况，会将版本链上最新的数据复制一份，然后将trx_id修改成删除操作的trx_id，同时在该条记录的头信息（record header）里的（deleted_flag）标记位写上true，来表示当前记录已经被删除，在查询时按照上面的规则查到对应的记录如果delete_flag标记位为true，意味着记录已被删除，则不返回数据。&lt;br&gt;&lt;br&gt;注意：begin/start&amp;nbsp;transaction&amp;nbsp;命令并不是一个事务的起点，在执行到它们之后的第一个修改操作InnoDB表的语句，事务才真正启动，才会向mysql申请事务id，mysql内部是严格按照事务的启动顺序来分配事务id的。&lt;br&gt;&lt;br&gt;总结：&lt;br&gt;MVCC机制的实现就是通过read-view机制与undo版本链比对机制，使得不同的事务会根据数据版本链对比规则读取同一条数据在版本链上的不同版本数据。" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="Ct21ZAAm-CWYSVT3wcQW-1">
+          <mxGeometry x="50" y="830" width="1300" height="260" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
