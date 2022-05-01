@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-01T15:15:28.697Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" etag="ufagag8Di_mHZI8ff70O" version="15.8.3" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-05-01T15:16:56.673Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" etag="m2_govD-4csIphNXkBaV" version="15.8.3" type="github" pages="4">
   <diagram id="0EBJrcc88xZn_uUqVCnv" name="jvm内存模型">
     <mxGraphModel dx="1422" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="192000" pageHeight="108000" background="#FFFFFF" math="0" shadow="1">
       <root>
@@ -551,6 +551,18 @@
         </mxCell>
         <mxCell id="t_84uG4GTKYHsWbonnFn-19" value="&lt;font style=&quot;font-size: 12px&quot;&gt;Shenandoah&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fillColor=#E5CCFF;" vertex="1" parent="t_84uG4GTKYHsWbonnFn-1">
           <mxGeometry x="840" y="160" width="80" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="t_84uG4GTKYHsWbonnFn-20" value="" style="endArrow=none;dashed=1;html=1;rounded=0;dashPattern=1 1;fontSize=12;strokeColor=#000000;strokeWidth=2;" edge="1" parent="t_84uG4GTKYHsWbonnFn-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="430" as="sourcePoint" />
+            <mxPoint x="260" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t_84uG4GTKYHsWbonnFn-21" value="&lt;font style=&quot;font-size: 18px&quot;&gt;&lt;b&gt;单线程&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="t_84uG4GTKYHsWbonnFn-1">
+          <mxGeometry x="140" y="80" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t_84uG4GTKYHsWbonnFn-22" value="&lt;font style=&quot;font-size: 18px&quot;&gt;&lt;b&gt;多线程&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="t_84uG4GTKYHsWbonnFn-1">
+          <mxGeometry x="280" y="80" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
