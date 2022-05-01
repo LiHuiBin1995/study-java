@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-01T15:10:58.883Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" etag="gzm8V1d1skCRaiCPoajt" version="15.8.3" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-05-01T15:11:25.760Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" etag="D2kEEuCFJbs8XKCPqyaL" version="15.8.3" type="github" pages="4">
   <diagram id="0EBJrcc88xZn_uUqVCnv" name="jvm内存模型">
     <mxGraphModel dx="1422" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="192000" pageHeight="108000" background="#FFFFFF" math="0" shadow="1">
       <root>
@@ -505,6 +505,9 @@
           <mxGeometry x="125" y="160" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="t_84uG4GTKYHsWbonnFn-14" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;dashed=1;dashPattern=1 1;fontSize=18;endArrow=none;endFill=0;strokeColor=#000000;strokeWidth=2;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="t_84uG4GTKYHsWbonnFn-1" source="t_84uG4GTKYHsWbonnFn-3" target="t_84uG4GTKYHsWbonnFn-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t_84uG4GTKYHsWbonnFn-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;dashPattern=1 1;fontSize=18;endArrow=none;endFill=0;strokeColor=#000000;strokeWidth=2;" edge="1" parent="t_84uG4GTKYHsWbonnFn-1" source="t_84uG4GTKYHsWbonnFn-3" target="t_84uG4GTKYHsWbonnFn-7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="t_84uG4GTKYHsWbonnFn-3" value="Serial Old" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#999999;" vertex="1" parent="t_84uG4GTKYHsWbonnFn-1">
