@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-01T00:19:27.659Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" etag="-WGXQNXqOUFzMKt5pH8s" version="15.8.3" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-05-01T15:03:04.388Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" etag="dStiFjDMDfVjc5YYoj2K" version="15.8.3" type="github" pages="4">
   <diagram id="0EBJrcc88xZn_uUqVCnv" name="jvm内存模型">
     <mxGraphModel dx="1422" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="192000" pageHeight="108000" background="#FFFFFF" math="0" shadow="1">
       <root>
@@ -486,6 +486,20 @@
         </mxCell>
         <mxCell id="wFC8HITw2d-bZQFK-zyV-18" value="业务线程" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="nrXJapArqn71sF3Drutu-1">
           <mxGeometry x="310" y="330" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="-9hQ9OZa55R0B8Zp1o_f" name="垃圾回收器">
+    <mxGraphModel dx="1422" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="t_84uG4GTKYHsWbonnFn-0" />
+        <mxCell id="t_84uG4GTKYHsWbonnFn-1" parent="t_84uG4GTKYHsWbonnFn-0" />
+        <mxCell id="t_84uG4GTKYHsWbonnFn-2" value="Serial" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6E6;" vertex="1" parent="t_84uG4GTKYHsWbonnFn-1">
+          <mxGeometry x="80" y="160" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="t_84uG4GTKYHsWbonnFn-3" value="Serial Old" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#999999;" vertex="1" parent="t_84uG4GTKYHsWbonnFn-1">
+          <mxGeometry x="80" y="320" width="120" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
