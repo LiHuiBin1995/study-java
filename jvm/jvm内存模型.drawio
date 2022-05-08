@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-08T08:34:30.246Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" etag="TZvjugrTK4DhT1j9-gIS" version="15.8.3" type="github" pages="10">
+<mxfile host="app.diagrams.net" modified="2022-05-08T08:34:58.274Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" etag="-JUsDroZSa-MqJpERKQ1" version="15.8.3" type="github" pages="10">
   <diagram id="0EBJrcc88xZn_uUqVCnv" name="jvm内存模型">
     <mxGraphModel dx="1422" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="192000" pageHeight="108000" background="#FFFFFF" math="0" shadow="1">
       <root>
@@ -3020,7 +3020,7 @@
       <root>
         <mxCell id="6yQF4eteBUSzYJ1cQc24-0" />
         <mxCell id="6yQF4eteBUSzYJ1cQc24-1" parent="6yQF4eteBUSzYJ1cQc24-0" />
-        <mxCell id="snWiehr7bqM6anmqiiYY-0" value="引导类加载器" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontColor=#000000;strokeColor=#000000;fillColor=#66FFB3;align=center;strokeWidth=2;" vertex="1" parent="6yQF4eteBUSzYJ1cQc24-1">
+        <mxCell id="snWiehr7bqM6anmqiiYY-0" value="引导类加载器" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontColor=#000000;strokeColor=#000000;fillColor=#99FF99;align=center;strokeWidth=2;" vertex="1" parent="6yQF4eteBUSzYJ1cQc24-1">
           <mxGeometry x="260" y="190" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="snWiehr7bqM6anmqiiYY-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=16;fontColor=#000000;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=2;fillColor=#007FFF;" edge="1" parent="6yQF4eteBUSzYJ1cQc24-1" source="snWiehr7bqM6anmqiiYY-1" target="snWiehr7bqM6anmqiiYY-0">
@@ -3031,7 +3031,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="snWiehr7bqM6anmqiiYY-1" value="扩展类加载器" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontColor=#000000;strokeColor=#000000;fillColor=#66FFB3;align=center;strokeWidth=2;" vertex="1" parent="6yQF4eteBUSzYJ1cQc24-1">
+        <mxCell id="snWiehr7bqM6anmqiiYY-1" value="扩展类加载器" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontColor=#000000;strokeColor=#000000;fillColor=#99FF99;align=center;strokeWidth=2;" vertex="1" parent="6yQF4eteBUSzYJ1cQc24-1">
           <mxGeometry x="260" y="290" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="snWiehr7bqM6anmqiiYY-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=16;fontColor=#000000;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=2;fillColor=#007FFF;" edge="1" parent="6yQF4eteBUSzYJ1cQc24-1" source="snWiehr7bqM6anmqiiYY-2" target="snWiehr7bqM6anmqiiYY-1">
@@ -3042,19 +3042,19 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="snWiehr7bqM6anmqiiYY-2" value="应用程序类加载器" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontColor=#000000;strokeColor=#000000;fillColor=#66FFB3;align=center;strokeWidth=2;" vertex="1" parent="6yQF4eteBUSzYJ1cQc24-1">
+        <mxCell id="snWiehr7bqM6anmqiiYY-2" value="应用程序类加载器" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontColor=#000000;strokeColor=#000000;fillColor=#99FF99;align=center;strokeWidth=2;" vertex="1" parent="6yQF4eteBUSzYJ1cQc24-1">
           <mxGeometry x="260" y="390" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="snWiehr7bqM6anmqiiYY-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=16;fontColor=#000000;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=2;fillColor=#007FFF;" edge="1" parent="6yQF4eteBUSzYJ1cQc24-1" source="snWiehr7bqM6anmqiiYY-3" target="snWiehr7bqM6anmqiiYY-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="snWiehr7bqM6anmqiiYY-3" value="自定义类加载器" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontColor=#000000;strokeColor=#000000;fillColor=#66FFB3;align=center;strokeWidth=2;" vertex="1" parent="6yQF4eteBUSzYJ1cQc24-1">
+        <mxCell id="snWiehr7bqM6anmqiiYY-3" value="自定义类加载器" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontColor=#000000;strokeColor=#000000;fillColor=#99FF99;align=center;strokeWidth=2;" vertex="1" parent="6yQF4eteBUSzYJ1cQc24-1">
           <mxGeometry x="160" y="480" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="snWiehr7bqM6anmqiiYY-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=16;fontColor=#000000;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=2;fillColor=#007FFF;" edge="1" parent="6yQF4eteBUSzYJ1cQc24-1" source="snWiehr7bqM6anmqiiYY-5" target="snWiehr7bqM6anmqiiYY-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="snWiehr7bqM6anmqiiYY-5" value="自定义类加载器" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontColor=#000000;strokeColor=#000000;fillColor=#66FFB3;align=center;strokeWidth=2;" vertex="1" parent="6yQF4eteBUSzYJ1cQc24-1">
+        <mxCell id="snWiehr7bqM6anmqiiYY-5" value="自定义类加载器" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontColor=#000000;strokeColor=#000000;fillColor=#99FF99;align=center;strokeWidth=2;" vertex="1" parent="6yQF4eteBUSzYJ1cQc24-1">
           <mxGeometry x="360" y="480" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="snWiehr7bqM6anmqiiYY-12" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;fontColor=#000000;strokeColor=#000000;strokeWidth=2;fillColor=#007FFF;" edge="1" parent="6yQF4eteBUSzYJ1cQc24-1">
