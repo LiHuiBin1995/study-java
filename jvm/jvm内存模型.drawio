@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-05-08T09:02:56.941Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" etag="JeW1Re90YCiS12GHwnRU" version="15.8.3" type="github" pages="10">
+<mxfile host="app.diagrams.net" modified="2022-05-08T10:05:59.751Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" etag="0oxx9P-TlhgFgajIFI13" version="15.8.3" type="github" pages="10">
   <diagram id="0EBJrcc88xZn_uUqVCnv" name="jvm内存模型">
-    <mxGraphModel dx="1422" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="192000" pageHeight="108000" background="#FFFFFF" math="0" shadow="1">
+    <mxGraphModel dx="1185" dy="643" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="192000" pageHeight="108000" background="#FFFFFF" math="0" shadow="1">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -73,7 +73,8 @@
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="1655" y="450" />
-              <mxPoint x="1317" y="450" />
+              <mxPoint x="1358" y="450" />
+              <mxPoint x="1358" y="470" />
             </Array>
           </mxGeometry>
         </mxCell>
