@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.3" pages="2">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.3" pages="3">
   <diagram name="HDFS的写数据流程" id="30qI9tqOHQ6r8G0XzgNk">
     <mxGraphModel dx="1669" dy="635" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -354,6 +354,26 @@
         </mxCell>
         <mxCell id="n2Bi1-5VWXgMAPiwylTK-1" value="&lt;ol&gt;&lt;li&gt;客户端client通过DistributedFileSystem向NameNode请求下载文件，NameNode通过查询元数据，查找文件块所在的DataNode地址。&lt;/li&gt;&lt;li&gt;挑选一台DataNode（就近原则，然后随机）服务器，请求读取数据&lt;/li&gt;&lt;li&gt;DataNode开始传输数据给客户端（从磁盘里面读取数据输入流，以Packet为单位来做校验）&lt;/li&gt;&lt;li&gt;客户端以Packet为单位接收，现在本地缓存，然后写入目标文件&lt;/li&gt;&lt;/ol&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#FFB366;verticalAlign=top;align=left;" vertex="1" parent="1">
           <mxGeometry x="200" y="710" width="450" height="290" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="PKZmH83GFj3ciPmGajGF" name="NameNode工作原理">
+    <mxGraphModel dx="968" dy="730" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="xvp_xR8EVowD_0dAFAc9-1" value="client" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFCC99;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="50" y="160" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xvp_xR8EVowD_0dAFAc9-2" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#66CC00;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="240" y="110" width="400" height="600" as="geometry" />
+        </mxCell>
+        <mxCell id="xvp_xR8EVowD_0dAFAc9-3" value="NameNode" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="407" y="80" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xvp_xR8EVowD_0dAFAc9-5" value="内存128G&lt;div&gt;（每个Block占元数据150byte）&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;4内存数据增删改&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=none;gradientColor=#ea6b66;strokeWidth=2;verticalAlign=top;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="274" y="160" width="326" height="110" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
