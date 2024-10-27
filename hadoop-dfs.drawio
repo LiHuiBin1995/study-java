@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.3" pages="3">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.3" pages="4">
   <diagram name="HDFS的写数据流程" id="30qI9tqOHQ6r8G0XzgNk">
     <mxGraphModel dx="1669" dy="635" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -508,6 +508,101 @@
         </mxCell>
         <mxCell id="xvp_xR8EVowD_0dAFAc9-54" value="1）第一阶段：NameNode启动&lt;div&gt;&amp;nbsp; &amp;nbsp; （1）第一次启动NameNode格式化后，创建Fsimage和Edits文件。如果不是第一次启动，直接加载编辑日志和镜像文件到内存。&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; （2）客户端对元数据进行增删改的请求&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; （3）NameNode记录操作日志，更新滚动日志&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; （4）NameNode在内存中对元数据进行增删改&lt;/div&gt;&lt;div&gt;2）第二阶段：Secondary NameNode工作&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; （1）Secondary NameNode询问NameNode是否需要CheckPoint。直接带回NameNode是否检查结果&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; （2）Secondary NameNode请求执行CheckPoint&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; （3）NameNode滚动正在写的Edits日志&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; （4）将滚动前的编辑日志和镜像文件拷贝到Secondary NameNode&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; （5）Secondary NameNode加载编辑日志和镜像文件到内存，并合并&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; （6）生成新的镜像文件fsimage.chkpoint&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; （7）拷贝fsimage.chkpoint到NameNode&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; （8）NameNode将fsimage.chkpoint重新命名成fsimage&lt;/div&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#ffcd28;gradientColor=#ffa500;strokeColor=#d79b00;align=left;verticalAlign=top;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="280" y="689" width="887" height="480" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="omhmD-JZcOEsLbQPEQxm" name="DataNode工作原理">
+    <mxGraphModel dx="968" dy="730" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="EHOLzuL8DOGOUfvmINYq-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeColor=#FF6666;" edge="1" parent="1" source="EHOLzuL8DOGOUfvmINYq-1" target="EHOLzuL8DOGOUfvmINYq-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EHOLzuL8DOGOUfvmINYq-34" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="EHOLzuL8DOGOUfvmINYq-1" target="EHOLzuL8DOGOUfvmINYq-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EHOLzuL8DOGOUfvmINYq-1" value="NameNode" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#97D077;strokeWidth=2;verticalAlign=top;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="210" y="70" width="540" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="EHOLzuL8DOGOUfvmINYq-2" value="元数据" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;strokeWidth=2;verticalAlign=top;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="250" y="130" width="470" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="EHOLzuL8DOGOUfvmINYq-8" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="30" y="450" width="230" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="EHOLzuL8DOGOUfvmINYq-3" value="DataNode1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;strokeColor=#33FF99;verticalAlign=top;fontSize=15;" vertex="1" parent="EHOLzuL8DOGOUfvmINYq-8">
+          <mxGeometry width="230" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="EHOLzuL8DOGOUfvmINYq-4" value="数据、&lt;font color=&quot;#ff3333&quot; style=&quot;font-size: 15px;&quot;&gt;数据长度、校验和时间戳&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;fontSize=15;" vertex="1" parent="EHOLzuL8DOGOUfvmINYq-8">
+          <mxGeometry x="10" y="75" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EHOLzuL8DOGOUfvmINYq-5" value="Block1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="EHOLzuL8DOGOUfvmINYq-8">
+          <mxGeometry x="10" y="45" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EHOLzuL8DOGOUfvmINYq-6" value="数据、&lt;font color=&quot;#ff3333&quot; style=&quot;font-size: 15px;&quot;&gt;数据长度、校验和时间戳&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;fontSize=15;" vertex="1" parent="EHOLzuL8DOGOUfvmINYq-8">
+          <mxGeometry x="10" y="180" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EHOLzuL8DOGOUfvmINYq-7" value="Block3" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="EHOLzuL8DOGOUfvmINYq-8">
+          <mxGeometry x="10" y="150" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EHOLzuL8DOGOUfvmINYq-24" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="800" y="445" width="230" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="EHOLzuL8DOGOUfvmINYq-16" value="DataNode3" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;strokeColor=#33FF99;verticalAlign=top;fontSize=15;" vertex="1" parent="EHOLzuL8DOGOUfvmINYq-24">
+          <mxGeometry width="230" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="EHOLzuL8DOGOUfvmINYq-19" value="数据、&lt;font color=&quot;#ff3333&quot; style=&quot;font-size: 15px;&quot;&gt;数据长度、校验和时间戳&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;fontSize=15;" vertex="1" parent="EHOLzuL8DOGOUfvmINYq-24">
+          <mxGeometry x="10" y="80" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EHOLzuL8DOGOUfvmINYq-20" value="Block3" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="EHOLzuL8DOGOUfvmINYq-24">
+          <mxGeometry x="10" y="50" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EHOLzuL8DOGOUfvmINYq-22" value="数据、&lt;font color=&quot;#ff3333&quot; style=&quot;font-size: 15px;&quot;&gt;数据长度、校验和时间戳&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;fontSize=15;container=0;" vertex="1" parent="EHOLzuL8DOGOUfvmINYq-24">
+          <mxGeometry x="10" y="185" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EHOLzuL8DOGOUfvmINYq-23" value="Block2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;container=0;" vertex="1" parent="EHOLzuL8DOGOUfvmINYq-24">
+          <mxGeometry x="10" y="155" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EHOLzuL8DOGOUfvmINYq-25" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="450" y="445" width="230" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="EHOLzuL8DOGOUfvmINYq-10" value="DataNode2" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;strokeColor=#33FF99;verticalAlign=top;fontSize=15;container=0;" vertex="1" parent="EHOLzuL8DOGOUfvmINYq-25">
+          <mxGeometry width="230" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="EHOLzuL8DOGOUfvmINYq-11" value="数据、&lt;font color=&quot;#ff3333&quot; style=&quot;font-size: 15px;&quot;&gt;数据长度、校验和时间戳&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;fontSize=15;container=0;" vertex="1" parent="EHOLzuL8DOGOUfvmINYq-25">
+          <mxGeometry x="10" y="185" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EHOLzuL8DOGOUfvmINYq-12" value="Block1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;container=0;" vertex="1" parent="EHOLzuL8DOGOUfvmINYq-25">
+          <mxGeometry x="10" y="155" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EHOLzuL8DOGOUfvmINYq-13" value="数据、&lt;font color=&quot;#ff3333&quot; style=&quot;font-size: 15px;&quot;&gt;数据长度、校验和时间戳&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;fontSize=15;container=0;" vertex="1" parent="EHOLzuL8DOGOUfvmINYq-25">
+          <mxGeometry x="10" y="80" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EHOLzuL8DOGOUfvmINYq-14" value="Block2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;container=0;" vertex="1" parent="EHOLzuL8DOGOUfvmINYq-25">
+          <mxGeometry x="10" y="50" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EHOLzuL8DOGOUfvmINYq-26" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.469;entryY=0.994;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="EHOLzuL8DOGOUfvmINYq-3" target="EHOLzuL8DOGOUfvmINYq-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EHOLzuL8DOGOUfvmINYq-27" value="1、DataNode启动后&lt;div&gt;NameNode注册&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="190" y="280" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="EHOLzuL8DOGOUfvmINYq-28" value="2、DataNode注册成功" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="400" y="170" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EHOLzuL8DOGOUfvmINYq-30" value="2、注册成功" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="90" y="120" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EHOLzuL8DOGOUfvmINYq-33" value="3、以后每周期（6小时）&lt;div&gt;上报所有块信息&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="230" y="405" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="EHOLzuL8DOGOUfvmINYq-35" value="4、心跳每3秒一次，&lt;div&gt;心跳返回结果带有&lt;/div&gt;&lt;div&gt;NameNode给&lt;/div&gt;&lt;div&gt;DataNode的命令&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="390" y="290" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="EHOLzuL8DOGOUfvmINYq-36" value="5、超过10分钟+30秒没有&lt;div&gt;收到DataNode2的心跳，&lt;/div&gt;&lt;div&gt;则认为该节点不可用&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="560" y="360" width="160" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
