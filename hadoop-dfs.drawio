@@ -221,6 +221,15 @@
         <mxCell id="wsTgYcDpY_YJnjC_EcBg-68" value="&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;color: rgb(31, 31, 31); font-family: monospace; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;客户还client向namenode请求上传文件&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;color: rgb(31, 31, 31); font-family: monospace; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;namenode应答，可以上传&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;color: rgb(31, 31, 31); font-family: monospace; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;请求上传第一个block(HDFS中对数据的存储都是成块存在的，默认为128MB/block)，因此需要成块上传。&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;color: rgb(31, 31, 31); font-family: monospace; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;namenode返回存储数据的几个节点。&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;color: rgb(31, 31, 31); font-family: monospace; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;client请求datanode建立传输block的通道&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;color: rgb(31, 31, 31); font-family: monospace; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;datanode回复应答成功&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;color: rgb(31, 31, 31); font-family: monospace; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;开始传输数据。&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="230" y="700" width="400" height="220" as="geometry" />
         </mxCell>
+        <mxCell id="vX-ApJSKbwfmNeFZAbA2-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;flowAnimation=1;" edge="1" parent="1" source="vX-ApJSKbwfmNeFZAbA2-1" target="wsTgYcDpY_YJnjC_EcBg-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vX-ApJSKbwfmNeFZAbA2-1" value="0-128M" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="-130" y="340" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vX-ApJSKbwfmNeFZAbA2-2" value="kongfu.mkv" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-140" y="430" width="60" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
