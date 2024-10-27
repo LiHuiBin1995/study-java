@@ -604,6 +604,9 @@
         <mxCell id="EHOLzuL8DOGOUfvmINYq-36" value="5、超过10分钟+30秒没有&lt;div&gt;收到DataNode2的心跳，&lt;/div&gt;&lt;div&gt;则认为该节点不可用&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="560" y="360" width="160" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="EHOLzuL8DOGOUfvmINYq-37" value="（1）一个数据块在DataNode上以文件形式存储在磁盘上，包括两个文件，一个是数据本身，一个是元数据，元数据包括：数据块的长度、块数据的校验以及时间戳&lt;div&gt;（2）DataNode启动后向NameNode注册，注册通过后，周期性（6小时）的向NameNode上报所有的块信息&lt;/div&gt;&lt;div&gt;（3）心跳是每3秒一次，心跳返回结果带有NameNode给该DataNode的命令如复制块数据到另一台机器，或山存储某个数据块。&lt;/div&gt;&lt;div&gt;（4）如果超过10分钟+30秒没有收到某个DataNode的心跳，则认为该节点不可用。&lt;/div&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#ffcd28;gradientColor=#ffa500;strokeColor=#d79b00;fontSize=15;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="231" y="820" width="630" height="410" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
