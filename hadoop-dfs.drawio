@@ -352,6 +352,9 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="n2Bi1-5VWXgMAPiwylTK-1" value="&lt;ol&gt;&lt;li&gt;客户端client向namnode请求下载文件&lt;/li&gt;&lt;li&gt;namenode返回元数据&lt;/li&gt;&lt;li&gt;客户端client拿到元数据开始找元数据所在的节点&lt;/li&gt;&lt;li&gt;根据每个节点请求读取数据&lt;/li&gt;&lt;li&gt;然后传输数据&lt;/li&gt;&lt;/ol&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#FFB366;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="200" y="710" width="450" height="290" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
